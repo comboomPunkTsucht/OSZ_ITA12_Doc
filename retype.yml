@@ -9,8 +9,6 @@ branding:
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
-    icon: Logo-transparet.PNG
-    iconAlign: right 
 footer:
   copyright: "&copy; Copyright . All rights reserved."
 markdown:
