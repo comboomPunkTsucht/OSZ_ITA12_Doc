@@ -1,0 +1,17 @@
+url: https://bit.ly/ITA12DocOSZimt
+branding:
+  colors:
+    label:
+      text: "#ffffff"
+      background: "#000000"
+  title: ITA 12
+  label: Doc
+links:
+  - text: home
+    link: https://bit.ly/ITA12DocOSZimt
+    icon: Logo-transparet.PNG
+    iconAlign: right 
+footer:
+  copyright: "&copy; Copyright . All rights reserved."
+markdown:
+  lineBreaks: hard 
