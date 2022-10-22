@@ -20,7 +20,7 @@ search:
   minChars: 1
   mode: full
   noResultsFoundMsg: Error, 404 Not Found!
-  placeholder: Search on  comboom.sucht
+  placeholder: Search the ITA 12 Documentation
 snippets:
   lineNumbers:
     - *
