@@ -13,6 +13,17 @@ links:
   - text: Discord-Server
     link: https://discord.gg/sVhY5j3g
     icon: ":speech_balloon:"
+search:
+  hotkeys:
+    - "s"
+  maxResults: 100
+  minChars: 1
+  mode: full
+  noResultsFoundMsg: Error, 404 Not Found!
+  placeholder: Search on  comboom.sucht
+snippets:
+  lineNumbers:
+    - *
 footer:
   copyright: "&copy; Copyright . All rights reserved."
 markdown:
