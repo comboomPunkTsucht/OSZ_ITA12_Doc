@@ -1,3 +1,23 @@
 label: Java Grundlagen
+titel: Java Grundlagen
+description: Grundlagen für die Programmiersprache Java
+tags:
+  - Java
+  - Grundlagen
+  - PAS
+  - Programmiersprache
+  - Programmieren
+  - Klassen
+  - Variablen
+  - Methoden
+  - Funktionen
+  - Objekte
+  - Konstruktoren
+  - Arrays
+  - Konstruktoren
+  - Schleifen
+  - Konsole
+  - Eingabe
+  - Ausgabe
 icon: ":technologist:"
 route: /java_grundlagen/
