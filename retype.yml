@@ -21,7 +21,7 @@ search:
   hotkeys:
     - "s"
   maxResults: 100
-  minChars: 2
+  minChars: 1
   mode: full
   noResultsFoundMsg: Error, 404 Not Found!
   placeholder: Search the ITA 12 Documentation
