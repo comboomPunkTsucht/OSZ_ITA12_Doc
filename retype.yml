@@ -9,6 +9,8 @@ branding:
   label: Docs
   logo: /img/OSZimt-Logo-k.png
   logoDark: /img/OSZimt-Logo-k.png
+footer:
+  copyright: "&copy; Copyright . All rights reserved. \n Non Official OSZ imt hosted Webseite but hosted by a student of the ITA 12 class from the OSZ imt."
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
@@ -38,5 +40,4 @@ integrations:
     enabled: true 
 cache:
   busting: query
-footer:
-  copyright: "&copy; Copyright . All rights reserved. \n Non Official OSZ imt hosted Webseite but hosted by a student of the ITA 12 class from the OSZ imt."
+
