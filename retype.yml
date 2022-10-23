@@ -37,3 +37,5 @@ integrations:
     enabled: true 
 cache:
   busting: query
+meta:
+  title: " | ITA 12 Documentation"
