@@ -33,8 +33,6 @@ snippets:
 markdown:
   lineBreaks: hard 
 integrations:
-  googleTagManager:
-    id: GTM-5S34BSP
   gravatar:
     default: retro
     enabled: true 
