@@ -29,6 +29,17 @@ public void methodenname(Datentyp parametername, ...) {
     //some code
 }
 ```
+```java # Methodenaufruf aus Testklasse
+methodenname(parametername, ...);
+```
+
+```java # Methodenaufruf aus Objektklasse
+Objektname.methodenname(parametername, ...);
+```
+```java # Methodenaufruf in Objektklasse
+this.methodenname(parametername, ...);
+```
+
 
 ## Variablen
 
@@ -39,6 +50,11 @@ Datentyp variablenname;
  ```java # Mit Initialisierung
 Datentyp variablenname = Wert;
 ```
+```java # Wertzuweisung einer Variable aus Testklasse
+variablenname = Wert;
+```
+    
+
 
 ```java # Konstante
 final Datentyp variablenname = Wert;
@@ -52,16 +68,19 @@ Datentyp[] variablenname = new Datentyp[Anzahl];
 Datentyp[] variablenname = {Wert1, Wert2, ...};
 ```
 
-```java # Wertzuweisung eines Array-Elements
+```java # Wertzuweisung eines Array-Elements aus Testklasse
 variablenname[Arrayindex] = Wert;
 ```
 
-```java # Wertzuweisung einer Variable eines Objekts
+```java # Wertzuweisung einer Variable eines Objekts aus Testklasse
 Objektname.variablenname = Wert;
 ```
 
 ```java # Wertzuweisung eines Array-Elements eines Objekts
 Objektname.variablenname[Arrayindex] = Wert;
+```
+```java # Wertzuweisung einer Variable in Objektklasse
+this.variablenname = Wert;
 ```
 
 ```java # Wertzuweisung einer Variable eines Array-Objektes
@@ -72,24 +91,28 @@ Objektname[Arrayindex].variablenname = Wert;
 Objektname[Arrayindex].variablenname[Arrayindex] = Wert;
 ```
 
+```java # Wertzuweisung eines Array-Elements in Objektklasse
+this.variablenname[Arrayindex] = Wert;
+```
+
 ## Konstruktoren
 
 ```java # Normal
-Klassenname variablenname = new Klassenname();
+Klassenname variablenname = new Klassenname(parametername, ...);
 ```
 
 ```java # Array
 Datentyp[] variablenname = new Datentyp[Anzahl];
 
 for (int i = 0; i < Anzahl; i++) {
-    variablenname[i] = new Datentyp();
+    variablenname[i] = new Datentyp(parametername, ...);
 }
 ```
 
 ```java # in Objectklasse
 public Klassenname {
 
-    klassenname() {
+    klassenname(Datentyp parametername, ...) {
         //some code
     }
 }
