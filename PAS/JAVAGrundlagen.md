@@ -11,7 +11,11 @@ import java.util.Scanner;
 
 Klassenname {
         Scanner scanner = new Scanner(System.in);
+        String eingabe = scanner.next();
         String eingabe = scanner.nextLine();
+        int eingabe = scanner.nextInt();
+        double eingabe = scanner.nextDouble();
+        char eingabe = scanner.next().charAt(0);
 }
 ```
 
