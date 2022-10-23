@@ -1,5 +1,5 @@
 url: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/
-favicon: /img/OSZimt-logo.png
+favicon: /img/fav_OSZimt-logo.png
 branding:
   colors:
     label:
@@ -7,6 +7,8 @@ branding:
       background: "#000000"
   title: ITA 12
   label: Docs
+  logo: /img/OSZimt-Logo-l.jpg
+  logoDark: /img/OSZimt-Logo-l.jpg
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
