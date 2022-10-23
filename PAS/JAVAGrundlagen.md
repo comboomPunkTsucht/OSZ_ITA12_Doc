@@ -1,28 +1,5 @@
 # Java Grundlagen
 
-## Konsole
-
-### Ausgabe
-```java # 
-System.out.println("Text");
-```
-
-### Eingabe
-    
-```java #
-import java.util.Scanner;
-
-Klassenname {
-        Scanner scanner = new Scanner(System.in);
-        String eingabe = scanner.next();
-        String eingabe = scanner.nextLine();
-        int eingabe = scanner.nextInt();
-        double eingabe = scanner.nextDouble();
-        char eingabe = scanner.next().charAt(0);
-}
-```
-
-
 ## Klassen
 
 ```java #
@@ -265,5 +242,29 @@ for (Datentyp variablenname : Array) {
     //some code
 }
 ```
+
+## Konsole
+
+### Ausgabe
+
+```java # 
+System.out.println("Text");
+```
+
+### Eingabe
+    
+```java #
+import java.util.Scanner;
+
+Klassenname {
+        Scanner scanner = new Scanner(System.in);
+        String eingabe = scanner.next();
+        String eingabe = scanner.nextLine();
+        int eingabe = scanner.nextInt();
+        double eingabe = scanner.nextDouble();
+        char eingabe = scanner.next().charAt(0);
+}
+```
+
 
 
