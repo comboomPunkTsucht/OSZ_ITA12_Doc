@@ -1,12 +1,15 @@
 # Java Grundlagen
 
-### Konsole
-    
-```java # Ausgabe
+## Konsole
+
+### Ausgabe
+```java # 
 System.out.println("Text");
 ```
+
+### Eingabe
     
-```java # Eingabe
+```java #
 import java.util.Scanner;
 
 Klassenname {
@@ -32,98 +35,140 @@ public class Klassenname {
 
 ## Methoden
 
-```java # Wertrückgabe
+### Wertrückgabe
+
+```java # 
 public Datentyp methodenname(Datentyp parametername, ...) {
     //some code
     return Wert;
 }
 ```
+### Wertrückgabe per Variable
 
-```java # Wertrückgabe per Variable
+```java # 
 public Datentyp methodenname(Datentyp parametername, ...) {
     //some code
     return variable;
 }
 ```
+### Keine Wertrückgabe
 
-```java # Keine Wertrückgabe
+```java #
 public void methodenname(Datentyp parametername, ...) {
     //some code
 }
 ```
-```java # Methodenaufruf aus Testklasse
+
+### Methodenaufruf aus Testklasse
+
+```java # 
 methodenname(parametername, ...);
 ```
 
-```java # Methodenaufruf aus Objektklasse
+### Methodenaufruf aus Objektklasse
+
+```java # 
 Objektname.methodenname(parametername, ...);
 ```
-```java # Methodenaufruf in Objektklasse
+
+### Methodenaufruf in Objektklasse
+
+```java # 
 this.methodenname(parametername, ...);
 ```
 
 
 ## Variablen
 
-```java # Ohne Initialisierung
+### Ohne Initialisierung
+
+```java #
 Datentyp variablenname;
 ```
 
- ```java # Mit Initialisierung
+### Mit Initialisierung
+
+ ```java #
 Datentyp variablenname = Wert;
 ```
-```java # Wertzuweisung einer Variable aus Testklasse
+
+### Wertzuweisung einer Variable aus Testklasse
+
+```java # 
 variablenname = Wert;
 ```
     
+### Konstante
 
-
-```java # Konstante
+```java # 
 final Datentyp variablenname = Wert;
 ```
 
-```java # Array
+### Array
+
+```java # 
 Datentyp[] variablenname = new Datentyp[Anzahl];
 ```
 
-```java # Array mit Initialisierung
+### Array mit Initialisierung
+
+```java # 
 Datentyp[] variablenname = {Wert1, Wert2, ...};
 ```
 
-```java # Wertzuweisung eines Array-Elements aus Testklasse
+###  Wertzuweisung eines Array-Elements aus Testklasse
+
+```java #
 variablenname[Arrayindex] = Wert;
 ```
 
-```java # Wertzuweisung einer Variable eines Objekts aus Testklasse
+### Wertzuweisung einer Variable eines Objekts aus Testklasse
+
+```java # 
 Objektname.variablenname = Wert;
 ```
 
-```java # Wertzuweisung eines Array-Elements eines Objekts
+###  Wertzuweisung eines Array-Elements eines Objekts
+
+```java #
 Objektname.variablenname[Arrayindex] = Wert;
 ```
-```java # Wertzuweisung einer Variable in Objektklasse
+
+### Wertzuweisung einer Variable in Objektklasse
+
+```java # 
 this.variablenname = Wert;
 ```
 
-```java # Wertzuweisung einer Variable eines Array-Objektes
+### Wertzuweisung einer Variable eines Array-Objektes
+
+```java # 
 Objektname[Arrayindex].variablenname = Wert;
 ```
 
-```java # Wertzuweisung eines Array-Elements eines Array-Objektes
+### Wertzuweisung eines Array-Elements eines Array-Objektes
+
+```java # 
 Objektname[Arrayindex].variablenname[Arrayindex] = Wert;
 ```
 
-```java # Wertzuweisung eines Array-Elements in Objektklasse
+### Wertzuweisung eines Array-Elements in Objektklasse
+
+```java # 
 this.variablenname[Arrayindex] = Wert;
 ```
 
 ## Konstruktoren
 
-```java # Normal
+### Normal
+
+```java # 
 Klassenname variablenname = new Klassenname(parametername, ...);
 ```
 
-```java # Array
+### Array
+
+```java # 
 Datentyp[] variablenname = new Datentyp[Anzahl];
 
 for (int i = 0; i < Anzahl; i++) {
@@ -131,7 +176,9 @@ for (int i = 0; i < Anzahl; i++) {
 }
 ```
 
-```java # in Objectklasse
+### in Objectklasse
+
+```java # 
 public Klassenname {
 
     klassenname(Datentyp parametername, ...) {
@@ -142,13 +189,17 @@ public Klassenname {
 
 ## Kontrollstrukturen / Schleifen
 
-```java # if
+### if
+
+```java #
 if (Bedingung) {
     //some code
 }
 ```
 
-```java # if else
+### if else
+
+```java # 
 if (Bedingung) {
     //some code
 } else {
@@ -156,7 +207,9 @@ if (Bedingung) {
 }
 ```
 
-```java # if else if
+###  if else if
+
+```java #
 if (Bedingung) {
     //some code
 } else if (Bedingung) {
@@ -166,7 +219,9 @@ if (Bedingung) {
 }
 ```
 
-```java # switch
+### switch (case)
+
+```java #
 switch (Variable) {
     case Wert1:
         //some code
@@ -179,25 +234,33 @@ switch (Variable) {
 }
 ```
 
-```java # while
+### while
+
+```java #
 while (Bedingung) {
     //some code
 }
 ```
 
-```java # do while
+###  do while
+
+```java #
 do {
     //some code
 } while (Bedingung);
 ```
 
-```java # for
+### for
+
+```java #
 for (int i = 0; i < Anzahl; i++) {
     //some code
 }
 ```
 
-```java # for each
+### for each
+
+```java # 
 for (Datentyp variablenname : Array) {
     //some code
 }
