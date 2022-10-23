@@ -29,3 +29,6 @@ footer:
   copyright: "&copy; Copyright . All rights reserved."
 markdown:
   lineBreaks: hard 
+integrations:
+  googleTagManager:
+    id: GTM-5S34BSP
