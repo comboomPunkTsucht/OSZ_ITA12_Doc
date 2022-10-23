@@ -7,8 +7,8 @@ branding:
       background: "#000000"
   title: ITA 12
   label: Docs
-  logo: /img/OSZimt-Logo-l.jpg
-  logoDark: /img/OSZimt-Logo-l.jpg
+  logo: /img/OSZimt-Logo-k.png
+  logoDark: /img/OSZimt-Logo-k.png
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
