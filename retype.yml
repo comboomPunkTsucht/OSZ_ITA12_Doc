@@ -32,3 +32,8 @@ markdown:
 integrations:
   googleTagManager:
     id: GTM-5S34BSP
+  gravatar:
+    default: retro
+    enabled: true 
+cache:
+  busting: query
