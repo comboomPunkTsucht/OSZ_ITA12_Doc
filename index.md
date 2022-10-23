@@ -1,3 +1,5 @@
+![](/img/OSZimt-Logo-l.png)
+
 # Welcome to ITA 12 Docs
 This is the Website off the class ITA 12 from OSZ imt Berlin.
 
