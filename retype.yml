@@ -14,6 +14,9 @@ links:
   - text: Discord-Server
     link: https://discord.gg/sVhY5j3g
     icon: ":speech_balloon:"
+  - text: Guilded-Server
+    link: https://www.guilded.gg/i/pB193mbk
+    icon: ":speech_balloon:" 
 search:
   hotkeys:
     - "s"
