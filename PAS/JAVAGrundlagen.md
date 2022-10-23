@@ -10,8 +10,22 @@ public class Klassenname {
 
 ## Methoden
 
-```java #
+```java # Wertrückgabe
 public Datentyp methodenname(Datentyp parametername, ...) {
+    //some code
+    return Wert;
+}
+```
+
+```java # Wertrückgabe per Variable
+public Datentyp methodenname(Datentyp parametername, ...) {
+    //some code
+    return variable;
+}
+```
+
+```java # Keine Wertrückgabe
+public void methodenname(Datentyp parametername, ...) {
     //some code
 }
 ```
@@ -30,7 +44,7 @@ Datentyp variablenname = Wert;
 final Datentyp variablenname = Wert;
 ```
 
-```java # Arra
+```java # Array
 Datentyp[] variablenname = new Datentyp[Anzahl];
 ```
 
@@ -141,5 +155,21 @@ for (int i = 0; i < Anzahl; i++) {
 ```java # for each
 for (Datentyp variablenname : Array) {
     //some code
+}
+```
+
+
+### Konsole
+    
+```java # Ausgabe
+System.out.println("Text");
+```
+    
+```java # Eingabe
+import java.util.Scanner;
+
+Klassenname {
+        Scanner scanner = new Scanner(System.in);
+        String eingabe = scanner.nextLine();
 }
 ```
