@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719869983431">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719870916690">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -32,12 +32,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/oszimt-logo.png" rel="icon" />
-    <link href="../resources/css/retype.css?v=2.4.0.719869983431" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.719870916690" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.719869983431" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.719870916690" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.719869983431" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.719869983431" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.719870916690" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.719870916690" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -197,17 +197,27 @@
 </div>
 
 <doc-anchor-target id="konsole">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#konsole">#</doc-anchor-trigger>
         <span>Konsole</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="ausgabe">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ausgabe">#</doc-anchor-trigger>
+        <span>Ausgabe</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Ausgabe</div>
 <pre class="language-java"><code v-pre class="language-java">System.out.println(&quot;Text&quot;);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="eingabe">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#eingabe">#</doc-anchor-trigger>
+        <span>Eingabe</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Eingabe</div>
 <pre class="language-java"><code v-pre class="language-java">import java.util.Scanner;
 
 Klassenname {
@@ -238,36 +248,66 @@ Klassenname {
         <span>Methoden</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="wertrückgabe">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertrückgabe">#</doc-anchor-trigger>
+        <span>Wertrückgabe</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertrückgabe</div>
 <pre class="language-java"><code v-pre class="language-java">public Datentyp methodenname(Datentyp parametername, ...) {
     //some code
     return Wert;
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertrückgabe-per-variable">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertrückgabe-per-variable">#</doc-anchor-trigger>
+        <span>Wertrückgabe per Variable</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertrückgabe per Variable</div>
 <pre class="language-java"><code v-pre class="language-java">public Datentyp methodenname(Datentyp parametername, ...) {
     //some code
     return variable;
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="keine-wertrückgabe">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#keine-wertrückgabe">#</doc-anchor-trigger>
+        <span>Keine Wertrückgabe</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Keine Wertrückgabe</div>
 <pre class="language-java"><code v-pre class="language-java">public void methodenname(Datentyp parametername, ...) {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="methodenaufruf-aus-testklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#methodenaufruf-aus-testklasse">#</doc-anchor-trigger>
+        <span>Methodenaufruf aus Testklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Methodenaufruf aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">methodenname(parametername, ...);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="methodenaufruf-aus-objektklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#methodenaufruf-aus-objektklasse">#</doc-anchor-trigger>
+        <span>Methodenaufruf aus Objektklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Methodenaufruf aus Objektklasse</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname.methodenname(parametername, ...);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="methodenaufruf-in-objektklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#methodenaufruf-in-objektklasse">#</doc-anchor-trigger>
+        <span>Methodenaufruf in Objektklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Methodenaufruf in Objektklasse</div>
 <pre class="language-java"><code v-pre class="language-java">this.methodenname(parametername, ...);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="variablen">
@@ -276,56 +316,121 @@ Klassenname {
         <span>Variablen</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="ohne-initialisierung">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ohne-initialisierung">#</doc-anchor-trigger>
+        <span>Ohne Initialisierung</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Ohne Initialisierung</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp variablenname;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="mit-initialisierung">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mit-initialisierung">#</doc-anchor-trigger>
+        <span>Mit Initialisierung</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Mit Initialisierung</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-einer-variable-aus-testklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-einer-variable-aus-testklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung einer Variable aus Testklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung einer Variable aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="konstante">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#konstante">#</doc-anchor-trigger>
+        <span>Konstante</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Konstante</div>
 <pre class="language-java"><code v-pre class="language-java">final Datentyp variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="array">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#array">#</doc-anchor-trigger>
+        <span>Array</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Array</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp[] variablenname = new Datentyp[Anzahl];</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="array-mit-initialisierung">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#array-mit-initialisierung">#</doc-anchor-trigger>
+        <span>Array mit Initialisierung</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Array mit Initialisierung</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp[] variablenname = {Wert1, Wert2, ...};</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-eines-array-elements-aus-testklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-eines-array-elements-aus-testklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung eines Array-Elements aus Testklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung eines Array-Elements aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-einer-variable-eines-objekts-aus-testklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-einer-variable-eines-objekts-aus-testklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung einer Variable eines Objekts aus Testklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung einer Variable eines Objekts aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname.variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-eines-array-elements-eines-objekts">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-eines-array-elements-eines-objekts">#</doc-anchor-trigger>
+        <span>Wertzuweisung eines Array-Elements eines Objekts</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung eines Array-Elements eines Objekts</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname.variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-einer-variable-in-objektklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-einer-variable-in-objektklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung einer Variable in Objektklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung einer Variable in Objektklasse</div>
 <pre class="language-java"><code v-pre class="language-java">this.variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-einer-variable-eines-array-objektes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-einer-variable-eines-array-objektes">#</doc-anchor-trigger>
+        <span>Wertzuweisung einer Variable eines Array-Objektes</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung einer Variable eines Array-Objektes</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname[Arrayindex].variablenname = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-eines-array-elements-eines-array-objektes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-eines-array-elements-eines-array-objektes">#</doc-anchor-trigger>
+        <span>Wertzuweisung eines Array-Elements eines Array-Objektes</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung eines Array-Elements eines Array-Objektes</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname[Arrayindex].variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-eines-array-elements-in-objektklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-eines-array-elements-in-objektklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung eines Array-Elements in Objektklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung eines Array-Elements in Objektklasse</div>
 <pre class="language-java"><code v-pre class="language-java">this.variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="konstruktoren">
@@ -334,20 +439,35 @@ Klassenname {
         <span>Konstruktoren</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="normal">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#normal">#</doc-anchor-trigger>
+        <span>Normal</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Normal</div>
 <pre class="language-java"><code v-pre class="language-java">Klassenname variablenname = new Klassenname(parametername, ...);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="array-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#array-1">#</doc-anchor-trigger>
+        <span>Array</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Array</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp[] variablenname = new Datentyp[Anzahl];
 
 for (int i = 0; i &lt; Anzahl; i++) {
     variablenname[i] = new Datentyp(parametername, ...);
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="in-objectklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#in-objectklasse">#</doc-anchor-trigger>
+        <span>in Objectklasse</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">in Objectklasse</div>
 <pre class="language-java"><code v-pre class="language-java">public Klassenname {
 
     klassenname(Datentyp parametername, ...) {
@@ -361,22 +481,37 @@ for (int i = 0; i &lt; Anzahl; i++) {
         <span>Kontrollstrukturen / Schleifen</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="if">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#if">#</doc-anchor-trigger>
+        <span>if</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">if</div>
 <pre class="language-java"><code v-pre class="language-java">if (Bedingung) {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="if-else">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#if-else">#</doc-anchor-trigger>
+        <span>if else</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">if else</div>
 <pre class="language-java"><code v-pre class="language-java">if (Bedingung) {
     //some code
 } else {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="if-else-if">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#if-else-if">#</doc-anchor-trigger>
+        <span>if else if</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">if else if</div>
 <pre class="language-java"><code v-pre class="language-java">if (Bedingung) {
     //some code
 } else if (Bedingung) {
@@ -385,8 +520,13 @@ for (int i = 0; i &lt; Anzahl; i++) {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="switch-case">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#switch-case">#</doc-anchor-trigger>
+        <span>switch (case)</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">switch</div>
 <pre class="language-java"><code v-pre class="language-java">switch (Variable) {
     case Wert1:
         //some code
@@ -398,26 +538,46 @@ for (int i = 0; i &lt; Anzahl; i++) {
         //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="while">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#while">#</doc-anchor-trigger>
+        <span>while</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">while</div>
 <pre class="language-java"><code v-pre class="language-java">while (Bedingung) {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="do-while">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#do-while">#</doc-anchor-trigger>
+        <span>do while</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">do while</div>
 <pre class="language-java"><code v-pre class="language-java">do {
     //some code
 } while (Bedingung);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="for">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#for">#</doc-anchor-trigger>
+        <span>for</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">for</div>
 <pre class="language-java"><code v-pre class="language-java">for (int i = 0; i &lt; Anzahl; i++) {
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="for-each">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#for-each">#</doc-anchor-trigger>
+        <span>for each</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">for each</div>
 <pre class="language-java"><code v-pre class="language-java">for (Datentyp variablenname : Array) {
     //some code
 }</code></pre>
