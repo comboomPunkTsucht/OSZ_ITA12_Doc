@@ -30,8 +30,6 @@ search:
 snippets:
   lineNumbers:
     - *
-footer:
-  copyright: "&copy; Copyright . All rights reserved."
 markdown:
   lineBreaks: hard 
 integrations:
@@ -44,3 +42,5 @@ cache:
   busting: query
 meta:
   title: " | ITA 12 Documentation"
+  footer:
+    copyright: "&copy; Copyright . All rights reserved."
