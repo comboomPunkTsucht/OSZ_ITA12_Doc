@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/ITA12DocOSZimt">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719855453191">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719856093947">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,12 +29,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/ITA12DocOSZimt/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/oszimt-logo.png" rel="icon" />
-    <link href="../resources/css/retype.css?v=2.4.0.719855453191" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.719856093947" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.719855453191" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.719856093947" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.719855453191" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.719855453191" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.719856093947" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.719856093947" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -223,6 +223,18 @@
     //some code
 }</code></pre>
 </doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Methodenaufruf aus Testklasse</div>
+<pre class="language-java"><code v-pre class="language-java">methodenname(parametername, ...);</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Methodenaufruf aus Objektklasse</div>
+<pre class="language-java"><code v-pre class="language-java">Objektname.methodenname(parametername, ...);</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Methodenaufruf in Objektklasse</div>
+<pre class="language-java"><code v-pre class="language-java">this.methodenname(parametername, ...);</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="variablen">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#variablen">#</doc-anchor-trigger>
@@ -238,6 +250,10 @@
 <pre class="language-java"><code v-pre class="language-java">Datentyp variablenname = Wert;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Wertzuweisung einer Variable aus Testklasse</div>
+<pre class="language-java"><code v-pre class="language-java">variablenname = Wert;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">Konstante</div>
 <pre class="language-java"><code v-pre class="language-java">final Datentyp variablenname = Wert;</code></pre>
 </doc-codeblock></div>
@@ -250,16 +266,20 @@
 <pre class="language-java"><code v-pre class="language-java">Datentyp[] variablenname = {Wert1, Wert2, ...};</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung eines Array-Elements</div>
+<div class="codeblock-title">Wertzuweisung eines Array-Elements aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">Wertzuweisung einer Variable eines Objekts</div>
+<div class="codeblock-title">Wertzuweisung einer Variable eines Objekts aus Testklasse</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname.variablenname = Wert;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">Wertzuweisung eines Array-Elements eines Objekts</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname.variablenname[Arrayindex] = Wert;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Wertzuweisung einer Variable in Objektklasse</div>
+<pre class="language-java"><code v-pre class="language-java">this.variablenname = Wert;</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">Wertzuweisung einer Variable eines Array-Objektes</div>
@@ -269,6 +289,10 @@
 <div class="codeblock-title">Wertzuweisung eines Array-Elements eines Array-Objektes</div>
 <pre class="language-java"><code v-pre class="language-java">Objektname[Arrayindex].variablenname[Arrayindex] = Wert;</code></pre>
 </doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Wertzuweisung eines Array-Elements in Objektklasse</div>
+<pre class="language-java"><code v-pre class="language-java">this.variablenname[Arrayindex] = Wert;</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="konstruktoren">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#konstruktoren">#</doc-anchor-trigger>
@@ -277,21 +301,21 @@
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">Normal</div>
-<pre class="language-java"><code v-pre class="language-java">Klassenname variablenname = new Klassenname();</code></pre>
+<pre class="language-java"><code v-pre class="language-java">Klassenname variablenname = new Klassenname(parametername, ...);</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">Array</div>
 <pre class="language-java"><code v-pre class="language-java">Datentyp[] variablenname = new Datentyp[Anzahl];
 
 for (int i = 0; i &lt; Anzahl; i++) {
-    variablenname[i] = new Datentyp();
+    variablenname[i] = new Datentyp(parametername, ...);
 }</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">in Objectklasse</div>
 <pre class="language-java"><code v-pre class="language-java">public Klassenname {
 
-    klassenname() {
+    klassenname(Datentyp parametername, ...) {
         //some code
     }
 }</code></pre>
