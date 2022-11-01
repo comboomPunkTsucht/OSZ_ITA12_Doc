@@ -15,14 +15,14 @@ links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
     icon: ":house_with_garden:"
-  - text: Discord-Server
-    link: https://discord.gg/zXEjgA7m6m
-    icon: ":speech_balloon:"
-    target: blank
   - text: Guilded-Server
     link: https://www.guilded.gg/i/pB193mbk
     icon: ":speech_balloon:"
     target: blank 
+  - text: Discord-Server
+    link: https://discord.gg/zXEjgA7m6m
+    icon: ":speech_balloon:"
+    target: blank
 search:
   hotkeys:
     - "s"
