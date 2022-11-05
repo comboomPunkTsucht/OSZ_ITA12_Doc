@@ -23,6 +23,10 @@ links:
     link: https://discord.gg/zXEjgA7m6m
     icon: ":speech_balloon:"
     target: blank
+  - text: Our Font
+    link: https://github.com/comboomPunkTsucht/cascadia-code-ger/releases/tag/1.0.0
+    icon: :writing_hand:
+    target: blank
 search:
   hotkeys:
     - "s"
