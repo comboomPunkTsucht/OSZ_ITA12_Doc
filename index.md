@@ -13,4 +13,4 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
 
 | Guilded Server | Discord Server |
 | ---- | ---- |
-| <iframe src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1ED84ZWE" width="268px" height="380px" frameborder="0" scrolling="no"></iframe> | temp |
+| <iframe src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1ED84ZWE" width="268px" height="380px" frameborder="0" scrolling="no"></iframe> | <iframe src="https://discord.com/widget?id=1011175498463842355&theme=dark" width="350px" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> |
