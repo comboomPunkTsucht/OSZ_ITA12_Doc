@@ -265,6 +265,3 @@ Klassenname {
         char eingabe = scanner.next().charAt(0);
 }
 ```
-
-
-
