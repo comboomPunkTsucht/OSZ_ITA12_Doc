@@ -1,3 +1,4 @@
+ <style>
     .picture {
         text-align: center;
         color: #000000;
@@ -7,6 +8,7 @@
         padding-top: 20px;
         margin-bottom: 20px;
     }
+</style>
 
 :::picture
 ![](/img/OSZimt-Logo-l.png)
