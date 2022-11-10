@@ -1,6 +1,16 @@
-!!!contrast
+    .picture {
+        text-align: center;
+        color: #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+:::picture
 ![](/img/OSZimt-Logo-l.png)
-!!!
+:::
 # Welcome to ITA 12 Docs
 
 This is the Website off the class ITA 12 from OSZ imt Berlin.
@@ -8,7 +18,7 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
 ## Timetabe
 
 <style>
-    .sample {
+    .timetabe {
         text-align: center;
         color: #000000;
         border-radius: 10px;
@@ -20,7 +30,7 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
         height: 590px;
     }
 </style>
-:::sample
+:::timetable
 <iframe src="https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012" width="825px" height="550px" frameborder="0" scrolling="no"></iframe>
 :::
 
