@@ -7,8 +7,19 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
 
 ## Timetabe
 
-:::
-<iframe src="https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012" height="550px" frameborder="0" scrolling="no"></iframe>
+<style>
+    .sample {
+        text-align: center;
+        color: #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+:::sample
+<iframe src="https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012" width="825px" height="550px" frameborder="0" scrolling="no"></iframe>
 :::
 
 ## Guilded Server und Discord Server
