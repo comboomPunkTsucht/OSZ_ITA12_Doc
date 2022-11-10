@@ -16,7 +16,8 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
         border: 1px solid #000000;
         padding-top: 20px;
         margin-bottom: 20px;
-        with: 865px
+        width: 865px;
+        height: 590px;
     }
 </style>
 :::sample
