@@ -1,13 +1,14 @@
+!!!light
 ![](/img/OSZimt-Logo-l.png)
-
+!!!
 # Welcome to ITA 12 Docs
 
 This is the Website off the class ITA 12 from OSZ imt Berlin.
 
 ## Timetabe
-
+!!!light
 <iframe src="https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012" width="820px" height="550px" frameborder="0" scrolling="no"></iframe>
-
+!!!
 ## Guilded Server und Discord Server
 
 
