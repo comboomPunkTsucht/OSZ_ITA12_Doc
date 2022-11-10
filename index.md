@@ -4,7 +4,7 @@
         color: #000000;
         border-radius: 10px;
         background-color: #FFFFFF;
-        border: 1px solid #000000;
+        border: 1px solid #FFFFFF;
         padding-top: 20px;
         margin-bottom: 20px;
     }
@@ -25,7 +25,7 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
         color: #000000;
         border-radius: 10px;
         background-color: #FFFFFF;
-        border: 1px solid #000000;
+        border: 1px solid #FFFFFF;
         padding-top: 20px;
         margin-bottom: 20px;
         width: 865px;
