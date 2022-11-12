@@ -11,6 +11,10 @@ branding:
   logoDark: /img/OSZimt-Logo-k.png
 footer:
   copyright: "&copy; Copyright . All rights reserved. Non official OSZ imt hosted Webseite but hosted by a student of the ITA 12 class from the OSZ imt on GitHub Pages."
+  links:
+    - text: Categories
+    link: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/categories/
+    icon: ":bookmark_tabs:"
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
