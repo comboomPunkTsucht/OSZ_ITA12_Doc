@@ -1,4 +1,22 @@
 label: moodle-Kurs
+category: PAS
+tags:
+  - Java
+  - Grundlagen
+  - PAS
+  - Programmiersprache
+  - Programmieren
+  - Klassen
+  - Variablen
+  - Methoden
+  - Funktionen
+  - Objekte
+  - Konstruktoren
+  - Arrays
+  - Konstruktoren
+  - Schleifen
+  - moodle
+  - Kurs
 icon: ":technologist:"
 authors:
   - name: Fabian Aps
