@@ -28,8 +28,8 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
         border: 1px solid #FFFFFF;
         padding-top: 20px;
         margin-bottom: 20px;
-        width: 865px;
-        height: 590px;
+        width: 845px;
+        height: 570px;
     }
 </style>
 :::timetabe
