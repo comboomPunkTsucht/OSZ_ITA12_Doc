@@ -17,10 +17,10 @@
 
 This is the Website off the class ITA 12 from OSZ imt Berlin.
 
-## Timetabe
+## Timetable
 
 <style>
-    .timetabe {
+    .timetable {
         text-align: center;
         color: #000000;
         border-radius: 10px;
@@ -32,7 +32,7 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
         height: 590px;
     }
 </style>
-:::timetabe
+:::timetable
 <iframe src="https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012" frameborder="0" width="825px" height="550px" frameborder="0" scrolling="no"></iframe>
 :::
 
