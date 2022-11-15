@@ -1,13 +1,13 @@
 # Cisco Switch Befehle
 
-## normal
+## EXEC-Modus
 
 ### Exiting
 ``` 
 Sx> logout
 ```
 
-### priviliegirter modus
+### privilegierter EXEC-Modus
 
 #### Entering
 
@@ -35,7 +35,7 @@ Sx# reload
 ```
 Sx# clock set hh:mm:ss DD Month YYYY
 ```
-#### config modus
+#### Globaler Konfigurationsmodus
 ##### Entering
 ``` 
 Sx# configure terminal
@@ -102,22 +102,23 @@ Sx (config-line)# logging synchronous
 ```
 
 
-##### config interface
-
-``` Entering
+##### Schnittstellenkonfiguration
+###### Entering
+```
 Sx (config)# interface fa0/x
 ```
-``` Exiting
+###### Exiting
+```
 Sx (config-if)# exit
 ```
-##### config interface range
-
-``` Entering
+##### Multischnittstellenkonfiguration
+###### Entering
+``` 
 Sx (config)# interface range fa0/x-x
 Sx (config)# interface range fa0/x-fa0/x
 Sx (config)# interface range fa0/x, fa0/x, fa0/x
 ```
-
-``` Exiting
+###### Exiting
+```
 Sx (config-if-range)# exit
 ```
