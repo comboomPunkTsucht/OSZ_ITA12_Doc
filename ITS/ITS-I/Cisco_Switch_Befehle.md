@@ -1,14 +1,37 @@
 # Cisco Switch Befehle
 
+## normal
 
-## priviliegirter modus
+``` Exiting
+
+Sx> logout
+```
+
+### priviliegirter modus
 
 
 ``` Entering
-enable
+Sx> enable
 ```
-```Exitin
-exit
-logout
+``` Exiting
+Sx# exit
+Sx# logout
 ```
-### config modus
+#### config modus
+``` Entering
+Sx# configure terminal
+```
+``` Exiting
+Sx (config)# exit
+Sx (config)# logout
+```
+
+##### config interface
+
+``` Entering
+Sx (config)# configure terminal
+```
+``` Exiting
+Sx (config-ifj)# exit
+Sx (config-if)# logout
+```
