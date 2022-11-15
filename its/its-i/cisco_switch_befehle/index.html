@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721826688311">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721827048002">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.721826688311" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.721827048002" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721826688311" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721827048002" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721826688311" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721827048002" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -293,12 +293,27 @@ Sx (config)# logout</code></pre>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Entering</div>
-<pre class="language-none"><code v-pre class="language-none">Sx (config)# configure terminal</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# interface fa0/x</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exiting</div>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-ifj)# exit
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# exit
 Sx (config-if)# logout</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="config-interface-range">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#config-interface-range">#</doc-anchor-trigger>
+        <span>config interface range</span>
+    </h6>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">Entering</div>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# interface range fa0/x-x
+Sx (config)# interface range fa0/x-fa0/x
+Sx (config)# interface range fa0/x, fa0/x, fa0/x
+``` Exiting
+Sx (config-if-range)# exit
+Sx (config-if-range)# logout</code></pre>
 </doc-codeblock></div>
 
                                 
