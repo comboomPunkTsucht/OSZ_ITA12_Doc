@@ -29,9 +29,19 @@ Sx (config)# logout
 ##### config interface
 
 ``` Entering
-Sx (config)# configure terminal
+Sx (config)# interface fa0/x
 ```
 ``` Exiting
-Sx (config-ifj)# exit
+Sx (config-if)# exit
 Sx (config-if)# logout
+```
+###### config interface range
+
+``` Entering
+Sx (config)# interface range fa0/x-x
+Sx (config)# interface range fa0/x-fa0/x
+Sx (config)# interface range fa0/x, fa0/x, fa0/x
+``` Exiting
+Sx (config-if-range)# exit
+Sx (config-if-range)# logout
 ```
