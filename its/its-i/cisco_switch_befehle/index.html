@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721829638839">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721837951523">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.721829638839" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.721837951523" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721829638839" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721837951523" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721829638839" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721837951523" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -250,10 +250,14 @@
         <span>normal</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="exiting">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#exiting">#</doc-anchor-trigger>
+        <span>Exiting</span>
+    </h3>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Exiting</div>
-<pre class="language-none"><code v-pre class="language-none">
-Sx&gt; logout</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx&gt; logout</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="priviliegirter-modus">
     <h3>
@@ -261,14 +265,53 @@ Sx&gt; logout</code></pre>
         <span>priviliegirter modus</span>
     </h3>
 </doc-anchor-target>
+<doc-anchor-target id="entering">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#entering">#</doc-anchor-trigger>
+        <span>Entering</span>
+    </h4>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Entering</div>
-<pre class="language-none"><code v-pre class="language-none">Sx&gt; enable</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx&gt; enable
+Sx# </code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="exiting-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#exiting-1">#</doc-anchor-trigger>
+        <span>Exiting</span>
+    </h4>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Exiting</div>
 <pre class="language-none"><code v-pre class="language-none">Sx# exit
 Sx# logout</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="startup-config-entfernen">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startup-config-entfernen">#</doc-anchor-trigger>
+        <span>Startup config entfernen</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# erase startup-config</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="reload-system">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reload-system">#</doc-anchor-trigger>
+        <span>Reload System</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# reload</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="uhrzeit-und-datum-vergabe">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uhrzeit-und-datum-vergabe">#</doc-anchor-trigger>
+        <span>Uhrzeit und Datum vergabe</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# clock set hh:mm:ss DD Month YYYY</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="config-modus">
     <h4>
@@ -276,14 +319,120 @@ Sx# logout</code></pre>
         <span>config modus</span>
     </h4>
 </doc-anchor-target>
+<doc-anchor-target id="entering-1">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#entering-1">#</doc-anchor-trigger>
+        <span>Entering</span>
+    </h5>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Entering</div>
-<pre class="language-none"><code v-pre class="language-none">Sx# configure terminal</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx# configure terminal
+Sx (config)# </code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="exiting-2">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#exiting-2">#</doc-anchor-trigger>
+        <span>Exiting</span>
+    </h5>
+</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">Exiting</div>
 <pre class="language-none"><code v-pre class="language-none">Sx (config)# exit
-Sx (config)# logout</code></pre>
+Sx (config)# end</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="vergabe-eines-gerätenamens">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vergabe-eines-gerätenamens">#</doc-anchor-trigger>
+        <span>Vergabe eines Gerätenamens</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# hostname Sx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="verschlüsselte-passwortvergabe-für-den-exec-modus">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verschlüsselte-passwortvergabe-für-den-exec-modus">#</doc-anchor-trigger>
+        <span>verschlüsselte Passwortvergabe für den EXEC-Modus</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# enable secret class</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="automatische-suche-im-netz-deaktivieren">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automatische-suche-im-netz-deaktivieren">#</doc-anchor-trigger>
+        <span>Automatische Suche im Netz deaktivieren</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# no ip domain lookup</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="banner-motd-erzeugen">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#banner-motd-erzeugen">#</doc-anchor-trigger>
+        <span>Banner motd erzeugen</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# banner motd % [Entertaste drücken]
+******************************** [Entertaste drücken]
+* !! Authorized Access Only !! * [Entertaste drücken]
+******************************** [Entertaste drücken]
+% [Entertaste drücken]</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="passwörterangaben-in-der-running-config-verschlyseln">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#passwörterangaben-in-der-running-config-verschlyseln">#</doc-anchor-trigger>
+        <span>Passwörterangaben in der running-config verschlyseln</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# service password-encryption</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="zum-konsolenmodus-wechseln">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#zum-konsolenmodus-wechseln">#</doc-anchor-trigger>
+        <span>Zum Konsolenmodus wechseln</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# line console 0
+Sx (config-line)#</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="zum-fernverwaltungsmodus-wechseln-telnet">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#zum-fernverwaltungsmodus-wechseln-telnet">#</doc-anchor-trigger>
+        <span>Zum Fernverwaltungsmodus wechseln (Telnet)</span>
+    </h5>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# line vty 0 4</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="passwort-eingeben">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#passwort-eingeben">#</doc-anchor-trigger>
+        <span>Passwort eingeben</span>
+    </h6>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-line)# password cisco</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="passwordeingabe-aktivieren">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#passwordeingabe-aktivieren">#</doc-anchor-trigger>
+        <span>Passwordeingabe aktivieren</span>
+    </h6>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-line)# login</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="synchronisation-der-dateneingabe-aktivieren">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#synchronisation-der-dateneingabe-aktivieren">#</doc-anchor-trigger>
+        <span>Synchronisation der Dateneingabe aktivieren</span>
+    </h6>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-line)# logging synchronous</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="config-interface">
     <h5>
@@ -297,14 +446,13 @@ Sx (config)# logout</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exiting</div>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# exit
-Sx (config-if)# logout</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# exit</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="config-interface-range">
-    <h6>
+    <h5>
         <doc-anchor-trigger class="header-anchor-trigger" to="#config-interface-range">#</doc-anchor-trigger>
         <span>config interface range</span>
-    </h6>
+    </h5>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Entering</div>
@@ -314,8 +462,7 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <div class="codeblock-title">Exiting</div>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# exit
-Sx (config-if-range)# logout</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# exit</code></pre>
 </doc-codeblock></div>
 
                                 
