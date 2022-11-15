@@ -41,6 +41,8 @@ Sx (config-if)# logout
 Sx (config)# interface range fa0/x-x
 Sx (config)# interface range fa0/x-fa0/x
 Sx (config)# interface range fa0/x, fa0/x, fa0/x
+```
+
 ``` Exiting
 Sx (config-if-range)# exit
 Sx (config-if-range)# logout
