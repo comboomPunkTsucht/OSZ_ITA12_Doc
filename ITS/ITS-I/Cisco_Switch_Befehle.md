@@ -35,7 +35,7 @@ Sx# reload
 ```
 Sx# clock set hh:mm:ss DD Month YYYY
 ```
-### Globaler Konfigurationsmodus
+## Globaler Konfigurationsmodus
 ### Entering
 ``` 
 Sx# configure terminal
@@ -83,6 +83,7 @@ Sx (config-line)#
 
 ```
 Sx (config)# line vty 0 4
+Sx (config-line)#
 ```
 
 ### Passwort eingeben
