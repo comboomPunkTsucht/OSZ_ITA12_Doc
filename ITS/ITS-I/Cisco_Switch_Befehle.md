@@ -74,6 +74,12 @@ Sx (config)# banner motd % [Entertaste drücken]
 ```
 Sx (config)# service password-encryption
 ```
+
+### Default-Gateway
+
+```
+Sx (config)# ip default-gateway xxx.xxx.xxx.xxx
+```
 ## Zum Konsolenmodus wechseln
 ```
 Sx (config)# line console 0
@@ -128,12 +134,24 @@ Sx (config-if)# switchport mode access
 ```
 Sx (config-if)# switchport access vlan xx
 ```
+
+### Datenübertragungsrate verändern
+
+```
+Sx (config-if)# speed xxxx
+```
+
+### Übertragungsmodus ändern
+```
+Sx (config-if)# duplex xxxx
+```
 ## Multischnittstellenkonfiguration
 ### Entering
 ``` 
 Sx (config)# interface range fa0/x-x
 Sx (config)# interface range fa0/x-fa0/x
 Sx (config)# interface range fa0/x, fa0/x, fa0/x
+Sx (config-if-range)# 
 ```
 ### Exiting
 ```
@@ -143,19 +161,27 @@ Sx (config-if-range)# exit
 ### Beschreibung eingeben
 
 ```
-Sx (config-if)# description # [Beschreibung] #
+Sx (config-if-range)# description # [Beschreibung] #
 ```
 ### Access - VLAN Verbindung aktivieren (festlegen)
 
 ```
-Sx (config-if)# switchport mode access
+Sx (config-if-range)# switchport mode access
 ```
 ### Die Schnittstelle dem VLAN xx zuweisen
 
 ```
-Sx (config-if)# switchport access vlan xx
+Sx (config-if-range)# switchport access vlan xx
 ```
+### Datenübertragungsrate verändern
 
+```
+Sx (config-if-range)# speed xxxx
+```
+### Übertragungsmodus ändern
+```
+Sx (config-if-range)# duplex xxxx
+```
 ## Schnittstellenkonfiguration vom VLANs
 ### Entering
 ```
