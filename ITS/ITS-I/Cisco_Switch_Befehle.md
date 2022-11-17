@@ -112,6 +112,18 @@ Sx (config)# interface fa0/x
 ```
 Sx (config-if)# exit
 ```
+
+### Ip Adresse einstellen
+
+```
+Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+```
+
+### Schnittstelle aktivieren
+
+```
+Sx (config-if)# no shutdown
+```
 ## Multischnittstellenkonfiguration
 ### Entering
 ``` 
@@ -122,4 +134,55 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x
 ### Exiting
 ```
 Sx (config-if-range)# exit
+```
+
+### Ip Adresse einstellen
+
+```
+Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+```
+
+### Schnittstelle aktivieren
+
+```
+Sx (config-if)# no shutdown
+```
+## Schnittstellenkonfiguration vom VLANs
+### Entering
+```
+Sx (config)# interface vlan xx
+```
+### Exiting
+```
+Sx (config-if)# exit
+```
+
+### Ip Adresse einstellen
+
+```
+Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+```
+
+### Schnittstelle aktivieren
+
+```
+Sx (config-if)# no shutdown
+```
+
+## VLAN-Konfigurationsmodus
+
+### Entering
+```
+Sx (config)# vlan xx
+Sx (config-vlan)#
+```
+### Exiting
+```
+Sx (config-if)# exit
+```
+
+### Namen für das VLAN vergeben
+
+```
+Sx (config-vlan)# name xxxxxxxxxxxxxx
 ```
