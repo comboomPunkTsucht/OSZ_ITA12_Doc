@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721982305335">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721982737451">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.721982305335" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.721982737451" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721982305335" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721982737451" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721982305335" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721982737451" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -459,23 +459,32 @@ Sx (config-line)#</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if)# exit</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="ip-adresse-einstellen">
+<doc-anchor-target id="beschreibung-eingeben">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-adresse-einstellen">#</doc-anchor-trigger>
-        <span>Ip Adresse einstellen</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#beschreibung-eingeben">#</doc-anchor-trigger>
+        <span>Beschreibung eingeben</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# description # [Beschreibung] #</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="schnittstelle-aktivieren">
+<doc-anchor-target id="access---vlan-verbindung-aktivieren-festlegen">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstelle-aktivieren">#</doc-anchor-trigger>
-        <span>Schnittstelle aktivieren</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#access---vlan-verbindung-aktivieren-festlegen">#</doc-anchor-trigger>
+        <span>Access - VLAN Verbindung aktivieren (festlegen)</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# no shutdown</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport mode access</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="die-schnittstelle-dem-vlan-xx-zuweisen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#die-schnittstelle-dem-vlan-xx-zuweisen">#</doc-anchor-trigger>
+        <span>Die Schnittstelle dem VLAN xx zuweisen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport access vlan xx</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="multischnittstellenkonfiguration">
     <h2>
@@ -503,23 +512,32 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# exit</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="ip-adresse-einstellen-1">
+<doc-anchor-target id="beschreibung-eingeben-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-adresse-einstellen-1">#</doc-anchor-trigger>
-        <span>Ip Adresse einstellen</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#beschreibung-eingeben-1">#</doc-anchor-trigger>
+        <span>Beschreibung eingeben</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# description # [Beschreibung] #</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="schnittstelle-aktivieren-1">
+<doc-anchor-target id="access---vlan-verbindung-aktivieren-festlegen-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstelle-aktivieren-1">#</doc-anchor-trigger>
-        <span>Schnittstelle aktivieren</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#access---vlan-verbindung-aktivieren-festlegen-1">#</doc-anchor-trigger>
+        <span>Access - VLAN Verbindung aktivieren (festlegen)</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# no shutdown</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport mode access</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="die-schnittstelle-dem-vlan-xx-zuweisen-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#die-schnittstelle-dem-vlan-xx-zuweisen-1">#</doc-anchor-trigger>
+        <span>Die Schnittstelle dem VLAN xx zuweisen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport access vlan xx</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="schnittstellenkonfiguration-vom-vlans">
     <h2>
@@ -545,18 +563,18 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if)# exit</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="ip-adresse-einstellen-2">
+<doc-anchor-target id="ip-adresse-einstellen">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-adresse-einstellen-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-adresse-einstellen">#</doc-anchor-trigger>
         <span>Ip Adresse einstellen</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="schnittstelle-aktivieren-2">
+<doc-anchor-target id="schnittstelle-aktivieren">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstelle-aktivieren-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstelle-aktivieren">#</doc-anchor-trigger>
         <span>Schnittstelle aktivieren</span>
     </h3>
 </doc-anchor-target>
