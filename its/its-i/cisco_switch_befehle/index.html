@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721982737451">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721983179776">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.721982737451" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.721983179776" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721982737451" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721983179776" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721982737451" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721983179776" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -388,6 +388,15 @@ Sx (config)# end</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config)# service password-encryption</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="default-gateway">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#default-gateway">#</doc-anchor-trigger>
+        <span>Default-Gateway</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# ip default-gateway xxx.xxx.xxx.xxx</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="zum-konsolenmodus-wechseln">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#zum-konsolenmodus-wechseln">#</doc-anchor-trigger>
@@ -486,6 +495,24 @@ Sx (config-line)#</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport access vlan xx</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="datenübertragungsrate-verändern">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenübertragungsrate-verändern">#</doc-anchor-trigger>
+        <span>Datenübertragungsrate verändern</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# speed xxxx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="übertragungsmodus-ändern">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#übertragungsmodus-ändern">#</doc-anchor-trigger>
+        <span>Übertragungsmodus ändern</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# duplex xxxx</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="multischnittstellenkonfiguration">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#multischnittstellenkonfiguration">#</doc-anchor-trigger>
@@ -501,7 +528,8 @@ Sx (config-line)#</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config)# interface range fa0/x-x
 Sx (config)# interface range fa0/x-fa0/x
-Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
+Sx (config)# interface range fa0/x, fa0/x, fa0/x
+Sx (config-if-range)# </code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="exiting-4">
     <h3>
@@ -519,7 +547,7 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# description # [Beschreibung] #</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# description # [Beschreibung] #</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="access---vlan-verbindung-aktivieren-festlegen-1">
     <h3>
@@ -528,7 +556,7 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport mode access</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# switchport mode access</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="die-schnittstelle-dem-vlan-xx-zuweisen-1">
     <h3>
@@ -537,7 +565,25 @@ Sx (config)# interface range fa0/x, fa0/x, fa0/x</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Sx (config-if)# switchport access vlan xx</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# switchport access vlan xx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datenübertragungsrate-verändern-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenübertragungsrate-verändern-1">#</doc-anchor-trigger>
+        <span>Datenübertragungsrate verändern</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# speed xxxx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="übertragungsmodus-ändern-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#übertragungsmodus-ändern-1">#</doc-anchor-trigger>
+        <span>Übertragungsmodus ändern</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# duplex xxxx</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="schnittstellenkonfiguration-vom-vlans">
     <h2>
