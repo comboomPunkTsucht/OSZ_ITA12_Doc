@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721983179776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722342479678">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.721983179776" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.722342479678" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.721983179776" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.722342479678" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.721983179776" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.722342479678" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -294,6 +294,54 @@ Sx# logout</code></pre>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx# erase startup-config</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datei-entfernen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datei-entfernen">#</doc-anchor-trigger>
+        <span>datei entfernen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# delete flash:pathToFile/filename
+Sx# delete pathTofFle/filename</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="copy-file">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#copy-file">#</doc-anchor-trigger>
+        <span>copy file</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# copy flash:pathToFile/filename flash:pathToFile/filename
+Sx# copy pathToFile/filename pathToFile/filename</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="uplode-file-to-a-tftp-server">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uplode-file-to-a-tftp-server">#</doc-anchor-trigger>
+        <span>uplode file to a TFTP-Server</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# copy flash:pathToFile/filename tftp: filename</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="download-file-from-a-tftp-server">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-file-from-a-tftp-server">#</doc-anchor-trigger>
+        <span>download file from a TFTP-Server</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# copy tftp: filename flash:pathToFile/filename</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="show-flash">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#show-flash">#</doc-anchor-trigger>
+        <span>show flash</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx# dir flash:
+Sx# dir</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="reload-system">
     <h3>
