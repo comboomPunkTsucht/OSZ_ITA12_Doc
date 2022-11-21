@@ -40,11 +40,13 @@ Sx# copy pathToFile/filename pathToFile/filename
 ### uplode file to a TFTP-Server
 
 ```
-Sx# copy flash:pathToFile/filename tftp: filename
+Sx# copy flash:pathToFile/filename tftp:filename
+[ip-addresse des Servers]
 ```
 ### download file from a TFTP-Server
 ```
-Sx# copy tftp: filename flash:pathToFile/filename
+Sx# copy tftp:filename flash:pathToFile/filename
+[ip-addresse des Servers]
 ```
 ### show flash
 
