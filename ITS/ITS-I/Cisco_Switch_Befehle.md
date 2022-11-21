@@ -25,6 +25,33 @@ Sx# logout
 ```
 Sx# erase startup-config
 ```
+### datei entfernen
+
+```
+Sx# delete flash:pathToFile/filename
+Sx# delete pathTofFle/filename
+```
+### copy file
+
+```
+Sx# copy flash:pathToFile/filename flash:pathToFile/filename
+Sx# copy pathToFile/filename pathToFile/filename
+```
+### uplode file to a TFTP-Server
+
+```
+Sx# copy flash:pathToFile/filename tftp: filename
+```
+### download file from a TFTP-Server
+```
+Sx# copy tftp: filename flash:pathToFile/filename
+```
+### show flash
+
+```
+Sx# dir flash:
+Sx# dir
+```
 
 ### Reload System
 ```
