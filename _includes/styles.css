@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Cascadia Code PL";
+    src: url(CascadiaCodePL.ttf);
+    src: url(CascadiaCodePLItalic.ttf);
+
+    font-family: "Cascadia Code";
+    src: url(CascadiaCode.ttf);
+    src: url(CascadiaCodeItalic.ttf);
+
+    font-family: "Cascadia Mono PL";
+    src: url(CascadiaMonoPL.ttf);
+    src: url(CascadiaMonoPLItalic.ttf);
+
+    font-family: "Cascadia Mono";
+    src: url(CascadiaMono.ttf);
+    src: url(CascadiaMonoItalic.ttf);
+
+}
+
 * {
-    font-family: "Cascadia Code PL", "Cascadia Mono PL" !important;
+    font-family: "Cascadia Code PL", "Cascadia Code", "Cascadia Mono PL", "Cascadia Mono" !important;
 }
