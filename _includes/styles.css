@@ -2,30 +2,17 @@
     font-family: "Cascadia Code PL";
     src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf);
 
-    font-family: "Cascadia Code PL Italic";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCodePLItalic.ttf);
-
     font-family: "Cascadia Code";
     src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf);
-
-    font-family: "Cascadia Code Italic";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCodeItalic.ttf);
 
     font-family: "Cascadia Mono PL";
     src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMonoPL.ttf);
 
-    font-family: "Cascadia Mono PL Italic";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMonoPLItalic.ttf);
-
-    font-family: "Cascadia Mono";
+   font-family: "Cascadia Mono";
     src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMono.ttf);
-
-    font-family: "Cascadia Mono Italic";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMonoItalic.ttf);
-
 }
 
 body {
     background-color: #000000
-    font-family: "Cascadia Code PL", "Cascadia Code PL Italic", "Cascadia Code", "Cascadia Code Italic", "Cascadia Mono PL", "Cascadia Mono PL Italic", "Cascadia Mono", "Cascadia Mono Italic", -apple-system !important;
+    font-family: "Cascadia Code PL", "Cascadia Code", "Cascadia Mono PL", "Cascadia Mono", -apple-system !important;
 }
