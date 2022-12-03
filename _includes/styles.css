@@ -12,7 +12,6 @@
     src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMono.ttf) !important;;
 }
 
-body {
-    background-color: #000000
+* {
     font-family: "Cascadia Code PL", "Cascadia Code", "Cascadia Mono PL", "Cascadia Mono" !important;
 }
