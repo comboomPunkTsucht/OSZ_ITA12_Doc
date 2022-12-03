@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "Cascadia Code PL";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf);
+    font-family: "Cascadia Code PL" !important;;
+    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf) !important;;
 
-    font-family: "Cascadia Code";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf);
+    font-family: "Cascadia Code" !important;;
+    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaCode.ttf) !important;;
 
-    font-family: "Cascadia Mono PL";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMonoPL.ttf);
+    font-family: "Cascadia Mono PL" !important;;
+    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMonoPL.ttf) !important;;
 
-   font-family: "Cascadia Mono";
-    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMono.ttf);
+   font-family: "Cascadia Mono" !important;;
+    src: url(raw.githubusercontent.com/comboomPunkTsucht/OSZ_ITA12_Doc/main/_includes/CascadiaMono.ttf) !important;;
 }
 
 body {
