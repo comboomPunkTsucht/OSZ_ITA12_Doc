@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Cascadia Code PL";
-    src: url(_includes/CascadiaCodePL.ttf);
-    src: url(_includes/CascadiaCodePLItalic.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaCodePL.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaCodePLItalic.ttf);
 
     font-family: "Cascadia Code";
-    src: url(_includes/CascadiaCode.ttf);
-    src: url(_includes/CascadiaCodeItalic.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaCode.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaCodeItalic.ttf);
 
     font-family: "Cascadia Mono PL";
-    src: url(_includes/CascadiaMonoPL.ttf);
-    src: url(_includes/CascadiaMonoPLItalic.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaMonoPL.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaMonoPLItalic.ttf);
 
     font-family: "Cascadia Mono";
-    src: url(_includes/CascadiaMono.ttf);
-    src: url(_includes/CascadiaMonoItalic.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaMono.ttf);
+    src: url(comboompunktsucht.github.io/OSZ_ITA12_Doc/_includes/CascadiaMonoItalic.ttf);
 
 }
 
