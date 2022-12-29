@@ -6,7 +6,7 @@
         background-color: #232E3F;
         border: 1px solid #232E3F;
         padding-top: 20px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         padding-left: 20px;
     }
 </style>
