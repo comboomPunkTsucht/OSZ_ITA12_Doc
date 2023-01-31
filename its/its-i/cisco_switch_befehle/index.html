@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/OSZ_ITA12_Doc">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.728481460022">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.728484658819">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -29,11 +29,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/OSZ_ITA12_Doc/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.728481460022" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.728484658819" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.728481460022" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.728484658819" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.728481460022" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.728484658819" data-turbo-eval="false" defer></script>
 
     
 </head>
@@ -449,6 +449,51 @@ Sx (config)# end</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config)# ip default-gateway xxx.xxx.xxx.xxx</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="statische-mac-addresse-setzen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#statische-mac-addresse-setzen">#</doc-anchor-trigger>
+        <span>Statische MAC-addresse setzen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx (config)# mac- addresses static xx-xx-xx-xx-xx-xx vlan xx interface fa0/x </code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="vtp-domain-namen-einstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vtp-domain-namen-einstellen">#</doc-anchor-trigger>
+        <span>VTP Domain Namen einstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config)# vtp domain xxxxx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="vtp-password-vergeben">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vtp-password-vergeben">#</doc-anchor-trigger>
+        <span>VTP Password vergeben</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config)# vtp password xxxxx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="vtp-version-einstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vtp-version-einstellen">#</doc-anchor-trigger>
+        <span>VTP Version einstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config)# vtp version x</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="vtp-modus-einstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vtp-modus-einstellen">#</doc-anchor-trigger>
+        <span>VTP Modus einstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config)# vtp mode (server/client/transparent)</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="zum-konsolenmodus-wechseln">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#zum-konsolenmodus-wechseln">#</doc-anchor-trigger>
@@ -565,6 +610,69 @@ Sx (config-line)#</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if)# duplex xxxx</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="port-sicherheit-aktivieren">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port-sicherheit-aktivieren">#</doc-anchor-trigger>
+        <span>Port-Sicherheit aktivieren</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport port-security</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="port-sicherheit-sticky-flag">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port-sicherheit-sticky-flag">#</doc-anchor-trigger>
+        <span>Port-Sicherheit sticky flag</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport port-security mac-address sticky</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="port-sicherheit-mac-address-maximum">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port-sicherheit-mac-address-maximum">#</doc-anchor-trigger>
+        <span>Port-Sicherheit mac-address maximum</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport port-security maximum xx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="einen-trunk-link-zu-weisen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#einen-trunk-link-zu-weisen">#</doc-anchor-trigger>
+        <span>einen Trunk Link zu weisen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport mode trunk</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="trunk-link-zum-native-vlan-erklären">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#trunk-link-zum-native-vlan-erklären">#</doc-anchor-trigger>
+        <span>Trunk Link zum Native VLAN erklären</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk native vlan xx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="nur-die-vorhandenen-vlans-zulassen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nur-die-vorhandenen-vlans-zulassen">#</doc-anchor-trigger>
+        <span>Nur die vorhandenen VLANs zulassen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk allowed vlan xx, xx, xx, ...</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="protokoll-dot1q-aktivieren-gilt-nur-für-switch-3560">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#protokoll-dot1q-aktivieren-gilt-nur-für-switch-3560">#</doc-anchor-trigger>
+        <span>Protokoll dot1q aktivieren (<em>gilt nur für Switch 3560!</em>)</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk encapsulation dot1q</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="multischnittstellenkonfiguration">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#multischnittstellenkonfiguration">#</doc-anchor-trigger>
@@ -636,6 +744,63 @@ Sx (config-if-range)# </code></pre>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Sx (config-if-range)# duplex xxxx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="port-sicherheit-aktivieren-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port-sicherheit-aktivieren-1">#</doc-anchor-trigger>
+        <span>Port-Sicherheit aktivieren</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if-range)# switchport port-security</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="port-sicherheit-sticky-flag-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port-sicherheit-sticky-flag-1">#</doc-anchor-trigger>
+        <span>Port-Sicherheit sticky flag</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if-range)# switchport port-security mac-address sticky</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if-range)# switchport port-security maximum xx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="einen-trunk-link-zu-weisen-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#einen-trunk-link-zu-weisen-1">#</doc-anchor-trigger>
+        <span>einen Trunk Link zu weisen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport mode trunk</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="trunk-link-zum-native-vlan-erklären-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#trunk-link-zum-native-vlan-erklären-1">#</doc-anchor-trigger>
+        <span>Trunk Link zum Native VLAN erklären</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk native vlan xx</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="nur-die-vorhandenen-vlans-zulassen-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nur-die-vorhandenen-vlans-zulassen-1">#</doc-anchor-trigger>
+        <span>Nur die vorhandenen VLANs zulassen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk allowed vlan xx, xx, xx, ...</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="protokoll-dot1q-aktivieren-gilt-nur-für-switch-3560-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#protokoll-dot1q-aktivieren-gilt-nur-für-switch-3560-1">#</doc-anchor-trigger>
+        <span>Protokoll dot1q aktivieren (<em>gilt nur für Switch 3560!</em>)</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Sx(config-if)# switchport trunk encapsulation dot1q</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="schnittstellenkonfiguration-vom-vlans">
     <h2>
