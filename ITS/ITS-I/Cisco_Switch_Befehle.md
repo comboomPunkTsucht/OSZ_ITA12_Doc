@@ -111,6 +111,34 @@ Sx (config)# service password-encryption
 ```
 Sx (config)# ip default-gateway xxx.xxx.xxx.xxx
 ```
+### Statische MAC-addresse setzen
+
+```
+Sx (config)# mac- addresses static xx-xx-xx-xx-xx-xx vlan xx interface fa0/x 
+```
+### VTP Domain Namen einstellen
+
+```
+Sx(config)# vtp domain xxxxx
+```
+### VTP Password vergeben
+
+```
+Sx(config)# vtp password xxxxx
+```
+
+### VTP Version einstellen
+
+```
+Sx(config)# vtp version x
+```
+
+### VTP Modus einstellen
+
+```
+Sx(config)# vtp mode (server/client/transparent)
+```
+
 ## Zum Konsolenmodus wechseln
 ```
 Sx (config)# line console 0
@@ -176,6 +204,44 @@ Sx (config-if)# speed xxxx
 ```
 Sx (config-if)# duplex xxxx
 ```
+
+### Port-Sicherheit aktivieren
+
+```
+Sx(config-if)# switchport port-security
+```
+
+### Port-Sicherheit sticky flag
+
+```
+Sx(config-if)# switchport port-security mac-address sticky
+```
+### Port-Sicherheit mac-address maximum
+
+```
+Sx(config-if)# switchport port-security maximum xx
+```
+### einen Trunk Link zu weisen
+
+```
+Sx(config-if)# switchport mode trunk
+```
+### Trunk Link zum Native VLAN erklären
+
+```
+Sx(config-if)# switchport trunk native vlan xx
+```
+### Nur die vorhandenen VLANs zulassen
+
+```
+Sx(config-if)# switchport trunk allowed vlan xx, xx, xx, ...
+```
+### Protokoll dot1q aktivieren (*gilt nur für Switch 3560!*)
+
+```
+Sx(config-if)# switchport trunk encapsulation dot1q
+```
+
 ## Multischnittstellenkonfiguration
 ### Entering
 ``` 
@@ -213,6 +279,44 @@ Sx (config-if-range)# speed xxxx
 ```
 Sx (config-if-range)# duplex xxxx
 ```
+
+### Port-Sicherheit aktivieren
+
+```
+Sx(config-if-range)# switchport port-security
+```
+
+### Port-Sicherheit sticky flag
+
+```
+Sx(config-if-range)# switchport port-security mac-address sticky
+```
+
+```
+Sx(config-if-range)# switchport port-security maximum xx
+```
+
+### einen Trunk Link zu weisen
+
+```
+Sx(config-if)# switchport mode trunk
+```
+### Trunk Link zum Native VLAN erklären
+
+```
+Sx(config-if)# switchport trunk native vlan xx
+```
+### Nur die vorhandenen VLANs zulassen
+
+```
+Sx(config-if)# switchport trunk allowed vlan xx, xx, xx, ...
+```
+### Protokoll dot1q aktivieren (*gilt nur für Switch 3560!*)
+
+```
+Sx(config-if)# switchport trunk encapsulation dot1q
+```
+
 ## Schnittstellenkonfiguration vom VLANs
 ### Entering
 ```
