@@ -15,6 +15,9 @@ footer:
     - text: Categories
       link: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/categories/
       icon: ":bookmark_tabs:"
+    - text: Release Notes
+      link: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/releasenotes/
+      icon: ":spiral_note_pad:"
 links:
   - text: home
     link: https://bit.ly/ITA12DocOSZimt
