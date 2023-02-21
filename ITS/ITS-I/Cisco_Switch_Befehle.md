@@ -171,7 +171,7 @@ Sx (config-line)# logging synchronous
 ## Schnittstellenkonfiguration
 ### Entering
 ```
-Sx (config)# interface fa0/x
+Sx (config)# interface [fastethernet/gigabitethernet] x/x
 ```
 ### Exiting
 ```
