@@ -7,7 +7,11 @@
 * Ads -> no Ads
 * footer link to this page
 
-## 02/13/2023
+## 02/21/2023
 
 * update OneNote-Link
 * Homework Absatz
+
+## 02/22/2023
+
+* Cisco Switch Befehl satz
