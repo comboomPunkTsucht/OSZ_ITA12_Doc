@@ -151,7 +151,7 @@ Rx (config-if)# exit
 ```
 ### Clock Rate
 
-````
+```
 Rx (config-if)# clock rate xxxx
 ```
 
@@ -209,6 +209,6 @@ Rx (config-if-range)# no shutdown
 
 ### Clock Rate
 
-````
+```
 Rx (config-if)# clock rate xxxx
 ```
