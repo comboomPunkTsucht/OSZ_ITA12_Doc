@@ -1,4 +1,4 @@
-url: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/
+url: https://ita12docoszimt.serveblog.net/
 favicon: /img/fav_OSZimt-logo.png
 branding:
   colors:
@@ -13,15 +13,12 @@ footer:
   copyright: "&copy; Copyright . All rights reserved. Non official OSZ imt hosted Webseite but hosted by a student of the ITA 12 class from the OSZ imt on GitHub Pages."
   links:
     - text: Categories
-      link: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/categories/
+      link: https://ita12docoszimt.serveblog.net/categories/
       icon: ":bookmark_tabs:"
     - text: Release Notes
-      link: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/releasenotes/
+      link: https://ita12docoszimt.serveblog.net/releasenotes/
       icon: ":spiral_note_pad:"
 links:
-  - text: home
-    link: https://bit.ly/ITA12DocOSZimt
-    icon: ":house_with_garden:"
   - text: Guilded-Server
     link: https://www.guilded.gg/i/pB193mbk
     icon: ":speech_balloon:"
