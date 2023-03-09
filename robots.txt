@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://comboompunktsucht.github.io/OSZ_ITA12_Doc/sitemap.xml.gz
+Sitemap: https://ita12docoszimt.serveblog.net/sitemap.xml.gz
