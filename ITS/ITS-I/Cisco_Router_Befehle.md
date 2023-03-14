@@ -111,16 +111,108 @@ Rx (config)# service password-encryption
 ```
 Rx (config)# ip default-gateway xxx.xxx.xxx.xxx
 ```
+
+### Statiches Routing
+```
+Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+```
+```
+```
+Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x
+```
+
+### Passwort Mindestlänge
+'''
+Rx (config)# security password min-length xx
+```
+
+### Einstellungen zur Blockierung des Login-Zugriffs
+
+```
+Rx (config)# login block-for xx attempts x within xx
+```
+### User anlegen
+```
+Rx (config)# username [username] privilege xx secret [password]
+```
+### Festlegen einer IP-domain
+
+```
+Rx (config)# ip domain-name [domainname]
+```
+### Löchen gespeicherter alter Sicherheitsschlüssel
+
+```
+Rx (config)# crypto key zeroize rsa
+```
+
+### Generieren eines neuen Sicherheitsschlüssels
+
+```
+Rx (config)# crypto key generate rsa general-keys modulus 1024
+```
+
+### Versionseinstelung des SSH-Protokolls
+
+```
+Rx (config)# ip ssh version 2
+```
+### SSH-Protokoll Wartezeit beim Zugriff
+```
+Rx (config)# ip ssh time-out xx
+```
+### SSH-Protokoll Anzahl der Authentifizierungsversuche
+```
+Rx (config)# ip ssh authentication-retries xx
+```
 ## Zum Konsolenmodus wechseln
 ```
 Rx (config)# line console 0
 Rx (config-line)#
 ```
-## Zum Fernverwaltungsmodus wechseln (Telnet)
+### Passwort eingeben
+
+```
+Rx (config-line)# password cisco
+```
+### IOS Zugriffszeit-Einstellung
+
+```
+Rx (config-line)# exec-timeout [minutes] [seconds]
+```
+
+### Zugriffsrechte-Einstellung
+
+```
+Rx (config-line)# privilege level xxx
+```
+### Passwordeingabe aktivieren
+
+```
+Rx (config-line)# login
+```
+### Passwordeingabe aktivieren von Datenbank/Adminkonto
+
+```
+Rx (config-line)# login local
+```
+
+### Synchronisation der Dateneingabe aktivieren
+
+```
+Rx (config-line)# logging synchronous
+```
+## Zum Fernverwaltungsmodus wechseln
 
 ```
 Rx (config)# line vty 0 4
 Rx (config-line)#
+```
+
+### Übermitlungsprotokoll einstellen
+
+```
+Rx (config-line)# transport input [all/telnet/ssh]
 ```
 
 ### Passwort eingeben
@@ -128,10 +220,26 @@ Rx (config-line)#
 ```
 Rx (config-line)# password cisco
 ```
+### IOS Zugriffszeit-Einstellung
+
+```
+Rx (config-line)# exec-timeout [minutes] [seconds]
+```
+
+### Zugriffsrechte-Einstellung
+
+```
+Rx (config-line)# privilege level xxx
+```
 ### Passwordeingabe aktivieren
 
 ```
 Rx (config-line)# login
+```
+### Passwordeingabe aktivieren von Datenbank/Adminkonto
+
+```
+Rx (config-line)# login local
 ```
 ### Synchronisation der Dateneingabe aktivieren
 

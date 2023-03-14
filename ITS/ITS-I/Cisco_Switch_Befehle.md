@@ -138,11 +138,81 @@ Sx(config)# vtp version x
 ```
 Sx(config)# vtp mode (server/client/transparent)
 ```
+### Einstellungen zur Blockierung des Login-Zugriffs
+
+```
+Sx (config)# login block-for xx attempts x within xx
+```
+### User anlegen
+```
+Sx (config)# username [username] privilege xx secret [password]
+```
+### Festlegen einer IP-domain
+
+```
+Sx (config)# ip domain-name [domainname]
+```
+### Löchen gespeicherter alter Sicherheitsschlüssel
+
+```
+Sx (config)# crypto key zeroize rsa
+```
+
+### Generieren eines neuen Sicherheitsschlüssels
+
+```
+Sx (config)# crypto key generate rsa general-keys modulus 1024
+```
+
+### Versionseinstelung des SSH-Protokolls
+
+```
+Sx (config)# ip ssh version 2
+```
+### SSH-Protokoll Wartezeit beim Zugriff
+```
+Sx (config)# ip ssh time-out xx
+```
+### SSH-Protokoll Anzahl der Authentifizierungsversuche
+```
+Sx (config)# ip ssh authentication-retries xx
+```
 
 ## Zum Konsolenmodus wechseln
 ```
 Sx (config)# line console 0
 Sx (config-line)#
+```
+### Passwort eingeben
+
+```
+Sx (config-line)# password cisco
+```
+### IOS Zugriffszeit-Einstellung
+
+```
+Sx (config-line)# exec-timeout [minutes] [seconds]
+```
+
+### Zugriffsrechte-Einstellung
+
+```
+Sx (config-line)# privilege level xxx
+```
+### Passwordeingabe aktivieren
+
+```
+Sx (config-line)# login
+```
+### Passwordeingabe aktivieren von Datenbank/Adminkonto
+
+```
+Sx (config-line)# login local
+```
+### Synchronisation der Dateneingabe aktivieren
+
+```
+Sx (config-line)# logging synchronous
 ```
 ## Zum Fernverwaltungsmodus wechseln (Telnet)
 
@@ -156,10 +226,26 @@ Sx (config-line)#
 ```
 Sx (config-line)# password cisco
 ```
+### IOS Zugriffszeit-Einstellung
+
+```
+Sx (config-line)# exec-timeout [minutes] [seconds]
+```
+
+### Zugriffsrechte-Einstellung
+
+```
+Sx (config-line)# privilege level xxx
+```
 ### Passwordeingabe aktivieren
 
 ```
 Sx (config-line)# login
+```
+### Passwordeingabe aktivieren von Datenbank/Adminkonto
+
+```
+Sx (config-line)# login local
 ```
 ### Synchronisation der Dateneingabe aktivieren
 
