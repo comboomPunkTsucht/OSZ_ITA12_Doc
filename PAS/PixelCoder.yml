@@ -1,4 +1,4 @@
-label: moodle-Kurs
+label: PixelCoder
 category: PAS
 tags:
   - Java
@@ -15,6 +15,7 @@ tags:
   - Arrays
   - Konstruktoren
   - Schleifen
+  - Greenfoot
 icon: ":technologist:"
 authors:
   - name: Fabian Aps
