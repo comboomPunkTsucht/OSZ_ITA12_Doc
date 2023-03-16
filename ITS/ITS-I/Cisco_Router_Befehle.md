@@ -1,6 +1,6 @@
 
 
-# Cisco Switch Befehle
+# Cisco Router Befehle
 
 ## EXEC-Modus
 
