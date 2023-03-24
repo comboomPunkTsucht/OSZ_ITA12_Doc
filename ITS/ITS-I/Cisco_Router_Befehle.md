@@ -165,6 +165,32 @@ Rx (config)# ip ssh time-out xx
 ```
 Rx (config)# ip ssh authentication-retries xx
 ```
+
+### RIP dynamisches Routing aktivieren
+
+```
+Rx (config)# router rip
+Rx (config-router)# network [direkte Netz-ID]
+```
+
+### EIGRP dynamisches Routing aktivieren
+
+```
+Rx(config)# router eigrp [number]
+Rx(config-router)# network [direkte Netz-ID]
+```
+
+```
+Rx(config)# router eigrp [number]
+Rx(config-router)# network [direkte Netz-ID] [wildcard-mask]
+```
+
+### OSPF dynamisches Routing aktivieren
+
+```
+Rx(config)# router ospf [number]
+Rx(config-router)# network [direkte Netz-ID] [wildcard-mask] area [number]
+```
 ## Zum Konsolenmodus wechseln
 ```
 Rx (config)# line console 0
