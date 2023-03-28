@@ -30,3 +30,7 @@
 ## 03/24/2023
 
 * Cisco Router Befehl satz
+
+## 03/28/2023
+
+* DSL explanitys added
