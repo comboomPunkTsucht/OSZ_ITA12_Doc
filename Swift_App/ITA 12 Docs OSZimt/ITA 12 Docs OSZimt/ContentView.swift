@@ -10,13 +10,14 @@
 
 import WebKit
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
 
     var body: some View {
         
         TabView {
-            ClassSideView()
+            ClassSideView(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
                 .tabItem{
                     Text("Klassen Wbseite")
                     Image(systemName: "doc.richtext")
@@ -25,7 +26,7 @@ struct ContentView: View {
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
                 }
-            MoodleView()
+            MoodleView(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
                 .tabItem {
                     Text("Moodle")
                     Image(systemName: "studentdesk")
@@ -34,7 +35,7 @@ struct ContentView: View {
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
                 }
-            TimeTableView()
+            TimeTableView(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
                 .tabItem {
                     Text("Stundenplan")
                     Image(systemName: "info.circle")
@@ -43,7 +44,7 @@ struct ContentView: View {
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
                 }
-            OSZimtView()
+            OSZimtView(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
                 .tabItem {
                     Text("OSZ IMT Website")
                     Image(systemName: "graduationcap.circle")
@@ -56,8 +57,24 @@ struct ContentView: View {
 
             
     }
+    func goBack() {
+            // Your implementation here
+        }
+        
+        func goForward() {
+            // Your implementation here
+        }
+        
+        func goHome() {
+            // Your implementation here
+        }
+        
+        func reload() {
+            // Your implementation here
+        }
     
 }
+#if os(iOS)
 struct WebView: UIViewRepresentable {
     @Binding var webView: WKWebView
     let request: URLRequest
@@ -70,182 +87,226 @@ struct WebView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {}
 }
 
+#elseif os(macOS)
+struct WebView: NSViewRepresentable {
+
+    
+    @Binding var webView: WKWebView
+    let request: URLRequest
+    
+    func makeNSView(context: Context) -> WKWebView {
+        webView.load(request)
+        return webView
+    }
+    
+    func updateNSView(_ nsView: WKWebView, context: Context) {}
+}
+
+#endif
+
 struct ClassSideView: View {
+    let goBack: () -> Void
+    let goForward: () -> Void
+    let goHome: () -> Void
+    let reload: () -> Void
     @State private var webView = WKWebView()
     let startURL = URL(string: "https://ita12docoszimt.serveblog.net/")!
     var body: some View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL))
             HStack {
-                            Spacer()
-                            Button(action: goBack) {
-                                Image(systemName: "arrowshape.turn.up.left.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ö", modifiers: .command)
-                            
-                            Button(action: goForward) {
-                                Image(systemName: "arrowshape.turn.up.right.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ä", modifiers: .command)
-                            
-                            Button(action: goHome) {
-                                Image(systemName: "house.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("t", modifiers: .command)
-                            
-                            Button(action: reload) {
-                                Image(systemName: "arrow.clockwise.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("r", modifiers: .command)
-
-                        }
+                Spacer()
+                Button(action: goBack) {
+                    Image(systemName: "arrowshape.turn.up.left.circle")
+                        .resizable()
                         .aspectRatio(contentMode: .fit)
-                    }
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
                 }
+                .keyboardShortcut("ö", modifiers: .command)
                 
-                func goBack() {
-                    webView.goBack()
+                Button(action: goForward) {
+                    Image(systemName: "arrowshape.turn.up.right.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
                 }
+                .keyboardShortcut("ä", modifiers: .command)
                 
-                func goForward() {
-                    webView.goForward()
+                Button(action: goHome) {
+                    Image(systemName: "house.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
                 }
+                .keyboardShortcut("ü", modifiers: .command)
                 
-                func goHome() {
-                    webView.load(URLRequest(url: startURL))
+                Button(action: reload) {
+                    Image(systemName: "arrow.clockwise.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
                 }
+                .keyboardShortcut("r", modifiers: .command)
                 
-                func reload() {
-                    webView.reload()
-                }
             }
+            .aspectRatio(contentMode: .fit)
+        }
+        .toolbar {
+            ToolbarItem(placement: .automatic) {
+                MyCommandMenu(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
+                
+            }
+        }
+    }
+        
+        
+        func goBack() {
+            webView.goBack()
+        }
+        
+        func goForward() {
+            webView.goForward()
+        }
+        
+        func goHome() {
+            webView.load(URLRequest(url: startURL))
+        }
+        
+        func reload() {
+            webView.reload()
+        }
+}
     struct MoodleView: View {
+        let goBack: () -> Void
+        let goForward: () -> Void
+        let goHome: () -> Void
+        let reload: () -> Void
         @State private var webView = WKWebView()
         let startURL = URL(string: "https://moodle.oszimt.de/")!
         var body: some View {
             VStack{
                 WebView(webView: $webView, request: URLRequest(url: startURL))
                 HStack {
-                                Spacer()
-                                Button(action: goBack) {
-                                    Image(systemName: "arrowshape.turn.up.left.circle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(Color("AccentColor"))
-                                        .frame(width: 20.0)
-                                }
-                                .keyboardShortcut("ö", modifiers: .command)
-                                
-                                Button(action: goForward) {
-                                    Image(systemName: "arrowshape.turn.up.right.circle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(Color("AccentColor"))
-                                        .frame(width: 20.0)
-                                }
-                                .keyboardShortcut("ä", modifiers: .command)
-                                
-                                Button(action: goHome) {
-                                    Image(systemName: "house.circle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(Color("AccentColor"))
-                                        .frame(width: 20.0)
-                                }
-                                .keyboardShortcut("t", modifiers: .command)
-                                
-                                Button(action: reload) {
-                                    Image(systemName: "arrow.clockwise.circle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(Color("AccentColor"))
-                                        .frame(width: 20.0)
-                                }
-                                .keyboardShortcut("r", modifiers: .command)
-
-                            }
+                    Spacer()
+                    Button(action: goBack) {
+                        Image(systemName: "arrowshape.turn.up.left.circle")
+                            .resizable()
                             .aspectRatio(contentMode: .fit)
-                        }
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
                     }
+                    .keyboardShortcut("ö", modifiers: .command)
                     
-                    func goBack() {
-                        webView.goBack()
+                    Button(action: goForward) {
+                        Image(systemName: "arrowshape.turn.up.right.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
                     }
+                    .keyboardShortcut("ä", modifiers: .command)
                     
-                    func goForward() {
-                        webView.goForward()
+                    Button(action: goHome) {
+                        Image(systemName: "house.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
                     }
+                    .keyboardShortcut("ü", modifiers: .command)
                     
-                    func goHome() {
-                        webView.load(URLRequest(url: startURL))
+                    Button(action: reload) {
+                        Image(systemName: "arrow.clockwise.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
                     }
+                    .keyboardShortcut("r", modifiers: .command)
                     
-                    func reload() {
-                        webView.reload()
-                    }
                 }
-struct TimeTableView: View {
-    @State private var webView = WKWebView()
-    let startURL = URL(string: "https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012")!
-    var body: some View {
-        VStack{
-            WebView(webView: $webView, request: URLRequest(url: startURL))
-            HStack {
-                            Spacer()
-                            Button(action: goBack) {
-                                Image(systemName: "arrowshape.turn.up.left.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ö", modifiers: .command)
-                            
-                            Button(action: goForward) {
-                                Image(systemName: "arrowshape.turn.up.right.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ä", modifiers: .command)
-                            
-                            Button(action: goHome) {
-                                Image(systemName: "house.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("t", modifiers: .command)
-                            
-                            Button(action: reload) {
-                                Image(systemName: "arrow.clockwise.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("r", modifiers: .command)
-
+                .aspectRatio(contentMode: .fit)
+            }
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    MyCommandMenu(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
+                }}
+            
+            func goBack() {
+                webView.goBack()
+            }
+            
+            func goForward() {
+                webView.goForward()
+            }
+            
+            func goHome() {
+                webView.load(URLRequest(url: startURL))
+            }
+            
+            func reload() {
+                webView.reload()
+            }
+        }
+    }
+        struct TimeTableView: View {
+            let goBack: () -> Void
+            let goForward: () -> Void
+            let goHome: () -> Void
+            let reload: () -> Void
+            @State private var webView = WKWebView()
+            let startURL = URL(string: "https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012")!
+            var body: some View {
+                VStack{
+                    WebView(webView: $webView, request: URLRequest(url: startURL))
+                    HStack {
+                        Spacer()
+                        Button(action: goBack) {
+                            Image(systemName: "arrowshape.turn.up.left.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("AccentColor"))
+                                .frame(width: 20.0)
                         }
-                        .aspectRatio(contentMode: .fit)
+                        .keyboardShortcut("ö", modifiers: .command)
+                        
+                        Button(action: goForward) {
+                            Image(systemName: "arrowshape.turn.up.right.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("AccentColor"))
+                                .frame(width: 20.0)
+                        }
+                        .keyboardShortcut("ä", modifiers: .command)
+                        
+                        Button(action: goHome) {
+                            Image(systemName: "house.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("AccentColor"))
+                                .frame(width: 20.0)
+                        }
+                        .keyboardShortcut("ü", modifiers: .command)
+                        
+                        Button(action: reload) {
+                            Image(systemName: "arrow.clockwise.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("AccentColor"))
+                                .frame(width: 20.0)
+                        }
+                        .keyboardShortcut("r", modifiers: .command)
+                        
+                    }
+                    .aspectRatio(contentMode: .fit)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .automatic) {
+                        MyCommandMenu(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
                     }
                 }
                 
@@ -265,71 +326,81 @@ struct TimeTableView: View {
                     webView.reload()
                 }
             }
-struct OSZimtView: View {
-    @State private var webView = WKWebView()
-    let startURL = URL(string: "https://oszimt.de")!
-    var body: some View {
-        VStack{
-            WebView(webView: $webView, request: URLRequest(url: startURL))
-            HStack {
-                            Spacer()
-                            Button(action: goBack) {
-                                Image(systemName: "arrowshape.turn.up.left.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ö", modifiers: .command)
-                            
-                            Button(action: goForward) {
-                                Image(systemName: "arrowshape.turn.up.right.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("ä", modifiers: .command)
-                            
-                            Button(action: goHome) {
-                                Image(systemName: "house.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("t", modifiers: .command)
-                            
-                            Button(action: reload) {
-                                Image(systemName: "arrow.clockwise.circle")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(Color("AccentColor"))
-                                    .frame(width: 20.0)
-                            }
-                            .keyboardShortcut("r", modifiers: .command)
-
-                        }
-                        .aspectRatio(contentMode: .fit)
+        }
+    struct OSZimtView: View {
+        let goBack: () -> Void
+        let goForward: () -> Void
+        let goHome: () -> Void
+        let reload: () -> Void
+        @State private var webView = WKWebView()
+        let startURL = URL(string: "https://oszimt.de")!
+        var body: some View {
+            VStack{
+                WebView(webView: $webView, request: URLRequest(url: startURL))
+                HStack {
+                    Spacer()
+                    Button(action: goBack) {
+                        Image(systemName: "arrowshape.turn.up.left.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
                     }
+                    .keyboardShortcut("ö", modifiers: .command)
+                    
+                    Button(action: goForward) {
+                        Image(systemName: "arrowshape.turn.up.right.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
+                    }
+                    .keyboardShortcut("ä", modifiers: .command)
+                    
+                    Button(action: goHome) {
+                        Image(systemName: "house.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
+                    }
+                    .keyboardShortcut("ü", modifiers: .command)
+                    
+                    Button(action: reload) {
+                        Image(systemName: "arrow.clockwise.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(width: 20.0)
+                    }
+                    .keyboardShortcut("r", modifiers: .command)
+                    
                 }
-                
-                func goBack() {
-                    webView.goBack()
-                }
-                
-                func goForward() {
-                    webView.goForward()
-                }
-                
-                func goHome() {
-                    webView.load(URLRequest(url: startURL))
-                }
-                
-                func reload() {
-                    webView.reload()
-                }
+                .aspectRatio(contentMode: .fit)
             }
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    MyCommandMenu(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
+                }}
+            
+            
+            func goBack() {
+                webView.goBack()
+            }
+            
+            func goForward() {
+                webView.goForward()
+            }
+            
+            func goHome() {
+                webView.load(URLRequest(url: startURL))
+            }
+            
+            func reload() {
+                webView.reload()
+            }
+        }
+    }
 
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
@@ -339,6 +410,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 #endif
+
 
 
 
