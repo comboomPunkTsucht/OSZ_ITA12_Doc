@@ -12,51 +12,32 @@ struct ITA_12_Docs_OSZimtApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                
+            
         }
         .commands {
-                            MyCommandMenu(goBack: goBack, goForward: goForward, goHome: goHome, reload: reload)
-                        }
+            MyCommandMenu()
+        }
         
     }
-    func goBack() {
-        // Your implementation here
-    }
-
-    func goForward() {
-        // Your implementation here
-    }
-
-    func goHome() {
-        // Your implementation here
-    }
-
-    func reload() {
-        // Your implementation here
-    }
-    }
+}
 
 
 
 struct MyCommandMenu: Commands {
-    let goBack: () -> Void
-    let goForward: () -> Void
-    let goHome: () -> Void
-    let reload: () -> Void
     
     var body: some Commands {
         CommandGroup(before: .importExport) {
-            Button("go Back", action: goBack)
-                            .keyboardShortcut("ö", modifiers: .command)
-                        
-                        Button("go Forward", action: goForward)
-                            .keyboardShortcut("ä", modifiers: .command)
-                        
-                        Button("go Home", action: goHome)
-                            .keyboardShortcut("ü", modifiers: .command)
-                        
-                        Button("reload", action: reload)
-                            .keyboardShortcut("r", modifiers: .command)
-                    }
+            Button("go Back") {}
+                .keyboardShortcut("ö", modifiers: .command)
+            
+            Button("go Forward") {}
+                .keyboardShortcut("ä", modifiers: .command)
+            
+            Button("go Home") {}
+                .keyboardShortcut("ü", modifiers: .command)
+            
+            Button("reload") {}
+                .keyboardShortcut("r", modifiers: .command)
+        }
     }
 }
