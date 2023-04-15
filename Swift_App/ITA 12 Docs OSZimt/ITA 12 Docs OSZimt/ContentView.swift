@@ -39,7 +39,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
             WebUntisView()
                 .tabItem {
@@ -48,7 +48,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
             OSZimtView()
                 .tabItem {
@@ -57,7 +57,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
           ChatGPTView()
                 .tabItem {
@@ -66,7 +66,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
             WWWView()
                   .tabItem {
@@ -75,7 +75,7 @@ struct ContentView: View {
                           .resizable()
                           .aspectRatio(contentMode: .fit)
                           .foregroundColor(Color("AccentColor"))
-                          .frame(width: 20.0)
+                          .frame(width: 40)
                   }
         }.frame(minWidth: 1280,idealWidth: 1920, maxWidth: 7680, minHeight: 720, idealHeight: 1080, maxHeight: 4320)
         
@@ -192,7 +192,7 @@ struct ClassSideView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
                 
@@ -201,7 +201,7 @@ struct ClassSideView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
                 
@@ -210,7 +210,7 @@ struct ClassSideView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
                 
@@ -219,13 +219,13 @@ struct ClassSideView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         
@@ -260,7 +260,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ö", modifiers: .command)
                     
@@ -269,7 +269,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ä", modifiers: .command)
                     
@@ -278,7 +278,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ü", modifiers: .command)
                     
@@ -287,13 +287,13 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("r", modifiers: .command)
                     
                 }
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+                .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
             }
         }
             func goBack() {
@@ -327,7 +327,7 @@ struct ClassSideView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .foregroundColor(Color("AccentColor"))
-                                .frame(width: 20.0)
+                                .frame(width: 40)
                         }
                         .keyboardShortcut("ö", modifiers: .command)
                         
@@ -336,7 +336,7 @@ struct ClassSideView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .foregroundColor(Color("AccentColor"))
-                                .frame(width: 20.0)
+                                .frame(width: 40)
                         }
                         .keyboardShortcut("ä", modifiers: .command)
                         
@@ -345,7 +345,7 @@ struct ClassSideView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .foregroundColor(Color("AccentColor"))
-                                .frame(width: 20.0)
+                                .frame(width: 40)
                         }
                         .keyboardShortcut("ü", modifiers: .command)
                         
@@ -354,13 +354,13 @@ struct ClassSideView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .foregroundColor(Color("AccentColor"))
-                                .frame(width: 20.0)
+                                .frame(width: 40)
                         }
                         .keyboardShortcut("r", modifiers: .command)
                         
                     }
                     .aspectRatio(contentMode: .fit)
-                    .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+                    .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
                 }
             }
                 func goBack() {
@@ -394,7 +394,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ö", modifiers: .command)
                     
@@ -403,7 +403,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ä", modifiers: .command)
                     
@@ -412,7 +412,7 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("ü", modifiers: .command)
                     
@@ -421,13 +421,13 @@ struct ClassSideView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("AccentColor"))
-                            .frame(width: 20.0)
+                            .frame(width: 40)
                     }
                     .keyboardShortcut("r", modifiers: .command)
                     
                 }
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+                .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
             }
             
         }
@@ -465,7 +465,7 @@ struct ChatGPTView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
                 
@@ -474,7 +474,7 @@ struct ChatGPTView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
                 
@@ -483,7 +483,7 @@ struct ChatGPTView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
                 
@@ -492,13 +492,13 @@ struct ChatGPTView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         func goBack() {
@@ -532,13 +532,12 @@ struct WWWView: View {
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .keyboardType(.URL)
-                    .frame(minWidth: 1220)
                 Button(action: search) {
                     Image(systemName: "magnifyingglass.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut(.defaultAction)
                 Button(action: goBack) {
@@ -546,7 +545,7 @@ struct WWWView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
                 
@@ -555,7 +554,7 @@ struct WWWView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
                 
@@ -564,7 +563,7 @@ struct WWWView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
                 
@@ -573,13 +572,13 @@ struct WWWView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         
@@ -661,7 +660,7 @@ struct WebUntisView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
                 
@@ -670,7 +669,7 @@ struct WebUntisView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
                 
@@ -679,7 +678,7 @@ struct WebUntisView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
                 
@@ -688,13 +687,13 @@ struct WebUntisView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
-                        .frame(width: 20.0)
+                        .frame(width: 40.0)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
+            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         func goBack() {

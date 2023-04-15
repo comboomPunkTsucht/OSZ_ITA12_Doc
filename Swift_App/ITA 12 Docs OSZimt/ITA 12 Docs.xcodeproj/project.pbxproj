@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9186F3C329EB01FD00CB0863 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186F3C129EB01DF00CB0863 /* SwiftUI.framework */; };
+		9186F3C629EB01FF00CB0863 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186F3BF29EB01D100CB0863 /* WebKit.framework */; };
 		919E5AC129EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */; };
 		919E5AC329EAEC29005F7E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC229EAEC29005F7E9D /* ContentView.swift */; };
 		919E5AC529EAEC2A005F7E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919E5AC429EAEC2A005F7E9D /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9186F3BD29EB01BE00CB0863 /* ITA-12-Docs-OSZimt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ITA-12-Docs-OSZimt-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9186F3BF29EB01D100CB0863 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9186F3C129EB01DF00CB0863 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/iOSSupport/System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITA 12 Docs OSZimt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtApp.swift; sourceTree = "<group>"; };
 		919E5AC229EAEC29005F7E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9186F3C629EB01FF00CB0863 /* WebKit.framework in Frameworks */,
+				9186F3C329EB01FD00CB0863 /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9186F3BE29EB01D000CB0863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9186F3C129EB01DF00CB0863 /* SwiftUI.framework */,
+				9186F3BF29EB01D100CB0863 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		919E5AB429EAEC29005F7E9D = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +95,7 @@
 				919E5AD129EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */,
 				919E5ADB29EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */,
 				919E5ABE29EAEC29005F7E9D /* Products */,
+				9186F3BE29EB01D000CB0863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +112,7 @@
 		919E5ABF29EAEC29005F7E9D /* ITA 12 Docs OSZimt */ = {
 			isa = PBXGroup;
 			children = (
+				9186F3BD29EB01BE00CB0863 /* ITA-12-Docs-OSZimt-Info.plist */,
 				919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */,
 				919E5AC229EAEC29005F7E9D /* ContentView.swift */,
 				919E5AC429EAEC2A005F7E9D /* Assets.xcassets */,
@@ -423,12 +441,19 @@
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/PrivateFrameworks",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ITA-12-Docs-OSZimt-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ITA 12 Docs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -447,9 +472,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimt";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "ITA-12-Docs-OSZimt";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -469,12 +492,19 @@
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/PrivateFrameworks",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ITA-12-Docs-OSZimt-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ITA 12 Docs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -493,9 +523,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimt";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "ITA-12-Docs-OSZimt";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
