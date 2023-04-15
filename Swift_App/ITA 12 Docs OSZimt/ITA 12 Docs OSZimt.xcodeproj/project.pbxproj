@@ -7,74 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9109BF4929D58E1C00534B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164774629D480FE00C31445 /* Assets.xcassets */; };
-		9109BF4A29D58E1D00534B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164774629D480FE00C31445 /* Assets.xcassets */; };
-		9164774329D480FD00C31445 /* ITA_12_Docs_OSZimtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164774229D480FD00C31445 /* ITA_12_Docs_OSZimtApp.swift */; };
-		9164774529D480FE00C31445 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164774429D480FE00C31445 /* ContentView.swift */; };
-		9164774729D480FE00C31445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164774629D480FE00C31445 /* Assets.xcassets */; };
-		9164774B29D480FE00C31445 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164774A29D480FE00C31445 /* Preview Assets.xcassets */; };
-		9164775529D480FE00C31445 /* ITA_12_Docs_OSZimtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164775429D480FE00C31445 /* ITA_12_Docs_OSZimtTests.swift */; };
-		9164775F29D480FE00C31445 /* ITA_12_Docs_OSZimtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164775E29D480FE00C31445 /* ITA_12_Docs_OSZimtUITests.swift */; };
-		9164776129D480FE00C31445 /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164776029D480FE00C31445 /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */; };
-		919652FF29D4FA240091E784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919652FD29D4FA1F0091E784 /* Foundation.framework */; };
-		9196530229D4FA260091E784 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919652FB29D4FA070091E784 /* SwiftUI.framework */; };
-		9196530429D4FA290091E784 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164777229D4C37D00C31445 /* WebKit.framework */; };
+		9109276729EAEEA500B8A2DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9109276629EAEEA500B8A2DC /* Alamofire */; };
+		919E5AC129EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */; };
+		919E5AC329EAEC29005F7E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC229EAEC29005F7E9D /* ContentView.swift */; };
+		919E5AC529EAEC2A005F7E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919E5AC429EAEC2A005F7E9D /* Assets.xcassets */; };
+		919E5AC929EAEC2A005F7E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919E5AC829EAEC2A005F7E9D /* Preview Assets.xcassets */; };
+		919E5AD329EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */; };
+		919E5ADD29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */; };
+		919E5ADF29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */; };
+		919E5AEC29EAEC7C005F7E9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AEB29EAEC7C005F7E9D /* Constants.swift */; };
+		919E5AEE29EAECA2005F7E9D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AED29EAECA2005F7E9D /* ChatViewModel.swift */; };
+		919E5AF029EAECC0005F7E9D /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AEF29EAECC0005F7E9D /* OpenAIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9164775129D480FE00C31445 /* PBXContainerItemProxy */ = {
+		919E5ACF29EAEC2A005F7E9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9164773729D480FD00C31445 /* Project object */;
+			containerPortal = 919E5AB529EAEC29005F7E9D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9164773E29D480FD00C31445;
+			remoteGlobalIDString = 919E5ABC29EAEC29005F7E9D;
 			remoteInfo = "ITA 12 Docs OSZimt";
 		};
-		9164775B29D480FE00C31445 /* PBXContainerItemProxy */ = {
+		919E5AD929EAEC2A005F7E9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9164773729D480FD00C31445 /* Project object */;
+			containerPortal = 919E5AB529EAEC29005F7E9D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9164773E29D480FD00C31445;
+			remoteGlobalIDString = 919E5ABC29EAEC29005F7E9D;
 			remoteInfo = "ITA 12 Docs OSZimt";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9164773F29D480FD00C31445 /* ITA 12 Docs OSZimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITA 12 Docs OSZimt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9164774229D480FD00C31445 /* ITA_12_Docs_OSZimtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtApp.swift; sourceTree = "<group>"; };
-		9164774429D480FE00C31445 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9164774629D480FE00C31445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9164774829D480FE00C31445 /* ITA_12_Docs_OSZimt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITA_12_Docs_OSZimt.entitlements; sourceTree = "<group>"; };
-		9164774A29D480FE00C31445 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9164775029D480FE00C31445 /* ITA 12 Docs OSZimtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9164775429D480FE00C31445 /* ITA_12_Docs_OSZimtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtTests.swift; sourceTree = "<group>"; };
-		9164775A29D480FE00C31445 /* ITA 12 Docs OSZimtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9164775E29D480FE00C31445 /* ITA_12_Docs_OSZimtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITests.swift; sourceTree = "<group>"; };
-		9164776029D480FE00C31445 /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9164777229D4C37D00C31445 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		9164777429D4C7F200C31445 /* ITA-12-Docs-OSZimt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ITA-12-Docs-OSZimt-Info.plist"; sourceTree = SOURCE_ROOT; };
-		919652FB29D4FA070091E784 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
-		919652FD29D4FA1F0091E784 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITA 12 Docs OSZimt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtApp.swift; sourceTree = "<group>"; };
+		919E5AC229EAEC29005F7E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		919E5AC429EAEC2A005F7E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919E5AC629EAEC2A005F7E9D /* ITA_12_Docs_OSZimt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITA_12_Docs_OSZimt.entitlements; sourceTree = "<group>"; };
+		919E5AC829EAEC2A005F7E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtTests.swift; sourceTree = "<group>"; };
+		919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITests.swift; sourceTree = "<group>"; };
+		919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		919E5AEB29EAEC7C005F7E9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		919E5AED29EAECA2005F7E9D /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		919E5AEF29EAECC0005F7E9D /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9164773C29D480FD00C31445 /* Frameworks */ = {
+		919E5ABA29EAEC29005F7E9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				919652FF29D4FA240091E784 /* Foundation.framework in Frameworks */,
-				9196530229D4FA260091E784 /* SwiftUI.framework in Frameworks */,
-				9196530429D4FA290091E784 /* WebKit.framework in Frameworks */,
+				9109276729EAEEA500B8A2DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164774D29D480FE00C31445 /* Frameworks */ = {
+		919E5ACB29EAEC2A005F7E9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164775729D480FE00C31445 /* Frameworks */ = {
+		919E5AD529EAEC2A005F7E9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,86 +80,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9164773629D480FD00C31445 = {
+		919E5AB429EAEC29005F7E9D = {
 			isa = PBXGroup;
 			children = (
-				9164774129D480FD00C31445 /* ITA 12 Docs OSZimt */,
-				9164775329D480FE00C31445 /* ITA 12 Docs OSZimtTests */,
-				9164775D29D480FE00C31445 /* ITA 12 Docs OSZimtUITests */,
-				9164774029D480FD00C31445 /* Products */,
-				9164777129D4C37D00C31445 /* Frameworks */,
+				919E5ABF29EAEC29005F7E9D /* ITA 12 Docs OSZimt */,
+				919E5AD129EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */,
+				919E5ADB29EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */,
+				919E5ABE29EAEC29005F7E9D /* Products */,
 			);
 			sourceTree = "<group>";
-			wrapsLines = 0;
 		};
-		9164774029D480FD00C31445 /* Products */ = {
+		919E5ABE29EAEC29005F7E9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9164773F29D480FD00C31445 /* ITA 12 Docs OSZimt.app */,
-				9164775029D480FE00C31445 /* ITA 12 Docs OSZimtTests.xctest */,
-				9164775A29D480FE00C31445 /* ITA 12 Docs OSZimtUITests.xctest */,
+				919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */,
+				919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */,
+				919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9164774129D480FD00C31445 /* ITA 12 Docs OSZimt */ = {
+		919E5ABF29EAEC29005F7E9D /* ITA 12 Docs OSZimt */ = {
 			isa = PBXGroup;
 			children = (
-				9164777429D4C7F200C31445 /* ITA-12-Docs-OSZimt-Info.plist */,
-				9164774229D480FD00C31445 /* ITA_12_Docs_OSZimtApp.swift */,
-				9164774429D480FE00C31445 /* ContentView.swift */,
-				9164774629D480FE00C31445 /* Assets.xcassets */,
-				9164774829D480FE00C31445 /* ITA_12_Docs_OSZimt.entitlements */,
-				9164774929D480FE00C31445 /* Preview Content */,
+				919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */,
+				919E5AC229EAEC29005F7E9D /* ContentView.swift */,
+				919E5AEB29EAEC7C005F7E9D /* Constants.swift */,
+				919E5AED29EAECA2005F7E9D /* ChatViewModel.swift */,
+				919E5AEF29EAECC0005F7E9D /* OpenAIService.swift */,
+				919E5AC429EAEC2A005F7E9D /* Assets.xcassets */,
+				919E5AC629EAEC2A005F7E9D /* ITA_12_Docs_OSZimt.entitlements */,
+				919E5AC729EAEC2A005F7E9D /* Preview Content */,
 			);
 			path = "ITA 12 Docs OSZimt";
 			sourceTree = "<group>";
 		};
-		9164774929D480FE00C31445 /* Preview Content */ = {
+		919E5AC729EAEC2A005F7E9D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9164774A29D480FE00C31445 /* Preview Assets.xcassets */,
+				919E5AC829EAEC2A005F7E9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9164775329D480FE00C31445 /* ITA 12 Docs OSZimtTests */ = {
+		919E5AD129EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */ = {
 			isa = PBXGroup;
 			children = (
-				9164775429D480FE00C31445 /* ITA_12_Docs_OSZimtTests.swift */,
+				919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */,
 			);
 			path = "ITA 12 Docs OSZimtTests";
 			sourceTree = "<group>";
 		};
-		9164775D29D480FE00C31445 /* ITA 12 Docs OSZimtUITests */ = {
+		919E5ADB29EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9164775E29D480FE00C31445 /* ITA_12_Docs_OSZimtUITests.swift */,
-				9164776029D480FE00C31445 /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */,
+				919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */,
+				919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */,
 			);
 			path = "ITA 12 Docs OSZimtUITests";
-			sourceTree = "<group>";
-		};
-		9164777129D4C37D00C31445 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				919652FD29D4FA1F0091E784 /* Foundation.framework */,
-				919652FB29D4FA070091E784 /* SwiftUI.framework */,
-				9164777229D4C37D00C31445 /* WebKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9164773E29D480FD00C31445 /* ITA 12 Docs OSZimt */ = {
+		919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9164776429D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimt" */;
+			buildConfigurationList = 919E5AE229EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimt" */;
 			buildPhases = (
-				9164773B29D480FD00C31445 /* Sources */,
-				9164773C29D480FD00C31445 /* Frameworks */,
-				9164773D29D480FD00C31445 /* Resources */,
+				919E5AB929EAEC29005F7E9D /* Sources */,
+				919E5ABA29EAEC29005F7E9D /* Frameworks */,
+				919E5ABB29EAEC29005F7E9D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -171,165 +157,168 @@
 			);
 			name = "ITA 12 Docs OSZimt";
 			packageProductDependencies = (
+				9109276629EAEEA500B8A2DC /* Alamofire */,
 			);
 			productName = "ITA 12 Docs OSZimt";
-			productReference = 9164773F29D480FD00C31445 /* ITA 12 Docs OSZimt.app */;
+			productReference = 919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9164774F29D480FE00C31445 /* ITA 12 Docs OSZimtTests */ = {
+		919E5ACD29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9164776729D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */;
+			buildConfigurationList = 919E5AE529EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */;
 			buildPhases = (
-				9164774C29D480FE00C31445 /* Sources */,
-				9164774D29D480FE00C31445 /* Frameworks */,
-				9164774E29D480FE00C31445 /* Resources */,
+				919E5ACA29EAEC2A005F7E9D /* Sources */,
+				919E5ACB29EAEC2A005F7E9D /* Frameworks */,
+				919E5ACC29EAEC2A005F7E9D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9164775229D480FE00C31445 /* PBXTargetDependency */,
+				919E5AD029EAEC2A005F7E9D /* PBXTargetDependency */,
 			);
 			name = "ITA 12 Docs OSZimtTests";
 			productName = "ITA 12 Docs OSZimtTests";
-			productReference = 9164775029D480FE00C31445 /* ITA 12 Docs OSZimtTests.xctest */;
+			productReference = 919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9164775929D480FE00C31445 /* ITA 12 Docs OSZimtUITests */ = {
+		919E5AD729EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9164776A29D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */;
+			buildConfigurationList = 919E5AE829EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */;
 			buildPhases = (
-				9164775629D480FE00C31445 /* Sources */,
-				9164775729D480FE00C31445 /* Frameworks */,
-				9164775829D480FE00C31445 /* Resources */,
+				919E5AD429EAEC2A005F7E9D /* Sources */,
+				919E5AD529EAEC2A005F7E9D /* Frameworks */,
+				919E5AD629EAEC2A005F7E9D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9164775C29D480FE00C31445 /* PBXTargetDependency */,
+				919E5ADA29EAEC2A005F7E9D /* PBXTargetDependency */,
 			);
 			name = "ITA 12 Docs OSZimtUITests";
 			productName = "ITA 12 Docs OSZimtUITests";
-			productReference = 9164775A29D480FE00C31445 /* ITA 12 Docs OSZimtUITests.xctest */;
+			productReference = 919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9164773729D480FD00C31445 /* Project object */ = {
+		919E5AB529EAEC29005F7E9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					9164773E29D480FD00C31445 = {
-						CreatedOnToolsVersion = 14.2;
+					919E5ABC29EAEC29005F7E9D = {
+						CreatedOnToolsVersion = 14.3;
 					};
-					9164774F29D480FE00C31445 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 9164773E29D480FD00C31445;
+					919E5ACD29EAEC2A005F7E9D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 919E5ABC29EAEC29005F7E9D;
 					};
-					9164775929D480FE00C31445 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 9164773E29D480FD00C31445;
+					919E5AD729EAEC2A005F7E9D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 919E5ABC29EAEC29005F7E9D;
 					};
 				};
 			};
-			buildConfigurationList = 9164773A29D480FD00C31445 /* Build configuration list for PBXProject "ITA 12 Docs OSZimt" */;
+			buildConfigurationList = 919E5AB829EAEC29005F7E9D /* Build configuration list for PBXProject "ITA 12 Docs OSZimt" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
-			mainGroup = 9164773629D480FD00C31445;
+			mainGroup = 919E5AB429EAEC29005F7E9D;
 			packageReferences = (
-				91ECB91429E5E4B40046D34E /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				9109276529EAEEA500B8A2DC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
-			productRefGroup = 9164774029D480FD00C31445 /* Products */;
+			productRefGroup = 919E5ABE29EAEC29005F7E9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9164773E29D480FD00C31445 /* ITA 12 Docs OSZimt */,
-				9164774F29D480FE00C31445 /* ITA 12 Docs OSZimtTests */,
-				9164775929D480FE00C31445 /* ITA 12 Docs OSZimtUITests */,
+				919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */,
+				919E5ACD29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */,
+				919E5AD729EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9164773D29D480FD00C31445 /* Resources */ = {
+		919E5ABB29EAEC29005F7E9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164774B29D480FE00C31445 /* Preview Assets.xcassets in Resources */,
-				9164774729D480FE00C31445 /* Assets.xcassets in Resources */,
+				919E5AC929EAEC2A005F7E9D /* Preview Assets.xcassets in Resources */,
+				919E5AC529EAEC2A005F7E9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164774E29D480FE00C31445 /* Resources */ = {
+		919E5ACC29EAEC2A005F7E9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9109BF4929D58E1C00534B0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164775829D480FE00C31445 /* Resources */ = {
+		919E5AD629EAEC2A005F7E9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9109BF4A29D58E1D00534B0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9164773B29D480FD00C31445 /* Sources */ = {
+		919E5AB929EAEC29005F7E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164774529D480FE00C31445 /* ContentView.swift in Sources */,
-				9164774329D480FD00C31445 /* ITA_12_Docs_OSZimtApp.swift in Sources */,
+				919E5AC329EAEC29005F7E9D /* ContentView.swift in Sources */,
+				919E5AC129EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift in Sources */,
+				919E5AF029EAECC0005F7E9D /* OpenAIService.swift in Sources */,
+				919E5AEE29EAECA2005F7E9D /* ChatViewModel.swift in Sources */,
+				919E5AEC29EAEC7C005F7E9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164774C29D480FE00C31445 /* Sources */ = {
+		919E5ACA29EAEC2A005F7E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164775529D480FE00C31445 /* ITA_12_Docs_OSZimtTests.swift in Sources */,
+				919E5AD329EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9164775629D480FE00C31445 /* Sources */ = {
+		919E5AD429EAEC2A005F7E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164775F29D480FE00C31445 /* ITA_12_Docs_OSZimtUITests.swift in Sources */,
-				9164776129D480FE00C31445 /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */,
+				919E5ADD29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift in Sources */,
+				919E5ADF29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9164775229D480FE00C31445 /* PBXTargetDependency */ = {
+		919E5AD029EAEC2A005F7E9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9164773E29D480FD00C31445 /* ITA 12 Docs OSZimt */;
-			targetProxy = 9164775129D480FE00C31445 /* PBXContainerItemProxy */;
+			target = 919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */;
+			targetProxy = 919E5ACF29EAEC2A005F7E9D /* PBXContainerItemProxy */;
 		};
-		9164775C29D480FE00C31445 /* PBXTargetDependency */ = {
+		919E5ADA29EAEC2A005F7E9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9164773E29D480FD00C31445 /* ITA 12 Docs OSZimt */;
-			targetProxy = 9164775B29D480FE00C31445 /* PBXContainerItemProxy */;
+			target = 919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */;
+			targetProxy = 919E5AD929EAEC2A005F7E9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9164776229D480FE00C31445 /* Debug */ = {
+		919E5AE029EAEC2A005F7E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -362,7 +351,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -390,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		9164776329D480FE00C31445 /* Release */ = {
+		919E5AE129EAEC2A005F7E9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,7 +411,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -444,24 +431,21 @@
 			};
 			name = Release;
 		};
-		9164776529D480FE00C31445 /* Debug */ = {
+		919E5AE329EAEC2A005F7E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ITA-12-Docs-OSZimt-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ITA 12 Docs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -470,19 +454,19 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimt";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "ITA-12-Docs-OSZimt";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -494,24 +478,21 @@
 			};
 			name = Debug;
 		};
-		9164776629D480FE00C31445 /* Release */ = {
+		919E5AE429EAEC2A005F7E9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ITA-12-Docs-OSZimt-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ITA 12 Docs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -520,19 +501,19 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimt";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "ITA-12-Docs-OSZimt";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -544,20 +525,19 @@
 			};
 			name = Release;
 		};
-		9164776829D480FE00C31445 /* Debug */ = {
+		919E5AE629EAEC2A005F7E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimtTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -568,20 +548,19 @@
 			};
 			name = Debug;
 		};
-		9164776929D480FE00C31445 /* Release */ = {
+		919E5AE729EAEC2A005F7E9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimtTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -592,19 +571,18 @@
 			};
 			name = Release;
 		};
-		9164776B29D480FE00C31445 /* Debug */ = {
+		919E5AE929EAEC2A005F7E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimtUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -615,19 +593,18 @@
 			};
 			name = Debug;
 		};
-		9164776C29D480FE00C31445 /* Release */ = {
+		919E5AEA29EAEC2A005F7E9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboompunktsucht.ITA-12-Docs-OSZimtUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -641,38 +618,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9164773A29D480FD00C31445 /* Build configuration list for PBXProject "ITA 12 Docs OSZimt" */ = {
+		919E5AB829EAEC29005F7E9D /* Build configuration list for PBXProject "ITA 12 Docs OSZimt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9164776229D480FE00C31445 /* Debug */,
-				9164776329D480FE00C31445 /* Release */,
+				919E5AE029EAEC2A005F7E9D /* Debug */,
+				919E5AE129EAEC2A005F7E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9164776429D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimt" */ = {
+		919E5AE229EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9164776529D480FE00C31445 /* Debug */,
-				9164776629D480FE00C31445 /* Release */,
+				919E5AE329EAEC2A005F7E9D /* Debug */,
+				919E5AE429EAEC2A005F7E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9164776729D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */ = {
+		919E5AE529EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9164776829D480FE00C31445 /* Debug */,
-				9164776929D480FE00C31445 /* Release */,
+				919E5AE629EAEC2A005F7E9D /* Debug */,
+				919E5AE729EAEC2A005F7E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9164776A29D480FE00C31445 /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */ = {
+		919E5AE829EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9164776B29D480FE00C31445 /* Debug */,
-				9164776C29D480FE00C31445 /* Release */,
+				919E5AE929EAEC2A005F7E9D /* Debug */,
+				919E5AEA29EAEC2A005F7E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -680,15 +657,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		91ECB91429E5E4B40046D34E /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+		9109276529EAEEA500B8A2DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9109276629EAEEA500B8A2DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9109276529EAEEA500B8A2DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 9164773729D480FD00C31445 /* Project object */;
+	rootObject = 919E5AB529EAEC29005F7E9D /* Project object */;
 }

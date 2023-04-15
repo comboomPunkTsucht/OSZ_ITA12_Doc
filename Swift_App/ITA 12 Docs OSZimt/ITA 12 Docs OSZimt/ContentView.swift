@@ -2,18 +2,14 @@
 //  ContentView.swift
 //  ITA 12 Docs OSZimt
 //
-//  Created by mcpeaps_HD on 29/03/2023.
+//  Created by mcpeaps_HD on 15/04/2023.
 //
-// how to add navigationbuttons to the code above and can you add it to the code below?
-// BLACKBOX AUTOCOMPLETION
-
 
 import WebKit
 import SwiftUI
 import Foundation
-/*
-import OpenAISwift
 
+<<<<<<< Updated upstream
 final class ViewModel: ObservableObject {
     init() {}
     
@@ -35,6 +31,8 @@ final class ViewModel: ObservableObject {
     }
 }
 */
+=======
+>>>>>>> Stashed changes
 struct ContentView: View {
 
     var body: some View {
@@ -85,7 +83,7 @@ struct ContentView: View {
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
                 }
-          /*  ChatGPTView()
+          ChatGPTView()
                 .tabItem {
                     Text("ChatGPT")
                     Image(systemName: "message.circle")
@@ -93,7 +91,7 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
-                } */
+                }
             WWWView()
                   .tabItem {
                       Text("Browse Web")
@@ -103,7 +101,7 @@ struct ContentView: View {
                           .foregroundColor(Color("AccentColor"))
                           .frame(width: 20.0)
                   }
-        }.frame(minWidth: 1280,idealWidth: 1920,maxWidth: 1920,minHeight: 720,idealHeight: 1080,maxHeight: 1080)
+        }.frame(minWidth: 1280,idealWidth: 1920, maxWidth: 7680, minHeight: 720, idealHeight: 1080, maxHeight: 4320)
         
 
             
@@ -212,7 +210,7 @@ struct ClassSideView: View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText);
             HStack {
-                Spacer()
+                Spacer(minLength: 1240)
                 Button(action: goBack) {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
@@ -251,6 +249,7 @@ struct ClassSideView: View {
                 
             }
             .aspectRatio(contentMode: .fit)
+            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         
@@ -279,7 +278,7 @@ struct ClassSideView: View {
             VStack{
                 WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                 HStack {
-                    Spacer()
+                    Spacer(minLength: 1240)
                     Button(action: goBack) {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
@@ -318,6 +317,7 @@ struct ClassSideView: View {
                     
                 }
                 .aspectRatio(contentMode: .fit)
+                .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
             }
         }
             func goBack() {
@@ -345,7 +345,7 @@ struct ClassSideView: View {
                 VStack{
                     WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                     HStack {
-                        Spacer()
+                        Spacer(minLength: 1240)
                         Button(action: goBack) {
                             Image(systemName: "arrowshape.turn.up.left.circle")
                                 .resizable()
@@ -384,6 +384,7 @@ struct ClassSideView: View {
                         
                     }
                     .aspectRatio(contentMode: .fit)
+                    .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
                 }
             }
                 func goBack() {
@@ -411,7 +412,7 @@ struct ClassSideView: View {
             VStack{
                 WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                 HStack {
-                    Spacer()
+                    Spacer(minLength: 1240)
                     Button(action: goBack) {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
@@ -450,6 +451,7 @@ struct ClassSideView: View {
                     
                 }
                 .aspectRatio(contentMode: .fit)
+                .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
             }
             
         }
@@ -469,51 +471,45 @@ struct ClassSideView: View {
                 webView.reload()
             }
         }
-/*
+
+
+
+
 struct ChatGPTView: View {
     @ObservedObject var viewModel = ViewModel()
-    @State var text = ""
-    @State var models = [String]()
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             ScrollView {
-                ForEach(models, id: \.self) { string in
-                    Text(string)
+                ForEach(viewModel.messages.filter({$0.role != .system}), id: \.id) { message in
+                    messageView(message: message)
                 }
-                
             }
-            Spacer()
             HStack {
-                TextField("Type here...", text: $text)
-                Button(action: send) {
-                    Image(systemName: "paperplane.fill")
+                TextField("Schreibe eine Nachricht...", text: $viewModel.currentImput)
+                Button(action: viewModel.sendMessage) {
+                    Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
-                }.keyboardShortcut(.return, modifiers: [.command, .shift])
+                }.keyboardShortcut(.defaultAction)
             }
-            
-        }.onAppear {
-            viewModel.setup()
         }
-        .padding()
     }
-    func send() {
-        guard !text.trimmingCharacters(in: .whitespaces).isEmpty else {
-            return
-        }
-        
-        models.append("Me: \(text)")
-        viewModel.send(text: text) {response in
-            DispatchQueue.main.async {
-                self.models.append("ChatGPT: " + response)
-                self.text = ""
-            }
+    func messageView(message: Message) -> some View {
+        HStack {
+            if message.role == .user { Spacer()}
+            Text(message.content)
+                .padding()
+                .background(message.role == .user ? Color.blue : Color.gray.opacity(0.4))
+                .foregroundColor(Color.black)
+                .cornerRadius(24)
+            if message.role == .assistant { Spacer()}
         }
     }
 }
-    */
+
+
 
 struct WWWView: View {
     @State private var webView = WKWebView()
@@ -528,6 +524,7 @@ struct WWWView: View {
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .keyboardType(.URL)
+                    .frame(minWidth: 1220)
                 Button(action: search) {
                     Image(systemName: "magnifyingglass.circle")
                         .resizable()
@@ -574,6 +571,7 @@ struct WWWView: View {
                 
             }
             .aspectRatio(contentMode: .fit)
+            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         
@@ -649,7 +647,7 @@ struct WebUntisView: View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
             HStack {
-                Spacer()
+                Spacer(minLength: 1240)
                 Button(action: goBack) {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
@@ -688,6 +686,7 @@ struct WebUntisView: View {
                 
             }
             .aspectRatio(contentMode: .fit)
+            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
         func goBack() {
@@ -712,7 +711,7 @@ struct WebUntisView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewDevice("iPad Pro (12.9-inch) (6th generation) (16GB)")
+            
     }
 }
 #endif

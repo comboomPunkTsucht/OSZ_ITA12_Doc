@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "22775E86-B508-4351-9C13-49066ED87BFC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ITA 12 Docs OSZimt.xcodeproj",
+      "identifier" : "9164773E29D480FD00C31445",
+      "name" : "ITA 12 Docs OSZimt"
+    },
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ITA 12 Docs OSZimt.xcodeproj",
+        "identifier" : "9164774F29D480FE00C31445",
+        "name" : "ITA 12 Docs OSZimtTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ITA 12 Docs OSZimt.xcodeproj",
+        "identifier" : "9164775929D480FE00C31445",
+        "name" : "ITA 12 Docs OSZimtUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
