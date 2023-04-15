@@ -9,30 +9,6 @@ import WebKit
 import SwiftUI
 import Foundation
 
-<<<<<<< Updated upstream
-final class ViewModel: ObservableObject {
-    init() {}
-    
-    private var client: OpenAISwift?
-    
-    func setup() {
-        client = OpenAISwift(authToken: "token here")
-    }
-    func send(text: String, completion: @escaping (String) -> Void) {
-        client?.sendCompletion(with: text,maxTokens: 500,temperature: 0.9, completionHandler: {result in
-            switch result {
-            case .success(let model):
-                let output = model.choices?.first?.text ?? ""
-                completion(output)
-            case .failure:
-                break
-            }
-        })
-    }
-}
-*/
-=======
->>>>>>> Stashed changes
 struct ContentView: View {
 
     var body: some View {
@@ -210,7 +186,7 @@ struct ClassSideView: View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText);
             HStack {
-                Spacer(minLength: 1240)
+                Spacer()
                 Button(action: goBack) {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
@@ -278,7 +254,7 @@ struct ClassSideView: View {
             VStack{
                 WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                 HStack {
-                    Spacer(minLength: 1240)
+                    Spacer()
                     Button(action: goBack) {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
@@ -345,7 +321,7 @@ struct ClassSideView: View {
                 VStack{
                     WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                     HStack {
-                        Spacer(minLength: 1240)
+                        Spacer()
                         Button(action: goBack) {
                             Image(systemName: "arrowshape.turn.up.left.circle")
                                 .resizable()
@@ -412,7 +388,7 @@ struct ClassSideView: View {
             VStack{
                 WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
                 HStack {
-                    Spacer(minLength: 1240)
+                    Spacer()
                     Button(action: goBack) {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
@@ -476,39 +452,71 @@ struct ClassSideView: View {
 
 
 struct ChatGPTView: View {
-    @ObservedObject var viewModel = ViewModel()
+    @State private var webView = WKWebView()
+    let startURL = URL(string: "https://chat.openai.com/")!
+    @State private var searchText = ""
     var body: some View {
-        VStack {
-            ScrollView {
-                ForEach(viewModel.messages.filter({$0.role != .system}), id: \.id) { message in
-                    messageView(message: message)
-                }
-            }
+        VStack{
+            WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
             HStack {
-                TextField("Schreibe eine Nachricht...", text: $viewModel.currentImput)
-                Button(action: viewModel.sendMessage) {
+                Spacer()
+                Button(action: goBack) {
+                    Image(systemName: "arrowshape.turn.up.left.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
+                }
+                .keyboardShortcut("ö", modifiers: .command)
+                
+                Button(action: goForward) {
                     Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(Color("AccentColor"))
                         .frame(width: 20.0)
-                }.keyboardShortcut(.defaultAction)
+                }
+                .keyboardShortcut("ä", modifiers: .command)
+                
+                Button(action: goHome) {
+                    Image(systemName: "house.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
+                }
+                .keyboardShortcut("ü", modifiers: .command)
+                
+                Button(action: reload) {
+                    Image(systemName: "arrow.clockwise.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("AccentColor"))
+                        .frame(width: 20.0)
+                }
+                .keyboardShortcut("r", modifiers: .command)
+                
             }
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 22, alignment: .init(horizontal: .trailing, vertical: .center))
         }
     }
-    func messageView(message: Message) -> some View {
-        HStack {
-            if message.role == .user { Spacer()}
-            Text(message.content)
-                .padding()
-                .background(message.role == .user ? Color.blue : Color.gray.opacity(0.4))
-                .foregroundColor(Color.black)
-                .cornerRadius(24)
-            if message.role == .assistant { Spacer()}
+        func goBack() {
+            webView.goBack()
+        }
+        
+        func goForward() {
+            webView.goForward()
+        }
+        
+        func goHome() {
+            webView.load(URLRequest(url: startURL))
+        }
+        
+        func reload() {
+            webView.reload()
         }
     }
-}
-
 
 
 struct WWWView: View {
@@ -647,7 +655,7 @@ struct WebUntisView: View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
             HStack {
-                Spacer(minLength: 1240)
+                Spacer()
                 Button(action: goBack) {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
