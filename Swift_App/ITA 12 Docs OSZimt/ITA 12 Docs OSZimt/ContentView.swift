@@ -20,63 +20,70 @@ struct ContentView: View {
                     Image(systemName: "doc.richtext")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 20.0)
                 }
+                .navigationBarTitle(Text("Klassen Webseite"))
             MoodleView()
                 .tabItem {
                     Text("Moodle")
                     Image(systemName: "studentdesk")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 20.0)
                 }
+                .navigationBarTitle(Text("moodel"))
             TimeTableView()
                 .tabItem {
                     Text("Stundenplan")
                     Image(systemName: "info.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+                .navigationBarTitle(Text("Stundenplan"))
             WebUntisView()
                 .tabItem {
                     Text("WebUntis")
                     Image(systemName: "info.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+                .navigationBarTitle(Text("WebUntis"))
             OSZimtView()
                 .tabItem {
                     Text("OSZ IMT Website")
                     Image(systemName: "graduationcap.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+                .navigationBarTitle(Text("OSZ IMT Webseite"))
           ChatGPTView()
                 .tabItem {
                     Text("ChatGPT")
                     Image(systemName: "message.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+                .navigationBarTitle(Text("ChatGPT"))
             WWWView()
                   .tabItem {
                       Text("Browse Web")
                       Image(systemName: "globe")
                           .resizable()
                           .aspectRatio(contentMode: .fit)
-                          .foregroundColor(Color("AccentColor"))
+                          .foregroundColor(Color.accentColor)
                           .frame(width: 40)
                   }
+                  .navigationBarTitle(Text("Web"))
         }.frame(minWidth: 1280,idealWidth: 1920, maxWidth: 7680, minHeight: 720, idealHeight: 1080, maxHeight: 4320)
         
 
@@ -84,12 +91,12 @@ struct ContentView: View {
     }
             
 }
-
-#if os(iOS)
 struct WebView: UIViewRepresentable {
     @Binding var webView: WKWebView
     let request: URLRequest
     @Binding var searchText: String
+    let webViewConfiguration = WKWebViewConfiguration()
+
 
     class Coordinator: NSObject, WKNavigationDelegate {
         let parent: WebView
@@ -130,56 +137,19 @@ struct WebView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {}
 }
 
-#elseif os(macOS)
-struct WebView: NSViewRepresentable {
-    @Binding var webView: WKWebView
-    let request: URLRequest
-    @Binding var searchText: String
 
-    class Coordinator: NSObject, WKNavigationDelegate {
-        let parent: WebView
-
-        init(_ parent: WebView) {
-            self.parent = parent
-        }
-
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Aktualisieren Sie hier das Textfeld mit der tatsächlich geladenen URL
-            if let url = webView.url {
-                if url.absoluteString.hasPrefix("https://ita12docoszimt.serveblog.net/") {
-                    parent.searchText = ""
-                } else {
-                    parent.searchText = url.absoluteString
-                }
-            }
-        }
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    func makeNSView(context: Context) -> WKWebView {
-        // Importieren von Cookies aus Safari
-        WKWebsiteDataStore.default().httpCookieStore.getAllCookies { cookies in
-            for cookie in cookies {
-                webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
-            }
-        }
-
-        webView.navigationDelegate = context.coordinator
-        webView.load(request)
-        return webView
-    }
-
-    func updateNSView(_ nsView: WKWebView, context: Context) {}
-}
-
-#endif
 
 
 struct ClassSideView: View {
-    @State private var webView = WKWebView()
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
     let startURL = URL(string: "https://ita12docoszimt.serveblog.net/")!
     @State private var searchText = ""
     var body: some View {
@@ -191,7 +161,7 @@ struct ClassSideView: View {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
@@ -200,7 +170,7 @@ struct ClassSideView: View {
                     Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
@@ -209,7 +179,7 @@ struct ClassSideView: View {
                     Image(systemName: "house.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
@@ -218,14 +188,14 @@ struct ClassSideView: View {
                     Image(systemName: "arrow.clockwise.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+            
         }
     }
         
@@ -247,7 +217,15 @@ struct ClassSideView: View {
         }
 }
     struct MoodleView: View {
-        @State private var webView = WKWebView()
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
         let startURL = URL(string: "https://moodle.oszimt.de/")!
         @State private var searchText = ""
         var body: some View {
@@ -259,7 +237,7 @@ struct ClassSideView: View {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ö", modifiers: .command)
@@ -268,7 +246,7 @@ struct ClassSideView: View {
                         Image(systemName: "arrowshape.turn.up.right.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ä", modifiers: .command)
@@ -277,7 +255,7 @@ struct ClassSideView: View {
                         Image(systemName: "house.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ü", modifiers: .command)
@@ -286,14 +264,14 @@ struct ClassSideView: View {
                         Image(systemName: "arrow.clockwise.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("r", modifiers: .command)
                     
                 }
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+                
             }
         }
             func goBack() {
@@ -314,7 +292,15 @@ struct ClassSideView: View {
         }
     
         struct TimeTableView: View {
-            @State private var webView = WKWebView()
+            // Konfigurieren der WKWebViewConfiguration-Instanz
+            static let webViewConfiguration: WKWebViewConfiguration = {
+                let configuration = WKWebViewConfiguration()
+                configuration.allowsInlineMediaPlayback = true
+                configuration.allowsPictureInPictureMediaPlayback = true
+                return configuration
+            }()
+
+            @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
             let startURL = URL(string: "https://mese.webuntis.com/WebUntis/monitor?school=OSZ%20IMT&simple=2&type=1&monitorType=tt&name=ITA%2012")!
             @State private var searchText = ""
             var body: some View {
@@ -326,7 +312,7 @@ struct ClassSideView: View {
                             Image(systemName: "arrowshape.turn.up.left.circle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .foregroundColor(Color("AccentColor"))
+                                .foregroundColor(Color.accentColor)
                                 .frame(width: 40)
                         }
                         .keyboardShortcut("ö", modifiers: .command)
@@ -335,7 +321,7 @@ struct ClassSideView: View {
                             Image(systemName: "arrowshape.turn.up.right.circle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .foregroundColor(Color("AccentColor"))
+                                .foregroundColor(Color.accentColor)
                                 .frame(width: 40)
                         }
                         .keyboardShortcut("ä", modifiers: .command)
@@ -344,7 +330,7 @@ struct ClassSideView: View {
                             Image(systemName: "house.circle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .foregroundColor(Color("AccentColor"))
+                                .foregroundColor(Color.accentColor)
                                 .frame(width: 40)
                         }
                         .keyboardShortcut("ü", modifiers: .command)
@@ -353,14 +339,14 @@ struct ClassSideView: View {
                             Image(systemName: "arrow.clockwise.circle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .foregroundColor(Color("AccentColor"))
+                                .foregroundColor(Color.accentColor)
                                 .frame(width: 40)
                         }
                         .keyboardShortcut("r", modifiers: .command)
                         
                     }
                     .aspectRatio(contentMode: .fit)
-                    .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+                    
                 }
             }
                 func goBack() {
@@ -381,7 +367,15 @@ struct ClassSideView: View {
             }
         
     struct OSZimtView: View {
-        @State private var webView = WKWebView()
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
         let startURL = URL(string: "https://oszimt.de")!
         @State private var searchText = ""
         var body: some View {
@@ -393,7 +387,7 @@ struct ClassSideView: View {
                         Image(systemName: "arrowshape.turn.up.left.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ö", modifiers: .command)
@@ -402,7 +396,7 @@ struct ClassSideView: View {
                         Image(systemName: "arrowshape.turn.up.right.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ä", modifiers: .command)
@@ -411,7 +405,7 @@ struct ClassSideView: View {
                         Image(systemName: "house.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("ü", modifiers: .command)
@@ -420,14 +414,14 @@ struct ClassSideView: View {
                         Image(systemName: "arrow.clockwise.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 40)
                     }
                     .keyboardShortcut("r", modifiers: .command)
                     
                 }
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+                
             }
             
         }
@@ -447,12 +441,114 @@ struct ClassSideView: View {
                 webView.reload()
             }
         }
-
-
-
+/*
+struct Message: Identifiable {
+    var id = UUID()
+    var text: String
+    var isSentByUser: Bool
+}
+*/
 
 struct ChatGPTView: View {
-    @State private var webView = WKWebView()
+    /*
+    @State private var messages: [(String, Bool)] = []
+    @State private var inputText: String = ""
+    @State private var isLoading: Bool = false
+    
+    let apiKey = "/////////////////////////////////////sk-sMGNjfQkIJnIbg0FzNQJT3BlbkF/////////////////////////////////////JGm9HVNSgrd8lbJNNAE3t/////////////////////////////////////"
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                ForEach(messages, id: \.0) { message in
+                    HStack {
+                        if message.1 {
+                            Spacer()
+                        }
+                        Text(message.0)
+                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .padding()
+                            .background(message.1 ? Color.blue.opacity(0.2) : Color.green.opacity(0.2))
+                            .cornerRadius(24)
+                        if !message.1 {
+                            Spacer()
+                        }
+                    }
+                }
+                if isLoading {
+                    HStack {
+                        Text("ChatGPT tippt...")
+                            .foregroundColor(.gray)
+                            .italic()
+                            .padding()
+                            .background(Color.green.opacity(0.2))
+                            .cornerRadius(24)
+                        Spacer()
+                    }
+                }
+            }
+            HStack {
+                Button(action: reloadConversation) {
+                    Image(systemName: "arrow.clockwise.circle.fill")
+                }
+                TextField("Nachricht eingeben", text: $inputText, onCommit: sendMessage)
+                Button(action: sendMessage) {
+                    Image(systemName: "arrow.up.circle.fill")
+                }
+            }
+        }
+    }
+    
+    func sendMessage() {
+        messages.append((inputText, true))
+        inputText = ""
+        isLoading = true
+        
+        let prompt = messages.map { $0.0 }.joined(separator: "\n")
+        
+        var request = URLRequest(url: URL(string: "https://api.openai.com/v1/engines/davinci/completions")!)
+        request.httpMethod = "POST"
+        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let parameters: [String: Any] = [
+            "prompt": prompt,
+            "max_tokens": 2048,
+            "temperature": 0.6
+        ]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else { return }
+            let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any]
+            let choices = json?["choices"] as? [[String: Any]]
+            let text = choices?.first?["text"] as? String
+            DispatchQueue.main.async {
+                messages.append((text ?? "", false))
+                isLoading = false
+            }
+        }
+        task.resume()
+    }
+    
+    func reloadConversation() {
+        messages = []
+    }
+}
+     */
+
+    
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
     let startURL = URL(string: "https://chat.openai.com/")!
     @State private var searchText = ""
     var body: some View {
@@ -464,7 +560,7 @@ struct ChatGPTView: View {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
@@ -473,7 +569,7 @@ struct ChatGPTView: View {
                     Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
@@ -482,7 +578,7 @@ struct ChatGPTView: View {
                     Image(systemName: "house.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
@@ -491,14 +587,14 @@ struct ChatGPTView: View {
                     Image(systemName: "arrow.clockwise.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+            
         }
     }
         func goBack() {
@@ -520,14 +616,22 @@ struct ChatGPTView: View {
 
 
 struct WWWView: View {
-    @State private var webView = WKWebView()
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
     let startURL = URL(string: "https://ita12docoszimt.serveblog.net/")!
     @State private var searchText = ""
     var body: some View {
         VStack{
             WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
             HStack {
-                TextField("Suche", text: $searchText)
+                TextField("Suche", text: $searchText, onCommit: search)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
@@ -536,7 +640,7 @@ struct WWWView: View {
                     Image(systemName: "magnifyingglass.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut(.defaultAction)
@@ -544,7 +648,7 @@ struct WWWView: View {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
@@ -553,7 +657,7 @@ struct WWWView: View {
                     Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
@@ -562,7 +666,7 @@ struct WWWView: View {
                     Image(systemName: "house.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
@@ -571,14 +675,14 @@ struct WWWView: View {
                     Image(systemName: "arrow.clockwise.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+            
         }
     }
         
@@ -601,12 +705,21 @@ struct WWWView: View {
     func search() {
         // Check if the search text starts with "!yt:"
         if searchText.hasPrefix("!yt:") {
-            // Extract the video ID
-            let videoID = searchText.replacingOccurrences(of: "!yt:", with: "")
-            // Create the YouTube URL
-            let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(videoID)")
-            // Load the YouTube URL in the web view
-            webView.load(URLRequest(url: youtubeURL!))
+            // Extract the search query
+            let searchQuery = searchText.replacingOccurrences(of: "!yt:", with: "")
+            // Check if the search query is a video ID
+            if searchQuery.count == 11 && searchQuery.range(of: #"[^0-9a-zA-Z_-]"#, options: .regularExpression) == nil {
+                // Create the YouTube video URL
+                let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(searchQuery)")
+                // Load the YouTube video URL in the web view
+                webView.load(URLRequest(url: youtubeURL!))
+            } else {
+                // Create the YouTube search URL
+                let encodedSearchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+                let youtubeURL = URL(string: "https://www.youtube.com/results?search_query=\(encodedSearchQuery)")
+                // Load the YouTube search URL in the web view
+                webView.load(URLRequest(url: youtubeURL!))
+            }
         } else {
             // Check if the search bar is empty (including whitespace)
             if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
@@ -630,6 +743,7 @@ struct WWWView: View {
             }
         }
     }
+    
 
     func addProtocolToURL(_ urlString: String) -> URL? {
         if let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) {
@@ -644,10 +758,19 @@ struct WWWView: View {
         return nil
     }
 
+
 }
 
 struct WebUntisView: View {
-    @State private var webView = WKWebView()
+    // Konfigurieren der WKWebViewConfiguration-Instanz
+    static let webViewConfiguration: WKWebViewConfiguration = {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.allowsPictureInPictureMediaPlayback = true
+        return configuration
+    }()
+
+    @State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
     let startURL = URL(string: "https://mese.webuntis.com/WebUntis/?school=OSZ+IMT#/basic/login")!
     @State private var searchText = ""
     var body: some View {
@@ -659,7 +782,7 @@ struct WebUntisView: View {
                     Image(systemName: "arrowshape.turn.up.left.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ö", modifiers: .command)
@@ -668,7 +791,7 @@ struct WebUntisView: View {
                     Image(systemName: "arrowshape.turn.up.right.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ä", modifiers: .command)
@@ -677,7 +800,7 @@ struct WebUntisView: View {
                     Image(systemName: "house.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("ü", modifiers: .command)
@@ -686,14 +809,14 @@ struct WebUntisView: View {
                     Image(systemName: "arrow.clockwise.circle")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(Color.accentColor)
                         .frame(width: 40.0)
                 }
                 .keyboardShortcut("r", modifiers: .command)
                 
             }
             .aspectRatio(contentMode: .fit)
-            .frame(height: 40, alignment: .init(horizontal: .trailing, vertical: .center))
+            
         }
     }
         func goBack() {
