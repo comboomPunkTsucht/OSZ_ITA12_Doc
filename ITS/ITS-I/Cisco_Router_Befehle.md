@@ -179,6 +179,17 @@ Rx (config)# router rip
 Rx (config-router)# network [direkte Netz-ID]
 ```
 
+### RIP Version 2 einstellen
+```
+Rx (config)# router rip
+Rx (config-router)# version 2
+```
+### RIP passiven-Schnittstellen einstellen
+```
+Rx (config)# router rip
+Rx (config-router)# passive-interface [fastethernet/gigabitethernet/serial] x/x
+```
+
 ### EIGRP dynamisches Routing aktivieren
 
 ```
