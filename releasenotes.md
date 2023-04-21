@@ -38,3 +38,4 @@
 ##  04/21/2023
 
 * Cisco Router Befehl satz
+* Cisco Switch Befehl satz

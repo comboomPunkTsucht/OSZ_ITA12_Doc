@@ -331,10 +331,16 @@ Sx(config-if)# switchport trunk encapsulation dot1q
 ## Multischnittstellenkonfiguration
 ### Entering
 ``` 
-Sx (config)# interface range [fastethernet/gigabitethernet] x/x-x
-Sx (config)# interface range [fastethernet/gigabitethernet] x/x - [fastethernet/gigabitethernet] x/x
-Sx (config)# interface range[fastethernet/gigabitethernet] x/x,[fastethernet/gigabitethernet] x/x,[fastethernet/gigabitethernet] x/x
-Sx (config-if-range)# 
+Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x-x
+Rx (config-if-range)# 
+```
+```
+Rx (config)# interface range [fastethernet/gigabitethernet/serial] 0/x- [fastethernet/gigabitethernet/serial] x/x
+Rx (config-if-range)# 
+```
+```
+Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x
+Rx (config-if-range)# 
 ```
 ### Exiting
 ```
