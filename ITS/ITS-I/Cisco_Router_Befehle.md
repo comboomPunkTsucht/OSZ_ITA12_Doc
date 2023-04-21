@@ -190,6 +190,12 @@ Rx (config)# router rip
 Rx (config-router)# passive-interface [fastethernet/gigabitethernet/serial] x/x
 ```
 
+### RIP weitergabe der Defautl-Static-Route aktivieren
+```
+Rx (config)# router rip
+Rx (config-router)# default-information originate
+```
+
 ### EIGRP dynamisches Routing aktivieren
 
 ```
