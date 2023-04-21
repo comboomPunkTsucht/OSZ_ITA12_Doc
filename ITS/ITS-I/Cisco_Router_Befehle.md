@@ -120,7 +120,13 @@ Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
 ```
 Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x
 ```
-
+### Defautl-Static-Route
+```
+Rx (config)# ip route 0.0.0.0 0.0.0.0 xxx.xxx.xxx.xxx
+```
+```
+Rx (config)# ip route 0.0.0.0 0.0.0.0 [fastethernet/gigabitethernet/serial] x/x
+```
 ### Passwort Mindestlänge
 '''
 Rx (config)# security password min-length xx
