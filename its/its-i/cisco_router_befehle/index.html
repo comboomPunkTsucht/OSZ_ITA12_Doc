@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735390814106">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735391241089">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -31,11 +31,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.735390814106" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.735391241089" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.735390814106" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.735391241089" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.735390814106" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.735391241089" data-turbo-eval="false" defer></script>
 
     
 </head>
@@ -566,6 +566,16 @@ Rx (config-router)# version 2</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
 Rx (config-router)# passive-interface [fastethernet/gigabitethernet/serial] x/x</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="rip-weitergabe-der-defautl-static-route-aktivieren">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rip-weitergabe-der-defautl-static-route-aktivieren">#</doc-anchor-trigger>
+        <span>RIP weitergabe der Defautl-Static-Route aktivieren</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
+Rx (config-router)# default-information originate</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="eigrp-dynamisches-routing-aktivieren">
     <h3>
