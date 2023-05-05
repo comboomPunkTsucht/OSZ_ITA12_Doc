@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735994764944">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736579803732">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Cisco Router Befehle</title>
     <meta name="title" content="Cisco Router Befehle">
-    <meta name="description" content="Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x" />
+    <meta name="description" content="''' Rx (config)# security password min-length xx" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://ita12docoszimt.serveblog.net/its/its-i/cisco_router_befehle/" />
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ita12docoszimt.serveblog.net/its/its-i/cisco_router_befehle/">
     <meta property="og:title" content="Cisco Router Befehle">
-    <meta property="og:description" content="Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x">
+    <meta property="og:description" content="''' Rx (config)# security password min-length xx">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ita12docoszimt.serveblog.net/its/its-i/cisco_router_befehle/">
     <meta property="twitter:title" content="Cisco Router Befehle">
-    <meta property="twitter:description" content="Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x">
+    <meta property="twitter:description" content="''' Rx (config)# security password min-length xx">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/fav_oszimt-logo.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.735994764944" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.736579803732" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.735994764944" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.736579803732" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.735994764944" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.736579803732" data-turbo-eval="false" defer></script>
 
     
 </head>
@@ -449,441 +449,276 @@ Rx (config)# end</code></pre>
 <pre class="language-none"><code v-pre class="language-none">Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</code></pre>
 </doc-codeblock></div>
 <div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="defautl-static-route">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#defautl-static-route">#</doc-anchor-trigger>
+        <span>Defautl-Static-Route</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip route 0.0.0.0 0.0.0.0 xxx.xxx.xxx.xxx</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip route 0.0.0.0 0.0.0.0 [fastethernet/gigabitethernet/serial] x/x</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="passwort-mindestlänge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#passwort-mindestlänge">#</doc-anchor-trigger>
+        <span>Passwort Mindestlänge</span>
+    </h3>
+</doc-anchor-target>
+<p>&#x27;&#x27;&#x27;
+Rx (config)# security password min-length xx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Einstellungen zur Blockierung des Login-Zugriffs
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# login block-for xx attempts x within xx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### User anlegen</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# username [username] privilege xx secret [password]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Festlegen einer IP-domain
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# ip domain-name [domainname]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Löchen gespeicherter alter Sicherheitsschlüssel
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# crypto key zeroize rsa</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Generieren eines neuen Sicherheitsschlüssels
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# crypto key generate rsa general-keys modulus 1024</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Versionseinstelung des SSH-Protokolls
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# ip ssh version 2</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### SSH-Protokoll Wartezeit beim Zugriff</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# ip ssh time-out xx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### SSH-Protokoll Anzahl der Authentifizierungsversuche</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# ip ssh authentication-retries xx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### RIP dynamisches Routing aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# router rip
+Rx (config-router)# network [direkte Netz-ID]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### RIP Version 2 einstellen</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# router rip
+Rx (config-router)# version 2</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### RIP passiven-Schnittstellen einstellen</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# router rip
+Rx (config-router)# passive-interface [fastethernet/gigabitethernet/serial] x/x</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### RIP weitergabe der Defautl-Static-Route aktivieren</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# router rip
+Rx (config-router)# default-information originate</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### EIGRP dynamisches Routing aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx(config)# router eigrp [number]
+Rx(config-router)# network [direkte Netz-ID]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none"></code></pre>
 </doc-codeblock></div>
-<p>Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x</p>
+<p>Rx(config)# router eigrp [number]
+Rx(config-router)# network [direkte Netz-ID] [wildcard-mask]</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">### Defautl-Static-Route</code></pre>
+<pre class="language-none"><code v-pre class="language-none">
+### OSPF dynamisches Routing aktivieren
+</code></pre>
 </doc-codeblock></div>
-<p>Rx (config)# ip route 0.0.0.0 0.0.0.0 xxx.xxx.xxx.xxx</p>
+<p>Rx(config)# router ospf [number]
+Rx(config-router)# network [direkte Netz-ID] [wildcard-mask] area [number]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">## Zum Konsolenmodus wechseln</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# line console 0
+Rx (config-line)#</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Passwort eingeben
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# password cisco</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### IOS Zugriffszeit-Einstellung
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# exec-timeout [minutes] [seconds]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Zugriffsrechte-Einstellung
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# privilege level xxx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Passwordeingabe aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# login</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Passwordeingabe aktivieren von Datenbank/Adminkonto
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# login local</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Synchronisation der Dateneingabe aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# logging synchronous</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">## Zum Fernverwaltungsmodus wechseln
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# line vty 0 4
+Rx (config-line)#</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Übermitlungsprotokoll einstellen
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# transport input [all/telnet/ssh]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Passwort eingeben
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# password cisco</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### IOS Zugriffszeit-Einstellung
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# exec-timeout [minutes] [seconds]</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Zugriffsrechte-Einstellung
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# privilege level xxx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Passwordeingabe aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# login</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Passwordeingabe aktivieren von Datenbank/Adminkonto
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# login local</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Synchronisation der Dateneingabe aktivieren
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-line)# logging synchronous</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+
+## Schnittstellenkonfiguration
+### Entering</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# interface [fastethernet/gigabitethernet/serial] x/x</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Exiting</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-if)# exit</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Clock Rate
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-if)# clock rate xxxx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">
+### Beschreibung eingeben
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-if)# description # [Beschreibung] #</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Datenübertragungsrate verändern
+</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-if)# speed xxxx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">### Übertragungsmodus ändern</code></pre>
+</doc-codeblock></div>
+<p>Rx (config-if)# duplex xxxx</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">## Multischnittstellenkonfiguration
+### Entering</code></pre>
+</doc-codeblock></div>
+<p>Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x-x
+Rx (config-if-range)#</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none"></code></pre>
 </doc-codeblock></div>
-<p>Rx (config)# ip route 0.0.0.0 0.0.0.0 [fastethernet/gigabitethernet/serial] x/x</p>
+<p>Rx (config)# interface range [fastethernet/gigabitethernet/serial] 0/x- [fastethernet/gigabitethernet/serial] x/x
+Rx (config-if-range)#</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">### Passwort Mindestlänge
-'''
-Rx (config)# security password min-length xx</code></pre>
+<pre class="language-none"><code v-pre class="language-none"></code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="einstellungen-zur-blockierung-des-login-zugriffs">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#einstellungen-zur-blockierung-des-login-zugriffs">#</doc-anchor-trigger>
-        <span>Einstellungen zur Blockierung des Login-Zugriffs</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x
+Rx (config-if-range)#</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# login block-for xx attempts x within xx</code></pre>
+<pre class="language-none"><code v-pre class="language-none">### Exiting</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="user-anlegen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#user-anlegen">#</doc-anchor-trigger>
-        <span>User anlegen</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# exit</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# username [username] privilege xx secret [password]</code></pre>
+<pre class="language-none"><code v-pre class="language-none">
+### Beschreibung eingeben
+</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="festlegen-einer-ip-domain">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#festlegen-einer-ip-domain">#</doc-anchor-trigger>
-        <span>Festlegen einer IP-domain</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# description # [Beschreibung] #</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip domain-name [domainname]</code></pre>
+<pre class="language-none"><code v-pre class="language-none">### Datenübertragungsrate verändern</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="löchen-gespeicherter-alter-sicherheitsschlüssel">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#löchen-gespeicherter-alter-sicherheitsschlüssel">#</doc-anchor-trigger>
-        <span>Löchen gespeicherter alter Sicherheitsschlüssel</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# speed xxxx</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# crypto key zeroize rsa</code></pre>
+<pre class="language-none"><code v-pre class="language-none">### Übertragungsmodus ändern</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="generieren-eines-neuen-sicherheitsschlüssels">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#generieren-eines-neuen-sicherheitsschlüssels">#</doc-anchor-trigger>
-        <span>Generieren eines neuen Sicherheitsschlüssels</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# duplex xxxx</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# crypto key generate rsa general-keys modulus 1024</code></pre>
+<pre class="language-none"><code v-pre class="language-none">### Ip Adresse einstellen
+</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="versionseinstelung-des-ssh-protokolls">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#versionseinstelung-des-ssh-protokolls">#</doc-anchor-trigger>
-        <span>Versionseinstelung des SSH-Protokolls</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip ssh version 2</code></pre>
+<pre class="language-none"><code v-pre class="language-none">
+### Schnittstelle aktivieren
+</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="ssh-protokoll-wartezeit-beim-zugriff">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ssh-protokoll-wartezeit-beim-zugriff">#</doc-anchor-trigger>
-        <span>SSH-Protokoll Wartezeit beim Zugriff</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# no shutdown</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip ssh time-out xx</code></pre>
+<pre class="language-none"><code v-pre class="language-none">
+### Clock Rate
+</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="ssh-protokoll-anzahl-der-authentifizierungsversuche">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ssh-protokoll-anzahl-der-authentifizierungsversuche">#</doc-anchor-trigger>
-        <span>SSH-Protokoll Anzahl der Authentifizierungsversuche</span>
-    </h3>
-</doc-anchor-target>
+<p>Rx (config-if-range)# clock rate xxxx</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# ip ssh authentication-retries xx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="rip-dynamisches-routing-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rip-dynamisches-routing-aktivieren">#</doc-anchor-trigger>
-        <span>RIP dynamisches Routing aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
-Rx (config-router)# network [direkte Netz-ID]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="rip-version-2-einstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rip-version-2-einstellen">#</doc-anchor-trigger>
-        <span>RIP Version 2 einstellen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
-Rx (config-router)# version 2</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="rip-passiven-schnittstellen-einstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rip-passiven-schnittstellen-einstellen">#</doc-anchor-trigger>
-        <span>RIP passiven-Schnittstellen einstellen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
-Rx (config-router)# passive-interface [fastethernet/gigabitethernet/serial] x/x</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="rip-weitergabe-der-defautl-static-route-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rip-weitergabe-der-defautl-static-route-aktivieren">#</doc-anchor-trigger>
-        <span>RIP weitergabe der Defautl-Static-Route aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# router rip
-Rx (config-router)# default-information originate</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="eigrp-dynamisches-routing-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#eigrp-dynamisches-routing-aktivieren">#</doc-anchor-trigger>
-        <span>EIGRP dynamisches Routing aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx(config)# router eigrp [number]
-Rx(config-router)# network [direkte Netz-ID]</code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx(config)# router eigrp [number]
-Rx(config-router)# network [direkte Netz-ID] [wildcard-mask]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="ospf-dynamisches-routing-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ospf-dynamisches-routing-aktivieren">#</doc-anchor-trigger>
-        <span>OSPF dynamisches Routing aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx(config)# router ospf [number]
-Rx(config-router)# network [direkte Netz-ID] [wildcard-mask] area [number]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="zum-konsolenmodus-wechseln">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zum-konsolenmodus-wechseln">#</doc-anchor-trigger>
-        <span>Zum Konsolenmodus wechseln</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# line console 0
-Rx (config-line)#</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwort-eingeben">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwort-eingeben">#</doc-anchor-trigger>
-        <span>Passwort eingeben</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# password cisco</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="ios-zugriffszeit-einstellung">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ios-zugriffszeit-einstellung">#</doc-anchor-trigger>
-        <span>IOS Zugriffszeit-Einstellung</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# exec-timeout [minutes] [seconds]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="zugriffsrechte-einstellung">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zugriffsrechte-einstellung">#</doc-anchor-trigger>
-        <span>Zugriffsrechte-Einstellung</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# privilege level xxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwordeingabe-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwordeingabe-aktivieren">#</doc-anchor-trigger>
-        <span>Passwordeingabe aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# login</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwordeingabe-aktivieren-von-datenbankadminkonto">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwordeingabe-aktivieren-von-datenbankadminkonto">#</doc-anchor-trigger>
-        <span>Passwordeingabe aktivieren von Datenbank/Adminkonto</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# login local</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="synchronisation-der-dateneingabe-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#synchronisation-der-dateneingabe-aktivieren">#</doc-anchor-trigger>
-        <span>Synchronisation der Dateneingabe aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# logging synchronous</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="zum-fernverwaltungsmodus-wechseln">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zum-fernverwaltungsmodus-wechseln">#</doc-anchor-trigger>
-        <span>Zum Fernverwaltungsmodus wechseln</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# line vty 0 4
-Rx (config-line)#</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="übermitlungsprotokoll-einstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#übermitlungsprotokoll-einstellen">#</doc-anchor-trigger>
-        <span>Übermitlungsprotokoll einstellen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# transport input [all/telnet/ssh]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwort-eingeben-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwort-eingeben-1">#</doc-anchor-trigger>
-        <span>Passwort eingeben</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# password cisco</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="ios-zugriffszeit-einstellung-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ios-zugriffszeit-einstellung-1">#</doc-anchor-trigger>
-        <span>IOS Zugriffszeit-Einstellung</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# exec-timeout [minutes] [seconds]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="zugriffsrechte-einstellung-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zugriffsrechte-einstellung-1">#</doc-anchor-trigger>
-        <span>Zugriffsrechte-Einstellung</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# privilege level xxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwordeingabe-aktivieren-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwordeingabe-aktivieren-1">#</doc-anchor-trigger>
-        <span>Passwordeingabe aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# login</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="passwordeingabe-aktivieren-von-datenbankadminkonto-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#passwordeingabe-aktivieren-von-datenbankadminkonto-1">#</doc-anchor-trigger>
-        <span>Passwordeingabe aktivieren von Datenbank/Adminkonto</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# login local</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="synchronisation-der-dateneingabe-aktivieren-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#synchronisation-der-dateneingabe-aktivieren-1">#</doc-anchor-trigger>
-        <span>Synchronisation der Dateneingabe aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-line)# logging synchronous</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="schnittstellenkonfiguration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstellenkonfiguration">#</doc-anchor-trigger>
-        <span>Schnittstellenkonfiguration</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="entering-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#entering-2">#</doc-anchor-trigger>
-        <span>Entering</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# interface [fastethernet/gigabitethernet/serial] x/x</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="exiting-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#exiting-3">#</doc-anchor-trigger>
-        <span>Exiting</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if)# exit</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="clock-rate">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#clock-rate">#</doc-anchor-trigger>
-        <span>Clock Rate</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if)# clock rate xxxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="beschreibung-eingeben">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#beschreibung-eingeben">#</doc-anchor-trigger>
-        <span>Beschreibung eingeben</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if)# description # [Beschreibung] #</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="datenübertragungsrate-verändern">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datenübertragungsrate-verändern">#</doc-anchor-trigger>
-        <span>Datenübertragungsrate verändern</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if)# speed xxxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="übertragungsmodus-ändern">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#übertragungsmodus-ändern">#</doc-anchor-trigger>
-        <span>Übertragungsmodus ändern</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if)# duplex xxxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="multischnittstellenkonfiguration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#multischnittstellenkonfiguration">#</doc-anchor-trigger>
-        <span>Multischnittstellenkonfiguration</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="entering-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#entering-3">#</doc-anchor-trigger>
-        <span>Entering</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x-x
-Rx (config-if-range)# </code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# interface range [fastethernet/gigabitethernet/serial] 0/x- [fastethernet/gigabitethernet/serial] x/x
-Rx (config-if-range)# </code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config)# interface range [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x, [fastethernet/gigabitethernet/serial] x/x
-Rx (config-if-range)# </code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="exiting-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#exiting-4">#</doc-anchor-trigger>
-        <span>Exiting</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# exit</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="beschreibung-eingeben-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#beschreibung-eingeben-1">#</doc-anchor-trigger>
-        <span>Beschreibung eingeben</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# description # [Beschreibung] #</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="datenübertragungsrate-verändern-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datenübertragungsrate-verändern-1">#</doc-anchor-trigger>
-        <span>Datenübertragungsrate verändern</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# speed xxxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="übertragungsmodus-ändern-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#übertragungsmodus-ändern-1">#</doc-anchor-trigger>
-        <span>Übertragungsmodus ändern</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# duplex xxxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="ip-adresse-einstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-adresse-einstellen">#</doc-anchor-trigger>
-        <span>Ip Adresse einstellen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# ip address xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="schnittstelle-aktivieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#schnittstelle-aktivieren">#</doc-anchor-trigger>
-        <span>Schnittstelle aktivieren</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# no shutdown</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="clock-rate-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#clock-rate-1">#</doc-anchor-trigger>
-        <span>Clock Rate</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Rx (config-if-range)# clock rate xxxx</code></pre>
+<pre class="language-none"><code v-pre class="language-none"></code></pre>
 </doc-codeblock></div>
 
                                 
