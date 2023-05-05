@@ -117,7 +117,6 @@ Rx (config)# ip default-gateway xxx.xxx.xxx.xxx
 Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
 ```
 ```
-```
 Rx (config)# ip route xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx [fastethernet/gigabitethernet/serial] x/x
 ```
 ### Defautl-Static-Route
