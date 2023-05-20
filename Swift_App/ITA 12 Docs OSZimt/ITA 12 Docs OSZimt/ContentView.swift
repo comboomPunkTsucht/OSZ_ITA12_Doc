@@ -450,96 +450,7 @@ struct Message: Identifiable {
 */
 
 struct ChatGPTView: View {
-    /*
-    @State private var messages: [(String, Bool)] = []
-    @State private var inputText: String = ""
-    @State private var isLoading: Bool = false
-    
-    let apiKey = "/////////////////////////////////////sk-sMGNjfQkIJnIbg0FzNQJT3BlbkF/////////////////////////////////////JGm9HVNSgrd8lbJNNAE3t/////////////////////////////////////"
-    
-    @Environment(\.colorScheme) var colorScheme
-    
-    var body: some View {
-        VStack {
-            ScrollView {
-                ForEach(messages, id: \.0) { message in
-                    HStack {
-                        if message.1 {
-                            Spacer()
-                        }
-                        Text(message.0)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            .padding()
-                            .background(message.1 ? Color.blue.opacity(0.2) : Color.green.opacity(0.2))
-                            .cornerRadius(24)
-                        if !message.1 {
-                            Spacer()
-                        }
-                    }
-                }
-                if isLoading {
-                    HStack {
-                        Text("ChatGPT tippt...")
-                            .foregroundColor(.gray)
-                            .italic()
-                            .padding()
-                            .background(Color.green.opacity(0.2))
-                            .cornerRadius(24)
-                        Spacer()
-                    }
-                }
-            }
-            HStack {
-                Button(action: reloadConversation) {
-                    Image(systemName: "arrow.clockwise.circle.fill")
-                }
-                TextField("Nachricht eingeben", text: $inputText, onCommit: sendMessage)
-                Button(action: sendMessage) {
-                    Image(systemName: "arrow.up.circle.fill")
-                }
-            }
-        }
-    }
-    
-    func sendMessage() {
-        messages.append((inputText, true))
-        inputText = ""
-        isLoading = true
-        
-        let prompt = messages.map { $0.0 }.joined(separator: "\n")
-        
-        var request = URLRequest(url: URL(string: "https://api.openai.com/v1/engines/davinci/completions")!)
-        request.httpMethod = "POST"
-        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let parameters: [String: Any] = [
-            "prompt": prompt,
-            "max_tokens": 2048,
-            "temperature": 0.6
-        ]
-        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data else { return }
-            let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any]
-            let choices = json?["choices"] as? [[String: Any]]
-            let text = choices?.first?["text"] as? String
-            DispatchQueue.main.async {
-                messages.append((text ?? "", false))
-                isLoading = false
-            }
-        }
-        task.resume()
-    }
-    
-    func reloadConversation() {
-        messages = []
-    }
-}
-     */
 
-    
     // Konfigurieren der WKWebViewConfiguration-Instanz
     static let webViewConfiguration: WKWebViewConfiguration = {
         let configuration = WKWebViewConfiguration()
@@ -613,6 +524,7 @@ struct ChatGPTView: View {
             webView.reload()
         }
     }
+
 
 
 struct WWWView: View {
