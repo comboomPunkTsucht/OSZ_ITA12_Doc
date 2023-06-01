@@ -213,6 +213,23 @@ Rx(config-router)# network [direkte Netz-ID] [wildcard-mask]
 Rx(config)# router ospf [number]
 Rx(config-router)# network [direkte Netz-ID] [wildcard-mask] area [number]
 ```
+
+### DHCP einstellen
+```
+Rx (config)# ip dhcp excluded-address [Anfangsadresse] [Endadresse]
+Rx (config)# ip dhcp excluded-address [Serveradresse]
+```
+### DHCP Arbeitsbereich defenieren
+```
+Rx (config)# ip dhcp pool [Name des Bereiches]
+Rx (dhcp-config)# network [Netzwerk-ID] [Subnetzmaske]
+```
+### DHCP Defaul Router-Adresse einrichten
+```
+Rx (dhcp-config)# default-router [Gateway-Adresse] 
+Rx (dhcp-config)# dns-server [Server-Adresse]
+
+```
 ## Zum Konsolenmodus wechseln
 ```
 Rx (config)# line console 0
