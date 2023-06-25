@@ -61,4 +61,6 @@ editor:
   enabled: true
 exclude:
   - "Swift_App/"
-
+serve:
+  watch:
+    mode: disk
