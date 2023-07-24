@@ -23,7 +23,9 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 20.0)
                 }
+
                 .navigationBarTitle(Text("Klassen Webseite"))
+
             MoodleView()
                 .tabItem {
                     Text("Moodle")
@@ -33,7 +35,9 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 20.0)
                 }
+
                 .navigationBarTitle(Text("moodel"))
+
             TimeTableView()
                 .tabItem {
                     Text("Stundenplan")
@@ -43,7 +47,9 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+
                 .navigationBarTitle(Text("Stundenplan"))
+
             WebUntisView()
                 .tabItem {
                     Text("WebUntis")
@@ -53,7 +59,9 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+
                 .navigationBarTitle(Text("WebUntis"))
+
             OSZimtView()
                 .tabItem {
                     Text("OSZ IMT Website")
@@ -63,7 +71,9 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+
                 .navigationBarTitle(Text("OSZ IMT Webseite"))
+
           ChatGPTView()
                 .tabItem {
                     Text("ChatGPT")
@@ -73,7 +83,21 @@ struct ContentView: View {
                         .foregroundColor(Color.accentColor)
                         .frame(width: 40)
                 }
+
                 .navigationBarTitle(Text("ChatGPT"))
+
+			DiscordView()
+				.tabItem {
+					Text("Discord")
+					Image(systemName: "message.badge.circle.rtl")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.foregroundColor(Color.accentColor)
+						.frame(width: 40)
+				}
+
+				.navigationBarTitle(Text("Discord"))
+
             WWWView()
                   .tabItem {
                       Text("Browse Web")
@@ -83,7 +107,9 @@ struct ContentView: View {
                           .foregroundColor(Color.accentColor)
                           .frame(width: 40)
                   }
+
                   .navigationBarTitle(Text("Web"))
+
         }.frame(minWidth: 1280,idealWidth: 1920, maxWidth: 7680, minHeight: 720, idealHeight: 1080, maxHeight: 4320)
         
 
@@ -91,51 +117,54 @@ struct ContentView: View {
     }
             
 }
+
+
 struct WebView: UIViewRepresentable {
-    @Binding var webView: WKWebView
-    let request: URLRequest
-    @Binding var searchText: String
-    let webViewConfiguration = WKWebViewConfiguration()
-
-
-    class Coordinator: NSObject, WKNavigationDelegate {
-        let parent: WebView
-
-        init(_ parent: WebView) {
-            self.parent = parent
-        }
-
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Aktualisieren Sie hier das Textfeld mit der tatsächlich geladenen URL
-            if let url = webView.url {
-                if url.absoluteString.hasPrefix("https://ita12docoszimt.serveblog.net/") {
-                    parent.searchText = ""
-                } else {
-                    parent.searchText = url.absoluteString
-                }
-            }
-        }
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    func makeUIView(context: Context) -> WKWebView {
-        // Importieren von Cookies aus Safari
-        WKWebsiteDataStore.default().httpCookieStore.getAllCookies { cookies in
-            for cookie in cookies {
-                webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
-            }
-        }
-
-        webView.navigationDelegate = context.coordinator
-        webView.load(request)
-        return webView
-    }
-
-    func updateUIView(_ uiView: WKWebView, context: Context) {}
+	@Binding var webView: WKWebView
+	let request: URLRequest
+	@Binding var searchText: String
+	let webViewConfiguration = WKWebViewConfiguration()
+	
+	
+	class Coordinator: NSObject, WKNavigationDelegate {
+		let parent: WebView
+		
+		init(_ parent: WebView) {
+			self.parent = parent
+		}
+		
+		func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+				// Aktualisieren Sie hier das Textfeld mit der tatsächlich geladenen URL
+			if let url = webView.url {
+				if url.absoluteString.hasPrefix("https://ita12docoszimt.serveblog.net/") {
+					parent.searchText = ""
+				} else {
+					parent.searchText = url.absoluteString
+				}
+			}
+		}
+	}
+	
+	func makeCoordinator() -> Coordinator {
+		Coordinator(self)
+	}
+	
+	func makeUIView(context: Context) -> WKWebView {
+			// Importieren von Cookies aus Safari
+		WKWebsiteDataStore.default().httpCookieStore.getAllCookies { cookies in
+			for cookie in cookies {
+				webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+			}
+		}
+		
+		webView.navigationDelegate = context.coordinator
+		webView.load(request)
+		return webView
+	}
+	
+	func updateUIView(_ uiView: WKWebView, context: Context) {}
 }
+
 
 
 
@@ -145,6 +174,7 @@ struct ClassSideView: View {
     static let webViewConfiguration: WKWebViewConfiguration = {
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
+
         configuration.allowsPictureInPictureMediaPlayback = true
         return configuration
     }()
@@ -748,6 +778,81 @@ struct WebUntisView: View {
         }
     }
 
+struct DiscordView: View {
+		// Konfigurieren der WKWebViewConfiguration-Instanz
+	static let webViewConfiguration: WKWebViewConfiguration = {
+		let configuration = WKWebViewConfiguration()
+		configuration.allowsInlineMediaPlayback = true
+		configuration.allowsPictureInPictureMediaPlayback = true
+		return configuration
+	}()
+	
+	@State private var webView = WKWebView(frame: .zero, configuration: Self.webViewConfiguration)
+	let startURL = URL(string: "https://ptb.discord.com/login")!
+	@State private var searchText = ""
+	var body: some View {
+		VStack{
+			WebView(webView: $webView, request: URLRequest(url: startURL), searchText: $searchText)
+			HStack {
+				Spacer()
+				Button(action: goBack) {
+					Image(systemName: "arrowshape.turn.up.left.circle")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.foregroundColor(Color.accentColor)
+						.frame(width: 40.0)
+				}
+				.keyboardShortcut("ö", modifiers: .command)
+				
+				Button(action: goForward) {
+					Image(systemName: "arrowshape.turn.up.right.circle")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.foregroundColor(Color.accentColor)
+						.frame(width: 40.0)
+				}
+				.keyboardShortcut("ä", modifiers: .command)
+				
+				Button(action: goHome) {
+					Image(systemName: "house.circle")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.foregroundColor(Color.accentColor)
+						.frame(width: 40.0)
+				}
+				.keyboardShortcut("ü", modifiers: .command)
+				
+				Button(action: reload) {
+					Image(systemName: "arrow.clockwise.circle")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.foregroundColor(Color.accentColor)
+						.frame(width: 40.0)
+				}
+				.keyboardShortcut("r", modifiers: .command)
+				
+			}
+			.aspectRatio(contentMode: .fit)
+			
+		}
+	}
+	func goBack() {
+		webView.goBack()
+	}
+	
+	func goForward() {
+		webView.goForward()
+	}
+	
+	func goHome() {
+		webView.load(URLRequest(url: startURL))
+	}
+	
+	func reload() {
+		webView.reload()
+	}
+}
+
 
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
@@ -756,4 +861,5 @@ struct ContentView_Previews: PreviewProvider {
             
     }
 }
+
 #endif

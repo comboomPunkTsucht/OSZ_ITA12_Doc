@@ -14,10 +14,11 @@ struct ITA_12_Docs_OSZimtApp: App {
             ContentView()
             
         }
+
         .commands {
             MyCommandMenu()
         }
-        
+
     }
 }
 
@@ -41,3 +42,4 @@ struct MyCommandMenu: Commands {
         }
     }
 }
+

@@ -7,49 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9186F3C329EB01FD00CB0863 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186F3C129EB01DF00CB0863 /* SwiftUI.framework */; };
-		9186F3C629EB01FF00CB0863 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186F3BF29EB01D100CB0863 /* WebKit.framework */; };
 		919E5AC129EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */; };
 		919E5AC329EAEC29005F7E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AC229EAEC29005F7E9D /* ContentView.swift */; };
 		919E5AC529EAEC2A005F7E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919E5AC429EAEC2A005F7E9D /* Assets.xcassets */; };
 		919E5AC929EAEC2A005F7E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919E5AC829EAEC2A005F7E9D /* Preview Assets.xcassets */; };
-		919E5AD329EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */; };
-		919E5ADD29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */; };
-		919E5ADF29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */; };
+		91B7D8C12A6882ED002EFD4D /* ITA-12-Docs-OSZimt-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B7D8C02A6882ED002EFD4D /* ITA-12-Docs-OSZimt-Info.plist */; };
+		91B7D8C52A688D92002EFD4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B7D8C42A688D92002EFD4D /* WebKit.framework */; };
+		91B7D8C72A688DA1002EFD4D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B7D8C62A688DA1002EFD4D /* SwiftUI.framework */; };
+		91B7D8C92A688DC3002EFD4D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B7D8C82A688DC3002EFD4D /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		919E5ACF29EAEC2A005F7E9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 919E5AB529EAEC29005F7E9D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 919E5ABC29EAEC29005F7E9D;
-			remoteInfo = "ITA 12 Docs OSZimt";
+/* Begin PBXCopyFilesBuildPhase section */
+		91B7D8E32A6890F6002EFD4D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		919E5AD929EAEC2A005F7E9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 919E5AB529EAEC29005F7E9D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 919E5ABC29EAEC29005F7E9D;
-			remoteInfo = "ITA 12 Docs OSZimt";
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9186F3BD29EB01BE00CB0863 /* ITA-12-Docs-OSZimt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ITA-12-Docs-OSZimt-Info.plist"; sourceTree = SOURCE_ROOT; };
-		9186F3BF29EB01D100CB0863 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
-		9186F3C129EB01DF00CB0863 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/iOSSupport/System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITA 12 Docs OSZimt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ITA 12 Docs OSZimt.app"; path = "/Users/mahd/DEV/OSZ_ITA12_Doc/Swift_App/ITA 12 Docs OSZimt/build/Debug/ITA 12 Docs OSZimt.app"; sourceTree = "<absolute>"; };
 		919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtApp.swift; sourceTree = "<group>"; };
 		919E5AC229EAEC29005F7E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		919E5AC429EAEC2A005F7E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		919E5AC629EAEC2A005F7E9D /* ITA_12_Docs_OSZimt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ITA_12_Docs_OSZimt.entitlements; sourceTree = "<group>"; };
 		919E5AC829EAEC2A005F7E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtTests.swift; sourceTree = "<group>"; };
-		919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITA 12 Docs OSZimtUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITests.swift; sourceTree = "<group>"; };
-		919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITA_12_Docs_OSZimtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91B7D8C02A6882ED002EFD4D /* ITA-12-Docs-OSZimt-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ITA-12-Docs-OSZimt-Info.plist"; sourceTree = "<group>"; };
+		91B7D8C22A6882FE002EFD4D /* ITA_12_Docs_OSZimt.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ITA_12_Docs_OSZimt.entitlements; sourceTree = "<group>"; };
+		91B7D8C42A688D92002EFD4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		91B7D8C62A688DA1002EFD4D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		91B7D8C82A688DC3002EFD4D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		91B7D8CF2A6890F3002EFD4D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,66 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9186F3C629EB01FF00CB0863 /* WebKit.framework in Frameworks */,
-				9186F3C329EB01FD00CB0863 /* SwiftUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919E5ACB29EAEC2A005F7E9D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919E5AD529EAEC2A005F7E9D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				91B7D8C92A688DC3002EFD4D /* MobileCoreServices.framework in Frameworks */,
+				91B7D8C72A688DA1002EFD4D /* SwiftUI.framework in Frameworks */,
+				91B7D8C52A688D92002EFD4D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9186F3BE29EB01D000CB0863 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9186F3C129EB01DF00CB0863 /* SwiftUI.framework */,
-				9186F3BF29EB01D100CB0863 /* WebKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		919E5AB429EAEC29005F7E9D = {
 			isa = PBXGroup;
 			children = (
+				91B7D8C02A6882ED002EFD4D /* ITA-12-Docs-OSZimt-Info.plist */,
 				919E5ABF29EAEC29005F7E9D /* ITA 12 Docs OSZimt */,
-				919E5AD129EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */,
-				919E5ADB29EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */,
-				919E5ABE29EAEC29005F7E9D /* Products */,
-				9186F3BE29EB01D000CB0863 /* Frameworks */,
+				91B7D8C32A688D91002EFD4D /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		919E5ABE29EAEC29005F7E9D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */,
-				919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */,
-				919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		919E5ABF29EAEC29005F7E9D /* ITA 12 Docs OSZimt */ = {
 			isa = PBXGroup;
 			children = (
-				9186F3BD29EB01BE00CB0863 /* ITA-12-Docs-OSZimt-Info.plist */,
+				91B7D8C22A6882FE002EFD4D /* ITA_12_Docs_OSZimt.entitlements */,
 				919E5AC029EAEC29005F7E9D /* ITA_12_Docs_OSZimtApp.swift */,
 				919E5AC229EAEC29005F7E9D /* ContentView.swift */,
 				919E5AC429EAEC2A005F7E9D /* Assets.xcassets */,
-				919E5AC629EAEC2A005F7E9D /* ITA_12_Docs_OSZimt.entitlements */,
 				919E5AC729EAEC2A005F7E9D /* Preview Content */,
 			);
 			path = "ITA 12 Docs OSZimt";
@@ -130,21 +87,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		919E5AD129EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */ = {
+		91B7D8C32A688D91002EFD4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				919E5AD229EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift */,
+				91B7D8C82A688DC3002EFD4D /* MobileCoreServices.framework */,
+				91B7D8C62A688DA1002EFD4D /* SwiftUI.framework */,
+				91B7D8C42A688D92002EFD4D /* WebKit.framework */,
+				91B7D8CF2A6890F3002EFD4D /* WidgetKit.framework */,
 			);
-			path = "ITA 12 Docs OSZimtTests";
-			sourceTree = "<group>";
-		};
-		919E5ADB29EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */ = {
-			isa = PBXGroup;
-			children = (
-				919E5ADC29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift */,
-				919E5ADE29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift */,
-			);
-			path = "ITA 12 Docs OSZimtUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +108,7 @@
 				919E5AB929EAEC29005F7E9D /* Sources */,
 				919E5ABA29EAEC29005F7E9D /* Frameworks */,
 				919E5ABB29EAEC29005F7E9D /* Resources */,
+				91B7D8E32A6890F6002EFD4D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -169,42 +121,6 @@
 			productReference = 919E5ABD29EAEC29005F7E9D /* ITA 12 Docs OSZimt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		919E5ACD29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 919E5AE529EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */;
-			buildPhases = (
-				919E5ACA29EAEC2A005F7E9D /* Sources */,
-				919E5ACB29EAEC2A005F7E9D /* Frameworks */,
-				919E5ACC29EAEC2A005F7E9D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				919E5AD029EAEC2A005F7E9D /* PBXTargetDependency */,
-			);
-			name = "ITA 12 Docs OSZimtTests";
-			productName = "ITA 12 Docs OSZimtTests";
-			productReference = 919E5ACE29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		919E5AD729EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 919E5AE829EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */;
-			buildPhases = (
-				919E5AD429EAEC2A005F7E9D /* Sources */,
-				919E5AD529EAEC2A005F7E9D /* Frameworks */,
-				919E5AD629EAEC2A005F7E9D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				919E5ADA29EAEC2A005F7E9D /* PBXTargetDependency */,
-			);
-			name = "ITA 12 Docs OSZimtUITests";
-			productName = "ITA 12 Docs OSZimtUITests";
-			productReference = 919E5AD829EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,19 +128,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					919E5ABC29EAEC29005F7E9D = {
 						CreatedOnToolsVersion = 14.3;
-					};
-					919E5ACD29EAEC2A005F7E9D = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 919E5ABC29EAEC29005F7E9D;
-					};
-					919E5AD729EAEC2A005F7E9D = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 919E5ABC29EAEC29005F7E9D;
 					};
 				};
 			};
@@ -240,13 +148,11 @@
 			mainGroup = 919E5AB429EAEC29005F7E9D;
 			packageReferences = (
 			);
-			productRefGroup = 919E5ABE29EAEC29005F7E9D /* Products */;
+			productRefGroup = 919E5AB429EAEC29005F7E9D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */,
-				919E5ACD29EAEC2A005F7E9D /* ITA 12 Docs OSZimtTests */,
-				919E5AD729EAEC2A005F7E9D /* ITA 12 Docs OSZimtUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,20 +164,7 @@
 			files = (
 				919E5AC929EAEC2A005F7E9D /* Preview Assets.xcassets in Resources */,
 				919E5AC529EAEC2A005F7E9D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919E5ACC29EAEC2A005F7E9D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919E5AD629EAEC2A005F7E9D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				91B7D8C12A6882ED002EFD4D /* ITA-12-Docs-OSZimt-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,37 +180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		919E5ACA29EAEC2A005F7E9D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				919E5AD329EAEC2A005F7E9D /* ITA_12_Docs_OSZimtTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919E5AD429EAEC2A005F7E9D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				919E5ADD29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITests.swift in Sources */,
-				919E5ADF29EAEC2A005F7E9D /* ITA_12_Docs_OSZimtUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		919E5AD029EAEC2A005F7E9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */;
-			targetProxy = 919E5ACF29EAEC2A005F7E9D /* PBXContainerItemProxy */;
-		};
-		919E5ADA29EAEC2A005F7E9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 919E5ABC29EAEC29005F7E9D /* ITA 12 Docs OSZimt */;
-			targetProxy = 919E5AD929EAEC2A005F7E9D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		919E5AE029EAEC2A005F7E9D /* Debug */ = {
@@ -375,8 +238,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -428,8 +293,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -439,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
@@ -462,25 +329,28 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cbps.ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "2,6";
+				TARGETED_DEVICE_FAMILY = "2,6,7";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 			};
 			name = Debug;
 		};
@@ -490,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ITA 12 Docs OSZimt/ITA_12_Docs_OSZimt.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ITA 12 Docs OSZimt/Preview Content\"";
@@ -513,115 +383,28 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ITA-12-Docs-OSZimt";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cbps.ITA-12-Docs-OSZimt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "2,6";
-			};
-			name = Release;
-		};
-		919E5AE629EAEC2A005F7E9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITA 12 Docs OSZimt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ITA 12 Docs OSZimt";
-			};
-			name = Debug;
-		};
-		919E5AE729EAEC2A005F7E9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITA 12 Docs OSZimt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ITA 12 Docs OSZimt";
-			};
-			name = Release;
-		};
-		919E5AE929EAEC2A005F7E9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ITA 12 Docs OSZimt";
-			};
-			name = Debug;
-		};
-		919E5AEA29EAEC2A005F7E9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KUZ76Z8W3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "comboomPunkTsucht.ITA-12-Docs-OSZimtUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ITA 12 Docs OSZimt";
+				TARGETED_DEVICE_FAMILY = "2,6,7";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 			};
 			name = Release;
 		};
@@ -642,24 +425,6 @@
 			buildConfigurations = (
 				919E5AE329EAEC2A005F7E9D /* Debug */,
 				919E5AE429EAEC2A005F7E9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		919E5AE529EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				919E5AE629EAEC2A005F7E9D /* Debug */,
-				919E5AE729EAEC2A005F7E9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		919E5AE829EAEC2A005F7E9D /* Build configuration list for PBXNativeTarget "ITA 12 Docs OSZimtUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				919E5AE929EAEC2A005F7E9D /* Debug */,
-				919E5AEA29EAEC2A005F7E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
