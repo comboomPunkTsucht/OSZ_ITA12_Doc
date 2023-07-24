@@ -49,7 +49,7 @@
 * {
   font-family: 'Caskaydia Cove Nerd Font Complete', 'CaskaydiaCove Nerd Font Complete Propo', sans-serif; /* Verwendung der eigenen Schriftart für den Text auf der Webseite */
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, code, kbd, pre, samp {
 	font-family: 'CaskaydiaCove Nerd Font Complete Mono', 'CaskaydiaCove Nerd Font Complete Propo', monospace;
 }
 
