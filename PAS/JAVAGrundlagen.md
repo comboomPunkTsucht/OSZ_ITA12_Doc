@@ -400,7 +400,7 @@ Klassenname {
 
 ### Syntax
 
-```java
+```java #
 public class MeineKlasse {
     public static void main(String[] args) {
         // Code zur Verwendung der Kommandozeilenargumente
