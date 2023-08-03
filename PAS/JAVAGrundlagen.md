@@ -122,8 +122,13 @@ Datentyp variablenname;
 
 ### Mit Initialisierung
 
- ```java #
 Datentyp variablenname = Wert;
+```
+
+### per Bedingung
+
+```
+Datentyp variablenname = Bedingung ? Wert_bei_true : Wert_bei_false
 ```
 
 ### Wertzuweisung einer Variable aus Testklasse
@@ -191,6 +196,75 @@ Objektname[Arrayindex].variablenname[Arrayindex] = Wert;
 ```java # 
 this.variablenname[Arrayindex] = Wert;
 ```
+### ArrayLists
+
+### ArrayLists importieren
+
+```java
+import java.util.ArrayList;
+```
+
+### ArrayList erstellen
+
+```java
+ArrayList<Datentyp> variablenname = new ArrayList<>();
+```
+```java
+ArrayList<Datentyp> variablenname = new ArrayList<Datentyp>();
+```
+### ArrayList mit Initialisierung
+
+```java
+ArrayList<Datentyp> variablenname = new ArrayList<>(List.of(Wert1, Wert2, ...));
+```
+
+### Element zur ArrayList hinzufügen
+
+```java
+variablenname.add(Wert);
+```
+
+### Element in der ArrayList ändern
+
+```java
+variablenname.set(Index, Wert);
+```
+
+### Element aus der ArrayList entfernen
+
+```java
+variablenname.remove(Index);
+```
+### Element aus der ArrayList abrufen
+
+```java
+Datentyp element = variablenname.get(Index);
+```
+
+### ArrayList-Größe abrufen
+
+```java
+int size = variablenname.size();
+```
+
+### Überprüfen, ob die ArrayList leer ist
+
+```java
+boolean isEmpty = variablenname.isEmpty();
+```
+
+### ArrayList leeren
+
+```java
+variablenname.clear();
+```
+
+### Überprüfen, ob ein Element in der ArrayList enthalten ist
+
+```java
+boolean contains = variablenname.contains(Wert);
+```
+
 
 ## Konstruktoren
 
@@ -309,7 +383,6 @@ System.out.println("Text");
 ```
 
 ### Eingabe
-    
 ```java #
 import java.util.Scanner;
 
@@ -322,3 +395,63 @@ Klassenname {
         char eingabe = scanner.next().charAt(0);
 }
 ```
+
+## Kommandozeilenargumente in Java
+
+### Syntax
+
+```java
+public class MeineKlasse {
+    public static void main(String[] args) {
+        // Code zur Verwendung der Kommandozeilenargumente
+    }
+}
+```
+
+### Beschreibung
+
+Kommandozeilenargumente ermöglichen es, Werte an ein Java-Programm zu übergeben, wenn es gestartet wird. Die Argumente werden in Form von Zeichenketten (Strings) übergeben und stehen in der `main`-Methode des Programms als Array `args` zur Verfügung.
+
+### Verwendung
+
+Um das Java-Programm mit Kommandozeilenargumenten auszuführen, geben Sie diese nach dem Befehl `java` gefolgt vom Klassennamen an. Die Argumente werden durch Leerzeichen getrennt.
+
+```bash
+java MeineKlasse argument1 argument2 argument3 ...
+```
+
+In der `main`-Methode des Java-Programms können die übergebenen Argumente im Array `args` verarbeitet werden. Hier ein Beispiel, wie man alle übergebenen Argumente ausgibt:
+
+```java
+public class MeineKlasse {
+    public static void main(String[] args) {
+        // Ausgabe aller übergebenen Argumente
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("Argument " + i + ": " + args[i]);
+        }
+    }
+}
+```
+```java
+public class MeinProgramm {
+    public static void main(String[] args) {
+        // Überprüfen, ob Argumente übergeben wurden
+        if (args.length == 0) {
+            System.out.println("Es wurden keine Argumente übergeben.");
+        } else {
+            // Ausgabe der übergebenen Argumente mit einer Foreach-Schleife
+            System.out.println("Übergebene Argumente:");
+            int index = 1;
+            for (String arg : args) {
+                System.out.println("Argument " + index + ": " + arg);
+                index++;
+            }
+        }
+    }
+}
+```
+
+### Hinweis
+
+- Kommandozeilenargumente werden immer als Zeichenketten (Strings) übergeben. Wenn andere Datentypen benötigt werden, müssen sie entsprechend geparst oder konvertiert werden.
+- Wenn keine Argumente übergeben werden, ist das `args`-Array leer (mit der Länge 0). In diesem Fall wird die `for`-Schleife nicht ausgeführt und es erfolgt keine Ausgabe.
