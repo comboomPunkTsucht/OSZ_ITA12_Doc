@@ -438,10 +438,6 @@ public class MeineKlasse {
 ```java #
 public class MeinProgramm {
     public static void main(String[] args) {
-        // Überprüfen, ob Argumente übergeben wurden
-        if (args.length == 0) {
-            System.out.println("Es wurden keine Argumente übergeben.");
-        } else {
             // Ausgabe der übergebenen Argumente mit einer Foreach-Schleife
             System.out.println("Übergebene Argumente:");
             int index = 1;
@@ -451,7 +447,6 @@ public class MeinProgramm {
             }
         }
     }
-}
 ```
 
 ### Hinweis
