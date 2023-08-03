@@ -440,7 +440,7 @@ public class MeinProgramm {
     public static void main(String[] args) {
             // Ausgabe der übergebenen Argumente mit einer Foreach-Schleife
             System.out.println("Übergebene Argumente:");
-            int index = 1;
+            int index = 0;
             for (String arg : args) {
                 System.out.println("Argument " + index + ": " + arg);
                 index++;
