@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744418973939">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744419350186">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/fav_oszimt-logo.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.1.0.744418973939" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.1.0.744419350186" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.1.0.744418973939" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.1.0.744419350186" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.1.0.744418973939" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.1.0.744418973939" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.1.0.744419350186" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.1.0.744419350186" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -391,19 +391,23 @@ h1, h2, h3, h4, h5, h6, code, kbd, pre, samp {
         <span>Mit Initialisierung</span>
     </h3>
 </doc-anchor-target>
-<p>Datentyp variablenname = Wert;</p>
+<p>&#x27;&#x27;&#x27;java #
+Datentyp variablenname = Wert;</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">
 ### per Bedingung
-</code></pre>
-</doc-codeblock></div>
-<p>Datentyp variablenname = Bedingung ? Wert_bei_true : Wert_bei_false</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">
-### Wertzuweisung einer Variable aus Testklasse
 
-```java # 
-variablenname = Wert;</code></pre>
+```java #
+Datentyp variablenname = Bedingung ? Wert_bei_true : Wert_bei_false</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="wertzuweisung-einer-variable-aus-testklasse">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wertzuweisung-einer-variable-aus-testklasse">#</doc-anchor-trigger>
+        <span>Wertzuweisung einer Variable aus Testklasse</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-java"><code v-pre class="language-java">variablenname = Wert;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="konstante">
     <h3>
@@ -508,6 +512,7 @@ variablenname = Wert;</code></pre>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">+</div>
 <pre class="language-java"><code v-pre class="language-java">import java.util.ArrayList;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="arraylist-erstellen">
@@ -516,10 +521,10 @@ variablenname = Wert;</code></pre>
         <span>ArrayList erstellen</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">ArrayList&lt;Datentyp&gt; variablenname = new ArrayList&lt;&gt;();</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">ArrayList&lt;Datentyp&gt; variablenname = new ArrayList&lt;Datentyp&gt;();</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="arraylist-mit-initialisierung">
@@ -528,7 +533,7 @@ variablenname = Wert;</code></pre>
         <span>ArrayList mit Initialisierung</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">ArrayList&lt;Datentyp&gt; variablenname = new ArrayList&lt;&gt;(List.of(Wert1, Wert2, ...));</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="element-zur-arraylist-hinzufügen">
@@ -537,7 +542,7 @@ variablenname = Wert;</code></pre>
         <span>Element zur ArrayList hinzufügen</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">variablenname.add(Wert);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="element-in-der-arraylist-ändern">
@@ -546,7 +551,7 @@ variablenname = Wert;</code></pre>
         <span>Element in der ArrayList ändern</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">variablenname.set(Index, Wert);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="element-aus-der-arraylist-entfernen">
@@ -555,7 +560,7 @@ variablenname = Wert;</code></pre>
         <span>Element aus der ArrayList entfernen</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">variablenname.remove(Index);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="element-aus-der-arraylist-abrufen">
@@ -564,7 +569,7 @@ variablenname = Wert;</code></pre>
         <span>Element aus der ArrayList abrufen</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">Datentyp element = variablenname.get(Index);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="arraylist-größe-abrufen">
@@ -573,7 +578,7 @@ variablenname = Wert;</code></pre>
         <span>ArrayList-Größe abrufen</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">int size = variablenname.size();</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="überprüfen-ob-die-arraylist-leer-ist">
@@ -582,7 +587,7 @@ variablenname = Wert;</code></pre>
         <span>Überprüfen, ob die ArrayList leer ist</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">boolean isEmpty = variablenname.isEmpty();</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="arraylist-leeren">
@@ -591,7 +596,7 @@ variablenname = Wert;</code></pre>
         <span>ArrayList leeren</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">variablenname.clear();</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="überprüfen-ob-ein-element-in-der-arraylist-enthalten-ist">
@@ -600,7 +605,7 @@ variablenname = Wert;</code></pre>
         <span>Überprüfen, ob ein Element in der ArrayList enthalten ist</span>
     </h3>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">boolean contains = variablenname.contains(Wert);</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="konstruktoren">
@@ -818,11 +823,14 @@ Klassenname {
     </h3>
 </doc-anchor-target>
 <p>Um das Java-Programm mit Kommandozeilenargumenten auszuführen, geben Sie diese nach dem Befehl <code v-pre>java</code> gefolgt vom Klassennamen an. Die Argumente werden durch Leerzeichen getrennt.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-bash"><code v-pre class="language-bash">java MeineKlasse argument1 argument2 argument3 ...</code></pre>
 </doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-bash"><code v-pre class="language-bash">java -jar MeinProgramm.jar argument1 argument2 argument3 ...</code></pre>
+</doc-codeblock></div>
 <p>In der <code v-pre>main</code>-Methode des Java-Programms können die übergebenen Argumente im Array <code v-pre>args</code> verarbeitet werden. Hier ein Beispiel, wie man alle übergebenen Argumente ausgibt:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">public class MeineKlasse {
     public static void main(String[] args) {
         // Ausgabe aller übergebenen Argumente
@@ -832,7 +840,7 @@ Klassenname {
     }
 }</code></pre>
 </doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-java"><code v-pre class="language-java">public class MeinProgramm {
     public static void main(String[] args) {
         // Überprüfen, ob Argumente übergeben wurden
@@ -858,7 +866,7 @@ Klassenname {
 </doc-anchor-target>
 <ul>
 <li>Kommandozeilenargumente werden immer als Zeichenketten (Strings) übergeben. Wenn andere Datentypen benötigt werden, müssen sie entsprechend geparst oder konvertiert werden.</li>
-<li>Wenn keine Argumente übergeben werden, ist das <code v-pre>args</code>-Array leer (mit der Länge 0). In diesem Fall wird die <code v-pre>for</code>-Schleife nicht ausgeführt und es erfolgt keine Ausgabe.</li>
+<li>Wenn keine Argumente übergeben werden, ist das <code v-pre>args</code>-Array leer (mit der Länge 0). In diesem Fall wird die <code v-pre>for</code>-Schleife bzw. <code v-pre>foreach</code>-Schleife nicht ausgeführt und es erfolgt keine Ausgabe.</li>
 </ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
