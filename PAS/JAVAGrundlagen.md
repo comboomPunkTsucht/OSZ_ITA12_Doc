@@ -57,6 +57,11 @@ h1, h2, h3, h4, h5, h6, code, kbd, pre, samp {
 
 # Java Grundlagen
 
+
+<div style="padding-bottom: 56.25%; position: relative;"><iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/PKtnafFtfEo?autoplay=1&cc_load_policy=1&color=white&controls=0&loop=1&modestbranding=1&playlist=PKtnafFtfEo&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" ><small>Powered by <a href="https://embed.tube/embed-code-generator/youtube/">youtube embed video</a> generator</small></iframe></div>
+
+
+
 ## Klassen
 
 ```java #
