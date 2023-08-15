@@ -29,9 +29,9 @@ links:
     link: https://discord.gg/aujhkqgvDE
     icon: ":speech_balloon:"
     target: blank
-  - text: Our Font
-    link: https://github.com/comboomPunkTsucht/cascadia-code-ger/releases/tag/1.0.0
-    icon: ":writing_hand:"
+  - text: Our Swift/UI App
+    link: https://github.com/comboomPunkTsucht/ITA-12_App
+    icon: ":technologist:"
     target: blank
   - text: OSZ imt Official Webseite
     link: https://www.oszimt.de/
