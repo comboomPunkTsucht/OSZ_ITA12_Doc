@@ -127,7 +127,7 @@ Datentyp variablenname;
 ```
 
 ### Mit Initialisierung
-´´´java #
+```java #
 Datentyp variablenname = Wert;
 ```
 
