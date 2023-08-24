@@ -108,7 +108,7 @@ This is the Website off the class ITA 12 from OSZ imt Berlin.
 ## GitHub Releases
 
 <iframe width="850" height="1600" src="https://rss.app/embed/v1/list/JmB3j4n17SW6YgDR" frameborder="0"></iframe>
-<iframe width="850" height="1600" src="https://rss.app/embed/v1/list/iqEVgf52IRgZLeGH" frameborder="0"></iframe>
+<iframe width="850" height="1600" src="https://rss.app/embed/v1/list/J8jFX6hGVmXtjTJv" frameborder="0"></iframe>
 
 
 :::*
