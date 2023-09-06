@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Page Not Found</title>
+    <style>
+        @font-face {
+            font-family: 'Caskaydia Cove Nerd Font Mono';
+            src: url('./fonts/CaskaydiaCoveNerdFontMono-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Caskaydia Cove Nerd Font Mono';
+            text-align: center;
+        }
+        .icon {
+            font-size: 10em;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon"></div>
+    <h1>404 Page Not Found</h1>
+    <p id="sadText"></p>
+    <script>
+        const sadTexts = [
+            "Oops! The page you're looking for doesn't exist.",
+            "Sorry, we couldn't find the page you're looking for.",
+            "The page you're trying to reach is lost in cyberspace.",
+            "The page you're looking for has vanished into thin air.",
+            "The page you're trying to access is nowhere to be found."
+        ];
+        document.getElementById("sadText").innerHTML = sadTexts[Math.floor(Math.random() * sadTexts.length)];
+    </script>
+</body>
+</html>
