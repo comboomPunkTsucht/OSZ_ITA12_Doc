@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747357951122">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747358662862">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.3.0">
@@ -28,11 +28,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/img/fav_oszimt-logo.png" rel="icon">
-    <link href="/resources/css/retype.css?v=3.3.0.747357951122" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.3.0.747358662862" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.747357951122" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.747358662862" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.747357951122" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.747358662862" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -237,20 +237,138 @@
     </style>
 </head>
 <body>
-    <a href="https://ita12docoszimt.serveblog.net/" id="homeButton">Home</a>
     <div class="nf nf-md-emoticon_sad_outline icon"></div>
     <h1>404 Page Not Found</h1>
     <p id="sadText"></p>
     <script>
         const sadTexts = [
-            "Oops! The page you're looking for doesn't exist.",
-            "Sorry, we couldn't find the page you're looking for.",
-            "The page you're trying to reach is lost in cyberspace.",
-            "The page you're looking for has vanished into thin air.",
-            "The page you're trying to access is nowhere to be found."
-        ];
-        document.getElementById("sadText").innerHTML = sadTexts[Math.floor(Math.random() * sadTexts.length)];
-    </script>
+    "Oops! The page you're looking for doesn't exist.",
+    "Sorry, we couldn't find the page you're looking for.",
+    "The page you're trying to reach is lost in cyberspace.",
+    "The page you're looking for has vanished into thin air.",
+    "The page you're trying to access is nowhere to be found.",
+    "Looks like this page took a wrong turn.",
+    "Oh dear, it seems we've hit a dead end.",
+    "This page seems to have gone on a vacation.",
+    "It appears the page is playing hide and seek.",
+    "The page seems to be off on an adventure.",
+    "This page is feeling a bit camera shy.",
+    "Oops! The page seems to be in stealth mode.",
+    "Sorry, the page seems to be in incognito mode.",
+    "The page might be on a coffee break.",
+    "This page has gone incognito.",
+    "Looks like this page is on a digital sabbatical.",
+    "Sorry, it seems this page is off the grid.",
+    "The page seems to have joined the witness protection program.",
+    "Oops! It seems we've entered a no-page zone.",
+    "Looks like this page has ghosted us.",
+    "This page is practicing social distancing.",
+    "Sorry, it seems the page has gone off the radar.",
+    "The page is on a quest for the lost city of URLs.",
+    "Oops! The page is taking a detour.",
+    "Looks like this page is on a scenic route.",
+    "This page is exploring uncharted territory.",
+    "Sorry, the page is on an intergalactic adventure.",
+    "The page is on a cosmic journey through cyberspace.",
+    "Oops! It seems this page is in a parallel universe.",
+    "Looks like this page is in stealth mode.",
+    "This page is on a top-secret mission.",
+    "Sorry, it seems this page is on a secret quest.",
+    "The page is on a classified mission.",
+    "Oops! The page is in ninja mode.",
+    "Looks like this page is in witness protection.",
+    "This page is incognito.",
+    "Sorry, it seems this page is undercover.",
+    "The page is on a covert operation.",
+    "Oops! The page is on a stealth mission.",
+    "Looks like this page is on a clandestine adventure.",
+    "This page is in disguise.",
+    "Sorry, it seems this page is on a classified quest.",
+    "The page is on a hush-hush mission.",
+    "Oops! The page is on a cloak-and-dagger operation.",
+    "Looks like this page is on a furtive adventure.",
+    "This page is on a need-to-know basis.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a sub-rosa operation.",
+    "Looks like this page is on a surreptitious adventure.",
+    "This page is on a down-low assignment.",
+    "Sorry, it seems this page is on a classified quest.",
+    "The page is on a hush-hush mission.",
+    "Oops! The page is on a cloak-and-dagger operation.",
+    "Looks like this page is on a furtive adventure.",
+    "This page is on a need-to-know basis.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a sub-rosa operation.",
+    "Looks like this page is on a surreptitious adventure.",
+    "This page is on a down-low assignment.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a top-secret operation.",
+    "Looks like this page is on a clandestine adventure.",
+    "This page is in incognito mode.",
+    "Sorry, it seems this page is on a secret quest.",
+    "The page is on a classified mission.",
+    "Oops! The page is on a stealth mission.",
+    "Looks like this page is in witness protection.",
+    "This page is incognito.",
+    "Sorry, it seems this page is undercover.",
+    "The page is on a covert operation.",
+    "Oops! The page is on a stealth mission.",
+    "Looks like this page is on a clandestine adventure.",
+    "This page is in disguise.",
+    "Sorry, it seems this page is on a classified quest.",
+    "The page is on a hush-hush mission.",
+    "Oops! The page is on a cloak-and-dagger operation.",
+    "Looks like this page is on a furtive adventure.",
+    "This page is on a need-to-know basis.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a sub-rosa operation.",
+    "Looks like this page is on a surreptitious adventure.",
+    "This page is on a down-low assignment.",
+    "Sorry, it seems this page is on a classified quest.",
+    "The page is on a hush-hush mission.",
+    "Oops! The page is on a cloak-and-dagger operation.",
+    "Looks like this page is on a furtive adventure.",
+    "This page is on a need-to-know basis.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a sub-rosa operation.",
+    "Looks like this page is on a surreptitious adventure.",
+    "This page is on a down-low assignment.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a top-secret operation.",
+    "Looks like this page is on a clandestine adventure.",
+    "This page is in incognito mode.",
+    "Sorry, it seems this page is on a secret quest.",
+    "The page is on a classified mission.",
+    "Oops! The page is on a stealth mission.",
+    "Looks like this page is in witness protection.",
+    "This page is incognito.",
+    "Sorry, it seems this page is undercover.",
+    "The page is on a covert operation.",
+    "Oops! The page is on a stealth mission.",
+    "Looks like this page is on a clandestine adventure.",
+    "This page is in disguise.",
+    "Sorry, it seems this page is on a classified quest.",
+    "The page is on a hush-hush mission.",
+    "Oops! The page is on a cloak-and-dagger operation.",
+    "Looks like this page is on a furtive adventure.",
+    "This page is on a need-to-know basis.",
+    "Sorry, it seems this page is on a covert quest.",
+    "The page is on a confidential mission.",
+    "Oops! The page is on a sub-rosa operation.",
+    "Looks like this page is on a surreptitious adventure.",
+    "This page is on a down-low assignment."
+];
+const randomSadText = sadTexts[Math.floor(Math.random() * sadTexts.length)];
+document.getElementById("sadText").innerHTML = randomSadText;
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&lt;/script&gt;</code></pre>
+</doc-codeblock></div>
 </body>
 
                                 
