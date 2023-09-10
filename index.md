@@ -62,5 +62,5 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 
 ## GitHub Releases
 ### Public Github Repo
-<iframe width="850" height="1600" src="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps/releases" frameborder="0"></iframe>
-<iframe width="850" height="1600" src="https://github.com/comboomPunkTsucht/ITA-12_App/releases" frameborder="0"></iframe>
+<iframe src="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps/releases" width="600" height="400"></iframe>
+<iframe src="https://github.com/comboomPunkTsucht/ITA-12_App/releases" width="600" height="400"></iframe>
