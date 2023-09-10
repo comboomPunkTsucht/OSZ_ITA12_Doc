@@ -37,6 +37,10 @@ links:
     link: https://www.oszimt.de/
     icon: ":school:"
     target: blank
+  - text: Our Font
+    link: https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip
+    icon: ":writing_hand:"
+    target: blank
 edit:
   repo: "https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc/"
   branch: main
