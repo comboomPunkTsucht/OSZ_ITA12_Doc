@@ -10,133 +10,167 @@
   ></iframe>
   </div>
 
-### Datenbank erstellen
 
+
+## 1. Datenbank und Tabelle erstellen:
 ```sql
-CREATE DATABASE databasename;
-```
+-- Datenbank erstellen
+CREATE DATABASE IF NOT EXISTS meine_datenbank;
 
-### Datenbank auswählen
-
-```sql
-USE databasename;
-```
-
-### Tabelle erstellen
-
-```sql
-CREATE TABLE tablename (
-    column1 datatype1 constraints,
-    column2 datatype2 constraints,
-    ...
+-- Tabelle erstellen
+USE meine_datenbank;
+CREATE TABLE IF NOT EXISTS meine_tabelle (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    alter INT
 );
 ```
 
-### Datentypen
-
-- `INT` - Ganzzahl
-- `VARCHAR(n)` - Zeichenkette mit maximaler Länge `n`
-- `DATE` - Datum
-- `FLOAT` - Gleitkommazahl
-
-### Constraints
-
-- `PRIMARY KEY` - Primärschlüssel
-- `AUTO_INCREMENT` - Automatische Inkrementierung
-- `NOT NULL` - Wert darf nicht NULL sein
-- `UNIQUE` - Wert muss eindeutig sein
-- `FOREIGN KEY` - Fremdschlüssel
-
-### Datensätze einfügen
-
+## 2. Datensatz einfügen:
 ```sql
-INSERT INTO tablename (column1, column2, ...) VALUES (value1, value2, ...);
+INSERT INTO meine_tabelle (id, name, alter)
+VALUES (1, 'Max Mustermann', 30);
 ```
 
-### Datensätze abfragen
-
+## 3. Daten abfragen:
 ```sql
-SELECT * FROM tablename;
+SELECT * FROM meine_tabelle;
 ```
 
-### Bedingte Abfrage
-
+## 4. Bedingte Abfrage (WHERE-Klausel):
 ```sql
-SELECT * FROM tablename WHERE condition;
+SELECT * FROM meine_tabelle WHERE alter > 25;
 ```
 
-### Datensätze aktualisieren
-
+## 5. Daten aktualisieren:
 ```sql
-UPDATE tablename SET column1 = value1, column2 = value2 WHERE condition;
+UPDATE meine_tabelle SET alter = 31 WHERE id = 1;
 ```
 
-### Datensätze löschen
-
+## 6. Daten löschen:
 ```sql
-DELETE FROM tablename WHERE condition;
+DELETE FROM meine_tabelle WHERE id = 1;
 ```
 
-### Verknüpfungen
-
-- `INNER JOIN` - Nur übereinstimmende Zeilen
-- `LEFT JOIN` - Alle Zeilen aus der linken Tabelle und übereinstimmende aus der rechten
-- `RIGHT JOIN` - Alle Zeilen aus der rechten Tabelle und übereinstimmende aus der linken
-- `FULL OUTER JOIN` - Alle Zeilen, wenn es Übereinstimmungen gibt
-
+## 7. Join (INNER JOIN):
 ```sql
-SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;
+SELECT t1.id, t1.name, t2.adresse
+FROM tabelle1 t1
+INNER JOIN tabelle2 t2 ON t1.id = t2.id;
 ```
 
-### Gruppieren und Aggregatfunktionen
-
+## 8. Join (LEFT JOIN):
 ```sql
-SELECT column, COUNT(*) FROM tablename GROUP BY column;
+SELECT t1.id, t1.name, t2.adresse
+FROM tabelle1 t1
+LEFT JOIN tabelle2 t2 ON t1.id = t2.id;
 ```
 
-### Unterabfragen
-
+## 9. Unterabfrage (Subquery):
 ```sql
-SELECT * FROM tablename WHERE column IN (SELECT column FROM anothertable WHERE condition);
+SELECT spalte1, spalte2
+FROM tabelle1
+WHERE spalte1 IN (SELECT spalte1 FROM tabelle2);
 ```
 
-### Indizes
-
+## 10. Aggregatfunktion (COUNT):
 ```sql
-CREATE INDEX indexname ON tablename (column);
+SELECT COUNT(*) FROM meine_tabelle;
 ```
 
-### Transaktionen
-
+## 11. Transaktionen:
 ```sql
+-- Transaktion starten
 START TRANSACTION;
--- SQL-Anweisungen
+
+-- SQL-Befehle hier ausführen
+
+-- Transaktion beenden (Commit)
 COMMIT;
+
+-- Transaktion rückgängig machen (Rollback)
+ROLLBACK;
 ```
 
-### Sichten (Views)
-
+## 12. Index erstellen:
 ```sql
-CREATE VIEW viewname AS SELECT column1, column2 FROM tablename WHERE condition;
+CREATE INDEX index_name ON meine_tabelle(spalte);
 ```
-
-### Benutzer verwalten
-
+## 13. Datenbank löschen:
 ```sql
-CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON databasename.* TO 'username'@'localhost';
-FLUSH PRIVILEGES;
+-- Datenbank löschen
+DROP DATABASE IF EXISTS meine_datenbank;
 ```
 
-### Datenbank sichern und wiederherstellen
-
-```bash
-mysqldump -u username -p databasename > dump.sql
-mysql -u username -p databasename < dump.sql
+## 14. Tabelle löschen:
+```sql
+-- Tabelle löschen
+DROP TABLE IF EXISTS meine_tabelle;
 ```
 
-### Hinweis
+## 15. Bedingte Abfrage (AND, OR):
+```sql
+SELECT * FROM meine_tabelle WHERE alter > 25 AND geschlecht = 'weiblich';
+SELECT * FROM meine_tabelle WHERE ort = 'Berlin' OR ort = 'Hamburg';
+```
 
-- Ersetze `databasename`, `tablename`, `column`, `value`, etc. mit den entsprechenden Namen und Werten.
-- Achte auf die Groß- und Kleinschreibung, da SQL case-sensitive ist.
-- Dies ist nur eine grundlegende Übersicht. Es gibt viele weitere fortgeschrittene Konzepte in MySQL.
+## 16. Bedingte Abfrage (LIKE):
+```sql
+-- Alle Namen, die mit "M" beginnen
+SELECT * FROM meine_tabelle WHERE name LIKE 'M%';
+
+-- Alle Namen, die "e" als dritten Buchstaben haben
+SELECT * FROM meine_tabelle WHERE name LIKE '__e%';
+```
+
+## 17. Sortieren (ORDER BY):
+```sql
+-- Aufsteigend nach Alter sortieren
+SELECT * FROM meine_tabelle ORDER BY alter ASC;
+
+-- Absteigend nach Namen sortieren
+SELECT * FROM meine_tabelle ORDER BY name DESC;
+```
+
+## 18. Datensätze gruppieren (GROUP BY):
+```sql
+-- Anzahl der Personen pro Ort ermitteln
+SELECT ort, COUNT(*) as anzahl_personen FROM meine_tabelle GROUP BY ort;
+```
+
+## 19. Aggregatfunktionen (SUM, AVG, MIN, MAX):
+```sql
+-- Summe der Gehälter berechnen
+SELECT SUM(gehalt) FROM mitarbeiter;
+
+-- Durchschnittsalter berechnen
+SELECT AVG(alter) FROM meine_tabelle;
+
+-- Älteste Person finden
+SELECT MAX(alter) FROM meine_tabelle;
+```
+
+## 20. Daten aktualisieren (CASE-Anweisung):
+```sql
+-- Alter basierend auf einer Bedingung aktualisieren
+UPDATE meine_tabelle
+SET alter = CASE
+    WHEN geschlecht = 'weiblich' THEN alter + 1
+    ELSE alter
+END;
+```
+
+## 21. Benutzer und Berechtigungen erstellen (für Administratoren):
+```sql
+-- Benutzer erstellen
+CREATE USER 'neuer_benutzer'@'localhost' IDENTIFIED BY 'passwort';
+
+-- Berechtigungen zuweisen
+GRANT SELECT, INSERT, UPDATE ON meine_datenbank.meine_tabelle TO 'neuer_benutzer'@'localhost';
+
+-- Berechtigungen widerrufen
+REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'neuer_benutzer'@'localhost';
+
+-- Benutzer löschen
+DROP USER 'neuer_benutzer'@'localhost';
+```
