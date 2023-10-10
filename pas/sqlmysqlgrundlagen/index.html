@@ -9,21 +9,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>moodle</title>
-    <meta name="title" content="moodle">
+    <title>SQL (MySQL) Grundlagen</title>
+    <meta name="title" content="SQL (MySQL) Grundlagen">
+    <meta name="description" content="INT- Ganzzahl">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://ita12docoszimt.serveblog.net/tags/moodle/">
+    <link rel="canonical" href="https://ita12docoszimt.serveblog.net/pas/sqlmysqlgrundlagen/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ita12docoszimt.serveblog.net/tags/moodle/">
-    <meta property="og:title" content="moodle">
+    <meta property="og:url" content="https://ita12docoszimt.serveblog.net/pas/sqlmysqlgrundlagen/">
+    <meta property="og:title" content="SQL (MySQL) Grundlagen">
+    <meta property="og:description" content="INT- Ganzzahl">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ita12docoszimt.serveblog.net/tags/moodle/">
-    <meta property="twitter:title" content="moodle">
+    <meta property="twitter:url" content="https://ita12docoszimt.serveblog.net/pas/sqlmysqlgrundlagen/">
+    <meta property="twitter:title" content="SQL (MySQL) Grundlagen">
+    <meta property="twitter:description" content="INT- Ganzzahl">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -33,6 +36,7 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750237636600" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750237636600" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.750237636600" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -219,26 +223,252 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="tag-moodle" class="break-words">
+<doc-anchor-target id="sql-mysql-grundlagen" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tag-moodle">#</doc-anchor-trigger>
-        <span>Tag: moodle</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sql-mysql-grundlagen">#</doc-anchor-trigger>
+        <span>SQL (MySQL) Grundlagen</span>
     </h1>
 </doc-anchor-target>
-<p>See all <a href="../">tags</a>.</p>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../pas/moodle-kurs/">
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">PAS</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">moodle-Kurs</div>
-    </div>
-</a>
+<div style="padding-bottom: 56.25%; position: relative;">
+<iframe 
+  width="100%" 
+  height="100%" 
+  src="https://www.youtube.com/embed/5OdVJbNCSso?si=x8AdAi6LBZBOt0QI&vq=hd1080&loop=1" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+  v
+<doc-anchor-target id="datenbank-erstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-erstellen">#</doc-anchor-trigger>
+        <span>Datenbank erstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE DATABASE databasename;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datenbank-auswählen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-auswählen">#</doc-anchor-trigger>
+        <span>Datenbank auswählen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">USE databasename;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="tabelle-erstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tabelle-erstellen">#</doc-anchor-trigger>
+        <span>Tabelle erstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE TABLE tablename (
+    column1 datatype1 constraints,
+    column2 datatype2 constraints,
+    ...
+);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datentypen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datentypen">#</doc-anchor-trigger>
+        <span>Datentypen</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>INT</code> - Ganzzahl</li>
+<li><code v-pre>VARCHAR(n)</code> - Zeichenkette mit maximaler Länge <code v-pre>n</code></li>
+<li><code v-pre>DATE</code> - Datum</li>
+<li><code v-pre>FLOAT</code> - Gleitkommazahl</li>
+</ul>
+<doc-anchor-target id="constraints">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#constraints">#</doc-anchor-trigger>
+        <span>Constraints</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>PRIMARY KEY</code> - Primärschlüssel</li>
+<li><code v-pre>AUTO_INCREMENT</code> - Automatische Inkrementierung</li>
+<li><code v-pre>NOT NULL</code> - Wert darf nicht NULL sein</li>
+<li><code v-pre>UNIQUE</code> - Wert muss eindeutig sein</li>
+<li><code v-pre>FOREIGN KEY</code> - Fremdschlüssel</li>
+</ul>
+<doc-anchor-target id="datensätze-einfügen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-einfügen">#</doc-anchor-trigger>
+        <span>Datensätze einfügen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">INSERT INTO tablename (column1, column2, ...) VALUES (value1, value2, ...);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datensätze-abfragen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-abfragen">#</doc-anchor-trigger>
+        <span>Datensätze abfragen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="bedingte-abfrage">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bedingte-abfrage">#</doc-anchor-trigger>
+        <span>Bedingte Abfrage</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename WHERE condition;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datensätze-aktualisieren">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-aktualisieren">#</doc-anchor-trigger>
+        <span>Datensätze aktualisieren</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">UPDATE tablename SET column1 = value1, column2 = value2 WHERE condition;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datensätze-löschen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-löschen">#</doc-anchor-trigger>
+        <span>Datensätze löschen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">DELETE FROM tablename WHERE condition;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="verknüpfungen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verknüpfungen">#</doc-anchor-trigger>
+        <span>Verknüpfungen</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>INNER JOIN</code> - Nur übereinstimmende Zeilen</li>
+<li><code v-pre>LEFT JOIN</code> - Alle Zeilen aus der linken Tabelle und übereinstimmende aus der rechten</li>
+<li><code v-pre>RIGHT JOIN</code> - Alle Zeilen aus der rechten Tabelle und übereinstimmende aus der linken</li>
+<li><code v-pre>FULL OUTER JOIN</code> - Alle Zeilen, wenn es Übereinstimmungen gibt</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="gruppieren-und-aggregatfunktionen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gruppieren-und-aggregatfunktionen">#</doc-anchor-trigger>
+        <span>Gruppieren und Aggregatfunktionen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT column, COUNT(*) FROM tablename GROUP BY column;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="unterabfragen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unterabfragen">#</doc-anchor-trigger>
+        <span>Unterabfragen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename WHERE column IN (SELECT column FROM anothertable WHERE condition);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="indizes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#indizes">#</doc-anchor-trigger>
+        <span>Indizes</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE INDEX indexname ON tablename (column);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="transaktionen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#transaktionen">#</doc-anchor-trigger>
+        <span>Transaktionen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">START TRANSACTION;
+-- SQL-Anweisungen
+COMMIT;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="sichten-views">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sichten-views">#</doc-anchor-trigger>
+        <span>Sichten (Views)</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE VIEW viewname AS SELECT column1, column2 FROM tablename WHERE condition;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="benutzer-verwalten">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#benutzer-verwalten">#</doc-anchor-trigger>
+        <span>Benutzer verwalten</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON databasename.* TO 'username'@'localhost';
+FLUSH PRIVILEGES;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="datenbank-sichern-und-wiederherstellen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-sichern-und-wiederherstellen">#</doc-anchor-trigger>
+        <span>Datenbank sichern und wiederherstellen</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">mysqldump -u username -p databasename &gt; dump.sql
+mysql -u username -p databasename &lt; dump.sql</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="hinweis">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hinweis">#</doc-anchor-trigger>
+        <span>Hinweis</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Ersetze <code v-pre>databasename</code>, <code v-pre>tablename</code>, <code v-pre>column</code>, <code v-pre>value</code>, etc. mit den entsprechenden Namen und Werten.</li>
+<li>Achte auf die Groß- und Kleinschreibung, da SQL case-sensitive ist.</li>
+<li>Dies ist nur eine grundlegende Übersicht. Es gibt viele weitere fortgeschrittene Konzepte in MySQL.</li>
+</ul>
 
                                 
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
+                                <div class="flex flex-wrap items-center justify-between mt-14">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc/blob/main/PAS/SQLMYSQLGrundlagen.md" target="_blank" rel="noopener">
+                                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>Edit this page</span>
+                                    </a>
+                                </div>
                             
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../pas/pixelcoder/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Pixel​Coder</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../wsk/bgb/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">BGB</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
                             </footer>
                         </main>
                 
@@ -289,6 +519,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "moodle", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "SQL (MySQL) Grundlagen", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
