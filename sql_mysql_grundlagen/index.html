@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750238530127">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750241723652">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/fav_oszimt-logo.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.750238530127" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.750241723652" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.750238530127" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.750241723652" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.750238530127" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.750238530127" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.750241723652" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.750241723652" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -254,201 +254,254 @@
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
   ></iframe>
   </div>
-<doc-anchor-target id="datenbank-erstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-erstellen">#</doc-anchor-trigger>
-        <span>Datenbank erstellen</span>
-    </h3>
+<doc-anchor-target id="1-datenbank-und-tabelle-erstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-datenbank-und-tabelle-erstellen">#</doc-anchor-trigger>
+        <span>1. Datenbank und Tabelle erstellen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">CREATE DATABASE databasename;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="datenbank-auswählen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-auswählen">#</doc-anchor-trigger>
-        <span>Datenbank auswählen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">USE databasename;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="tabelle-erstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tabelle-erstellen">#</doc-anchor-trigger>
-        <span>Tabelle erstellen</span>
-    </h3>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">CREATE TABLE tablename (
-    column1 datatype1 constraints,
-    column2 datatype2 constraints,
-    ...
+<pre class="language-sql"><code v-pre class="language-sql">-- Datenbank erstellen
+CREATE DATABASE IF NOT EXISTS meine_datenbank;
+
+-- Tabelle erstellen
+USE meine_datenbank;
+CREATE TABLE IF NOT EXISTS meine_tabelle (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    alter INT
 );</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="datentypen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datentypen">#</doc-anchor-trigger>
-        <span>Datentypen</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><code v-pre>INT</code> - Ganzzahl</li>
-<li><code v-pre>VARCHAR(n)</code> - Zeichenkette mit maximaler Länge <code v-pre>n</code></li>
-<li><code v-pre>DATE</code> - Datum</li>
-<li><code v-pre>FLOAT</code> - Gleitkommazahl</li>
-</ul>
-<doc-anchor-target id="constraints">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#constraints">#</doc-anchor-trigger>
-        <span>Constraints</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><code v-pre>PRIMARY KEY</code> - Primärschlüssel</li>
-<li><code v-pre>AUTO_INCREMENT</code> - Automatische Inkrementierung</li>
-<li><code v-pre>NOT NULL</code> - Wert darf nicht NULL sein</li>
-<li><code v-pre>UNIQUE</code> - Wert muss eindeutig sein</li>
-<li><code v-pre>FOREIGN KEY</code> - Fremdschlüssel</li>
-</ul>
-<doc-anchor-target id="datensätze-einfügen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-einfügen">#</doc-anchor-trigger>
-        <span>Datensätze einfügen</span>
-    </h3>
+<doc-anchor-target id="2-datensatz-einfügen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-datensatz-einfügen">#</doc-anchor-trigger>
+        <span>2. Datensatz einfügen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">INSERT INTO tablename (column1, column2, ...) VALUES (value1, value2, ...);</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">INSERT INTO meine_tabelle (id, name, alter)
+VALUES (1, 'Max Mustermann', 30);</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="datensätze-abfragen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-abfragen">#</doc-anchor-trigger>
-        <span>Datensätze abfragen</span>
-    </h3>
+<doc-anchor-target id="3-daten-abfragen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-daten-abfragen">#</doc-anchor-trigger>
+        <span>3. Daten abfragen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="bedingte-abfrage">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bedingte-abfrage">#</doc-anchor-trigger>
-        <span>Bedingte Abfrage</span>
-    </h3>
+<doc-anchor-target id="4-bedingte-abfrage-where-klausel">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-bedingte-abfrage-where-klausel">#</doc-anchor-trigger>
+        <span>4. Bedingte Abfrage (WHERE-Klausel):</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename WHERE condition;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE alter &gt; 25;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="datensätze-aktualisieren">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-aktualisieren">#</doc-anchor-trigger>
-        <span>Datensätze aktualisieren</span>
-    </h3>
+<doc-anchor-target id="5-daten-aktualisieren">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-daten-aktualisieren">#</doc-anchor-trigger>
+        <span>5. Daten aktualisieren:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">UPDATE tablename SET column1 = value1, column2 = value2 WHERE condition;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">UPDATE meine_tabelle SET alter = 31 WHERE id = 1;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="datensätze-löschen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datensätze-löschen">#</doc-anchor-trigger>
-        <span>Datensätze löschen</span>
-    </h3>
+<doc-anchor-target id="6-daten-löschen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-daten-löschen">#</doc-anchor-trigger>
+        <span>6. Daten löschen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">DELETE FROM tablename WHERE condition;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">DELETE FROM meine_tabelle WHERE id = 1;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="verknüpfungen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#verknüpfungen">#</doc-anchor-trigger>
-        <span>Verknüpfungen</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><code v-pre>INNER JOIN</code> - Nur übereinstimmende Zeilen</li>
-<li><code v-pre>LEFT JOIN</code> - Alle Zeilen aus der linken Tabelle und übereinstimmende aus der rechten</li>
-<li><code v-pre>RIGHT JOIN</code> - Alle Zeilen aus der rechten Tabelle und übereinstimmende aus der linken</li>
-<li><code v-pre>FULL OUTER JOIN</code> - Alle Zeilen, wenn es Übereinstimmungen gibt</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="gruppieren-und-aggregatfunktionen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gruppieren-und-aggregatfunktionen">#</doc-anchor-trigger>
-        <span>Gruppieren und Aggregatfunktionen</span>
-    </h3>
+<doc-anchor-target id="7-join-inner-join">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#7-join-inner-join">#</doc-anchor-trigger>
+        <span>7. Join (INNER JOIN):</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">SELECT column, COUNT(*) FROM tablename GROUP BY column;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT t1.id, t1.name, t2.adresse
+FROM tabelle1 t1
+INNER JOIN tabelle2 t2 ON t1.id = t2.id;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="unterabfragen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#unterabfragen">#</doc-anchor-trigger>
-        <span>Unterabfragen</span>
-    </h3>
+<doc-anchor-target id="8-join-left-join">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#8-join-left-join">#</doc-anchor-trigger>
+        <span>8. Join (LEFT JOIN):</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM tablename WHERE column IN (SELECT column FROM anothertable WHERE condition);</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT t1.id, t1.name, t2.adresse
+FROM tabelle1 t1
+LEFT JOIN tabelle2 t2 ON t1.id = t2.id;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="indizes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#indizes">#</doc-anchor-trigger>
-        <span>Indizes</span>
-    </h3>
+<doc-anchor-target id="9-unterabfrage-subquery">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#9-unterabfrage-subquery">#</doc-anchor-trigger>
+        <span>9. Unterabfrage (Subquery):</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">CREATE INDEX indexname ON tablename (column);</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT spalte1, spalte2
+FROM tabelle1
+WHERE spalte1 IN (SELECT spalte1 FROM tabelle2);</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="transaktionen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#transaktionen">#</doc-anchor-trigger>
-        <span>Transaktionen</span>
-    </h3>
+<doc-anchor-target id="10-aggregatfunktion-count">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#10-aggregatfunktion-count">#</doc-anchor-trigger>
+        <span>10. Aggregatfunktion (COUNT):</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">START TRANSACTION;
--- SQL-Anweisungen
-COMMIT;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT COUNT(*) FROM meine_tabelle;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="sichten-views">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sichten-views">#</doc-anchor-trigger>
-        <span>Sichten (Views)</span>
-    </h3>
+<doc-anchor-target id="11-transaktionen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-transaktionen">#</doc-anchor-trigger>
+        <span>11. Transaktionen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">CREATE VIEW viewname AS SELECT column1, column2 FROM tablename WHERE condition;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">-- Transaktion starten
+START TRANSACTION;
+
+-- SQL-Befehle hier ausführen
+
+-- Transaktion beenden (Commit)
+COMMIT;
+
+-- Transaktion rückgängig machen (Rollback)
+ROLLBACK;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="benutzer-verwalten">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#benutzer-verwalten">#</doc-anchor-trigger>
-        <span>Benutzer verwalten</span>
-    </h3>
+<doc-anchor-target id="12-index-erstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-index-erstellen">#</doc-anchor-trigger>
+        <span>12. Index erstellen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-sql"><code v-pre class="language-sql">CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON databasename.* TO 'username'@'localhost';
-FLUSH PRIVILEGES;</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">CREATE INDEX index_name ON meine_tabelle(spalte);</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="datenbank-sichern-und-wiederherstellen">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#datenbank-sichern-und-wiederherstellen">#</doc-anchor-trigger>
-        <span>Datenbank sichern und wiederherstellen</span>
-    </h3>
+<doc-anchor-target id="13-datenbank-löschen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#13-datenbank-löschen">#</doc-anchor-trigger>
+        <span>13. Datenbank löschen:</span>
+    </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">mysqldump -u username -p databasename &gt; dump.sql
-mysql -u username -p databasename &lt; dump.sql</code></pre>
+<pre class="language-sql"><code v-pre class="language-sql">-- Datenbank löschen
+DROP DATABASE IF EXISTS meine_datenbank;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="hinweis">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#hinweis">#</doc-anchor-trigger>
-        <span>Hinweis</span>
-    </h3>
+<doc-anchor-target id="14-tabelle-löschen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#14-tabelle-löschen">#</doc-anchor-trigger>
+        <span>14. Tabelle löschen:</span>
+    </h2>
 </doc-anchor-target>
-<ul>
-<li>Ersetze <code v-pre>databasename</code>, <code v-pre>tablename</code>, <code v-pre>column</code>, <code v-pre>value</code>, etc. mit den entsprechenden Namen und Werten.</li>
-<li>Achte auf die Groß- und Kleinschreibung, da SQL case-sensitive ist.</li>
-<li>Dies ist nur eine grundlegende Übersicht. Es gibt viele weitere fortgeschrittene Konzepte in MySQL.</li>
-</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Tabelle löschen
+DROP TABLE IF EXISTS meine_tabelle;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="15-bedingte-abfrage-and-or">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#15-bedingte-abfrage-and-or">#</doc-anchor-trigger>
+        <span>15. Bedingte Abfrage (AND, OR):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE alter &gt; 25 AND geschlecht = 'weiblich';
+SELECT * FROM meine_tabelle WHERE ort = 'Berlin' OR ort = 'Hamburg';</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="16-bedingte-abfrage-like">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#16-bedingte-abfrage-like">#</doc-anchor-trigger>
+        <span>16. Bedingte Abfrage (LIKE):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Alle Namen, die mit &quot;M&quot; beginnen
+SELECT * FROM meine_tabelle WHERE name LIKE 'M%';
+
+-- Alle Namen, die &quot;e&quot; als dritten Buchstaben haben
+SELECT * FROM meine_tabelle WHERE name LIKE '__e%';</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="17-sortieren-order-by">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#17-sortieren-order-by">#</doc-anchor-trigger>
+        <span>17. Sortieren (ORDER BY):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Aufsteigend nach Alter sortieren
+SELECT * FROM meine_tabelle ORDER BY alter ASC;
+
+-- Absteigend nach Namen sortieren
+SELECT * FROM meine_tabelle ORDER BY name DESC;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="18-datensätze-gruppieren-group-by">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#18-datensätze-gruppieren-group-by">#</doc-anchor-trigger>
+        <span>18. Datensätze gruppieren (GROUP BY):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Anzahl der Personen pro Ort ermitteln
+SELECT ort, COUNT(*) as anzahl_personen FROM meine_tabelle GROUP BY ort;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="19-aggregatfunktionen-sum-avg-min-max">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#19-aggregatfunktionen-sum-avg-min-max">#</doc-anchor-trigger>
+        <span>19. Aggregatfunktionen (SUM, AVG, MIN, MAX):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Summe der Gehälter berechnen
+SELECT SUM(gehalt) FROM mitarbeiter;
+
+-- Durchschnittsalter berechnen
+SELECT AVG(alter) FROM meine_tabelle;
+
+-- Älteste Person finden
+SELECT MAX(alter) FROM meine_tabelle;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="20-daten-aktualisieren-case-anweisung">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#20-daten-aktualisieren-case-anweisung">#</doc-anchor-trigger>
+        <span>20. Daten aktualisieren (CASE-Anweisung):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Alter basierend auf einer Bedingung aktualisieren
+UPDATE meine_tabelle
+SET alter = CASE
+    WHEN geschlecht = 'weiblich' THEN alter + 1
+    ELSE alter
+END;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="21-benutzer-und-berechtigungen-erstellen-für-administratoren">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#21-benutzer-und-berechtigungen-erstellen-für-administratoren">#</doc-anchor-trigger>
+        <span>21. Benutzer und Berechtigungen erstellen (für Administratoren):</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Benutzer erstellen
+CREATE USER 'neuer_benutzer'@'localhost' IDENTIFIED BY 'passwort';
+
+-- Berechtigungen zuweisen
+GRANT SELECT, INSERT, UPDATE ON meine_datenbank.meine_tabelle TO 'neuer_benutzer'@'localhost';
+
+-- Berechtigungen widerrufen
+REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'neuer_benutzer'@'localhost';
+
+-- Benutzer löschen
+DROP USER 'neuer_benutzer'@'localhost';</code></pre>
+</doc-codeblock></div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
