@@ -1,0 +1,17 @@
+label: SQL Grundlagen
+titel: SQL Grundlagen
+description: Grundlagen für SQL(MySQL)
+category: PAS
+tags:
+  - SQL
+  - Grundlagen
+  - PAS
+  - Programmiersprache
+  - Programmieren
+  - MySQL
+icon: ":technologist:"
+route: /sql_mysql_grundlagen/
+authors:
+  - name: Fabian Aps
+    email: mcpeaps_HD@outlook.com
+    link: https://linktr.ee/mcpeaps_hd
