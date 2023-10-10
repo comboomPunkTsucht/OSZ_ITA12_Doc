@@ -1,5 +1,4 @@
 # SQL (MySQL) Grundlagen
-<div style="padding-bottom: 56.25%; position: relative;">
 <iframe 
   width="100%" 
   height="100%" 
@@ -9,7 +8,6 @@
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen
 ></iframe>
-</div>
 
 ### Datenbank erstellen
 
