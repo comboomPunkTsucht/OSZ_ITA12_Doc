@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750241723652">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750513374071">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/fav_oszimt-logo.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.750241723652" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.750513374071" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.750241723652" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.750513374071" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.750241723652" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.750241723652" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.750513374071" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.750513374071" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -501,6 +501,172 @@ REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'neuer_benutzer'@'localhost'
 
 -- Benutzer löschen
 DROP USER 'neuer_benutzer'@'localhost';</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="22-datenbankverbindung-herstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#22-datenbankverbindung-herstellen">#</doc-anchor-trigger>
+        <span>22. Datenbankverbindung herstellen:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Verbindung zur Datenbank herstellen
+mysql -u benutzername -p passwort -h host -D datenbankname</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="23-zeichenkodierung-festlegen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#23-zeichenkodierung-festlegen">#</doc-anchor-trigger>
+        <span>23. Zeichenkodierung festlegen:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Zeichenkodierung in der Datenbank setzen
+ALTER DATABASE meine_datenbank CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Zeichenkodierung in der Tabelle setzen
+ALTER TABLE meine_tabelle CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="24-sichere-passwörter-verwenden">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#24-sichere-passwörter-verwenden">#</doc-anchor-trigger>
+        <span>24. Sichere Passwörter verwenden:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Ein sicheres Passwort setzen
+ALTER USER 'benutzer'@'localhost' IDENTIFIED WITH mysql_native_password BY 'sicheres_passwort';</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="25-backups-erstellen-und-wiederherstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#25-backups-erstellen-und-wiederherstellen">#</doc-anchor-trigger>
+        <span>25. Backups erstellen und wiederherstellen:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Backup erstellen
+mysqldump -u benutzername -p passwort meine_datenbank &gt; backup.sql
+
+-- Datenbank wiederherstellen
+mysql -u benutzername -p passwort meine_datenbank &lt; backup.sql</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="26-indizes-richtig-verwenden">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#26-indizes-richtig-verwenden">#</doc-anchor-trigger>
+        <span>26. Indizes richtig verwenden:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Indexe anlegen
+CREATE INDEX index_name ON meine_tabelle(spalte);
+
+-- Indexe entfernen
+DROP INDEX index_name ON meine_tabelle;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="27-views-erstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#27-views-erstellen">#</doc-anchor-trigger>
+        <span>27. Views erstellen:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- View erstellen
+CREATE VIEW mein_view AS
+SELECT spalte1, spalte2 FROM meine_tabelle WHERE bedingung;
+
+-- View aktualisieren
+CREATE OR REPLACE VIEW mein_view AS
+SELECT spalte1, spalte2 FROM meine_tabelle WHERE bedingung;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="28-trigger-definieren">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#28-trigger-definieren">#</doc-anchor-trigger>
+        <span>28. Trigger definieren:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Trigger erstellen
+DELIMITER //
+CREATE TRIGGER mein_trigger BEFORE INSERT ON meine_tabelle
+FOR EACH ROW
+BEGIN
+    -- Trigger-Code hier
+END;
+//
+
+-- Trigger entfernen
+DROP TRIGGER IF EXISTS mein_trigger;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="29-datenbankrechte-verwalten">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#29-datenbankrechte-verwalten">#</doc-anchor-trigger>
+        <span>29. Datenbankrechte verwalten:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Berechtigungen zuweisen
+GRANT SELECT, INSERT ON meine_datenbank.meine_tabelle TO 'benutzer'@'localhost';
+
+-- Berechtigungen widerrufen
+REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'benutzer'@'localhost';</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="30-fehlerbehandlung-mit-stored-procedures">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#30-fehlerbehandlung-mit-stored-procedures">#</doc-anchor-trigger>
+        <span>30. Fehlerbehandlung mit Stored Procedures:</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">-- Stored Procedure erstellen
+DELIMITER //
+CREATE PROCEDURE meine_prozedur()
+BEGIN
+    -- Prozedur-Code hier
+END;
+//
+
+-- Stored Procedure aufrufen
+CALL meine_prozedur();</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="31-verwendung-der-in-klausel">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#31-verwendung-der-in-klausel">#</doc-anchor-trigger>
+        <span>31. Verwendung der <code v-pre>IN</code>-Klausel:</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="abfrage-nach-bestimmten-ids">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#abfrage-nach-bestimmten-ids">#</doc-anchor-trigger>
+        <span>Abfrage nach bestimmten IDs:</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE id IN (1, 3, 5);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="abfrage-mit-einer-unterabfrage">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#abfrage-mit-einer-unterabfrage">#</doc-anchor-trigger>
+        <span>Abfrage mit einer Unterabfrage:</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE id IN (SELECT id FROM andere_tabelle WHERE bedingung);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="verwendung-mit-zeichenketten">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verwendung-mit-zeichenketten">#</doc-anchor-trigger>
+        <span>Verwendung mit Zeichenketten:</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE name IN ('Max', 'Anna', 'Peter');</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="verwendung-mit-subquery-und-not-in">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verwendung-mit-subquery-und-not-in">#</doc-anchor-trigger>
+        <span>Verwendung mit Subquery und <code v-pre>NOT IN</code>:</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE id NOT IN (SELECT id FROM andere_tabelle WHERE bedingung);</code></pre>
 </doc-codeblock></div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
