@@ -174,3 +174,125 @@ REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'neuer_benutzer'@'localhost'
 -- Benutzer löschen
 DROP USER 'neuer_benutzer'@'localhost';
 ```
+
+## 22. Datenbankverbindung herstellen:
+
+```sql
+-- Verbindung zur Datenbank herstellen
+mysql -u benutzername -p passwort -h host -D datenbankname
+```
+
+## 23. Zeichenkodierung festlegen:
+
+```sql
+-- Zeichenkodierung in der Datenbank setzen
+ALTER DATABASE meine_datenbank CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Zeichenkodierung in der Tabelle setzen
+ALTER TABLE meine_tabelle CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+## 24. Sichere Passwörter verwenden:
+
+```sql
+-- Ein sicheres Passwort setzen
+ALTER USER 'benutzer'@'localhost' IDENTIFIED WITH mysql_native_password BY 'sicheres_passwort';
+```
+
+## 25. Backups erstellen und wiederherstellen:
+
+```sql
+-- Backup erstellen
+mysqldump -u benutzername -p passwort meine_datenbank > backup.sql
+
+-- Datenbank wiederherstellen
+mysql -u benutzername -p passwort meine_datenbank < backup.sql
+```
+
+## 26. Indizes richtig verwenden:
+
+```sql
+-- Indexe anlegen
+CREATE INDEX index_name ON meine_tabelle(spalte);
+
+-- Indexe entfernen
+DROP INDEX index_name ON meine_tabelle;
+```
+
+## 27. Views erstellen:
+
+```sql
+-- View erstellen
+CREATE VIEW mein_view AS
+SELECT spalte1, spalte2 FROM meine_tabelle WHERE bedingung;
+
+-- View aktualisieren
+CREATE OR REPLACE VIEW mein_view AS
+SELECT spalte1, spalte2 FROM meine_tabelle WHERE bedingung;
+```
+
+## 28. Trigger definieren:
+
+```sql
+-- Trigger erstellen
+DELIMITER //
+CREATE TRIGGER mein_trigger BEFORE INSERT ON meine_tabelle
+FOR EACH ROW
+BEGIN
+    -- Trigger-Code hier
+END;
+//
+
+-- Trigger entfernen
+DROP TRIGGER IF EXISTS mein_trigger;
+```
+
+## 29. Datenbankrechte verwalten:
+
+```sql
+-- Berechtigungen zuweisen
+GRANT SELECT, INSERT ON meine_datenbank.meine_tabelle TO 'benutzer'@'localhost';
+
+-- Berechtigungen widerrufen
+REVOKE INSERT ON meine_datenbank.meine_tabelle FROM 'benutzer'@'localhost';
+```
+
+## 30. Fehlerbehandlung mit Stored Procedures:
+
+```sql
+-- Stored Procedure erstellen
+DELIMITER //
+CREATE PROCEDURE meine_prozedur()
+BEGIN
+    -- Prozedur-Code hier
+END;
+//
+
+-- Stored Procedure aufrufen
+CALL meine_prozedur();
+```
+## 31. Verwendung der `IN`-Klausel:
+
+### Abfrage nach bestimmten IDs:
+
+```sql
+SELECT * FROM meine_tabelle WHERE id IN (1, 3, 5);
+```
+
+### Abfrage mit einer Unterabfrage:
+
+```sql
+SELECT * FROM meine_tabelle WHERE id IN (SELECT id FROM andere_tabelle WHERE bedingung);
+```
+
+### Verwendung mit Zeichenketten:
+
+```sql
+SELECT * FROM meine_tabelle WHERE name IN ('Max', 'Anna', 'Peter');
+```
+
+### Verwendung mit Subquery und `NOT IN`:
+
+```sql
+SELECT * FROM meine_tabelle WHERE id NOT IN (SELECT id FROM andere_tabelle WHERE bedingung);
+```
