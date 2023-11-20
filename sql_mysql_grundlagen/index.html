@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753729487887">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753801702696">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../img/fav_oszimt-logo.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.753729487887" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.753801702696" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.753729487887" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.753801702696" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.753729487887" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.753729487887" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.753801702696" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.753801702696" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -668,6 +668,158 @@ CALL meine_prozedur();</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-sql"><code v-pre class="language-sql">SELECT * FROM meine_tabelle WHERE id NOT IN (SELECT id FROM andere_tabelle WHERE bedingung);</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="32-datentypen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#32-datentypen">#</doc-anchor-trigger>
+        <span>32 Datentypen</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Datentyp</th>
+<th>Minimale Größe</th>
+<th>Maximale Größe</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TINYINT</td>
+<td>1 Byte</td>
+<td>255</td>
+<td>-128</td>
+</tr>
+<tr>
+<td>SMALLINT</td>
+<td>2 Byte</td>
+<td>65535</td>
+<td>127</td>
+</tr>
+<tr>
+<td>MEDIUMINT</td>
+<td>3 Byte</td>
+<td>16777215</td>
+<td>32767</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>4 Byte</td>
+<td>4294967295</td>
+<td>2147483647</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>8 Byte</td>
+<td>18446744073709551615</td>
+<td>9223372036854775807</td>
+</tr>
+<tr>
+<td>FLOAT</td>
+<td>4 Byte</td>
+<td>1.1754943508222875e-38 to</td>
+<td>314.159</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3.4028234663852886e+38</td>
+<td></td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>8 Byte</td>
+<td>1.7976931348623158e+308 to</td>
+<td>14.142.135.623.730.900</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>-1.7976931348623158e+308</td>
+<td></td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td>1 Byte to 64 Byte</td>
+<td>-10<sup>38 to 10</sup>38</td>
+<td>123.456.789</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>3 Byte</td>
+<td>YYYY-MM-DD</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>3 Byte</td>
+<td>HH:MM:SS</td>
+<td>12:00:00</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>8 Byte</td>
+<td>YYYY-MM-DD HH:MM:SS</td>
+<td>2023-07-20 12:00:00</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>4 Byte</td>
+<td>YYYY-MM-DD HH:MM:SS</td>
+<td>2023-07-20 12:00:00</td>
+</tr>
+<tr>
+<td>CHAR</td>
+<td>1 Byte to 255 Byte</td>
+<td>1 Byte to 255 Byte</td>
+<td>&quot;Max Mustermann&quot;</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>1 Byte to 65535 Byte</td>
+<td>1 Byte to 65535 Byte</td>
+<td>&quot;Musterstraße 1&quot;</td>
+</tr>
+<tr>
+<td>BINARY</td>
+<td>1 Byte to 255 Byte</td>
+<td>1 Byte to 255 Byte</td>
+<td>&quot;1234567890&quot;</td>
+</tr>
+<tr>
+<td>VARBINARY</td>
+<td>1 Byte to 65535 Byte</td>
+<td>1 Byte to 65535 Byte</td>
+<td>&quot;Musterstadt&quot;</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>1 Byte to 4294967295 Byte</td>
+<td>1 Byte to 4294967295 Byte</td>
+<td>&quot;Musterfoto.jpg&quot;</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>1 Byte to 65535 Byte</td>
+<td>1 Byte to 65535 Byte</td>
+<td>&quot;Musterbeschreibung&quot;</td>
+</tr>
+<tr>
+<td>ENUM</td>
+<td>1 Byte to 64 Byte</td>
+<td>1 Byte to 64 Byte</td>
+<td>&quot;männlich&quot;, &quot;weiblich&quot;</td>
+</tr>
+<tr>
+<td>SET</td>
+<td>1 Byte to 64 Byte</td>
+<td>1 Byte to 64 Byte</td>
+<td>&quot;männlich&quot;, &quot;weiblich&quot;, &quot;divers&quot;</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
