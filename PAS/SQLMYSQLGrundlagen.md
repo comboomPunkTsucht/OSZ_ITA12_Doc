@@ -319,7 +319,7 @@ SELECT * FROM meine_tabelle WHERE name IN ('Max', 'Anna', 'Peter');
 SELECT * FROM meine_tabelle WHERE id NOT IN (SELECT id FROM andere_tabelle WHERE bedingung);
 ```
 
-## 32 Datentypen
+## 32. Datentypen
 
 | Datentyp  | Minimale Größe          | Maximale Größe           | Beispiel                          |
 | --------- | ------------------------- | -------------------------- | --------------------------------- |
