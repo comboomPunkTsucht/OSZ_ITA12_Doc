@@ -9,30 +9,34 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>BO</title>
-    <meta name="title" content="BO">
+    <title>Using SQL in Java</title>
+    <meta name="title" content="Using SQL in Java">
+    <meta name="description" content="Grundlagen für die Verbindung von Java mit SQL(MySQL)">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://ita12docoszimt.netlify.app/categories/bo/">
+    <link rel="canonical" href="https://ita12docoszimt.netlify.app/java_sql_mysql_grundlagen/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ita12docoszimt.netlify.app/categories/bo/">
-    <meta property="og:title" content="BO">
+    <meta property="og:url" content="https://ita12docoszimt.netlify.app/java_sql_mysql_grundlagen/">
+    <meta property="og:title" content="Using SQL in Java">
+    <meta property="og:description" content="Grundlagen für die Verbindung von Java mit SQL(MySQL)">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ita12docoszimt.netlify.app/categories/bo/">
-    <meta property="twitter:title" content="BO">
+    <meta property="twitter:url" content="https://ita12docoszimt.netlify.app/java_sql_mysql_grundlagen/">
+    <meta property="twitter:title" content="Using SQL in Java">
+    <meta property="twitter:description" content="Grundlagen für die Verbindung von Java mit SQL(MySQL)">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../img/fav_oszimt-logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.754053185324" rel="stylesheet">
+    <link href="../img/fav_oszimt-logo.png" rel="icon">
+    <link href="../resources/css/retype.css?v=3.5.0.754053185324" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754053185324" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754053185324" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.754053185324" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.754053185324" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.754053185324" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -47,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../img/oszimt-logo-k.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../img/oszimt-logo-k.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../img/oszimt-logo-k.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../img/oszimt-logo-k.png">
                             </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">ITA 12</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
@@ -219,26 +223,162 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="category-bo" class="break-words">
+<doc-anchor-target id="using-sql-in-java" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#category-bo">#</doc-anchor-trigger>
-        <span>Category: BO</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-sql-in-java">#</doc-anchor-trigger>
+        <span>Using SQL in Java</span>
     </h1>
 </doc-anchor-target>
-<p>See all <a href="../">categories</a>.</p>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../bp/moodle-kurs/">
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">BO</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">moodle-Kurs</div>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <a href="https://linktr.ee/mcpeaps_hd"><img class="object-cover" src="https://www.gravatar.com/avatar/6c4e3c69347774b67b72eb741aec6e29?d=mp"></a>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350"><a href="https://linktr.ee/mcpeaps_hd">Fabian Aps</a></div>
+        </div>
     </div>
-</a>
+    <div class="mx-2">&#9679;</div>
+    <div>In&nbsp;</div>
+    <div><a href="../categories/pas/">PAS</a></div>
+</div>
 
-                                
+<doc-anchor-target id="1-mysql-connectorj-herunterladen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-mysql-connectorj-herunterladen">#</doc-anchor-trigger>
+        <span>1. <strong>MySQL Connector/J herunterladen:</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>Zuerst müssen Sie den MySQL Connector/J JDBC-Treiber herunterladen und in Ihrem Projekt einbinden. Sie können es von der offiziellen MySQL-Website herunterladen.</p>
+<doc-anchor-target id="2-projekt-einrichten">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-projekt-einrichten">#</doc-anchor-trigger>
+        <span>2. <strong>Projekt einrichten:</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>Erstellen Sie ein neues Java-Projekt in Ihrer bevorzugten Entwicklungsumgebung und fügen Sie den heruntergeladenen JDBC-Treiber zu den externen Bibliotheken hinzu.</p>
+<doc-anchor-target id="3-datenbankverbindung-herstellen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-datenbankverbindung-herstellen">#</doc-anchor-trigger>
+        <span>3. <strong>Datenbankverbindung herstellen:</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>Verwenden Sie die <code v-pre>java.sql.Connection</code>-Schnittstelle, um eine Verbindung zur MySQL-Datenbank herzustellen. Geben Sie dabei die Datenbank-URL, den Benutzernamen und das Passwort an.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DatabaseConnector {
+    private static final String JDBC_URL = &quot;jdbc:mysql://localhost:3306/deineDatenbank&quot;;
+    private static final String USER = &quot;deinBenutzername&quot;;
+    private static final String PASSWORD = &quot;deinPasswort&quot;;
+
+    public static Connection connect() throws SQLException {
+        return DriverManager.getConnection(JDBC_URL, USER, PASSWORD);
+    }
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="4-sql-abfragen-ausführen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-sql-abfragen-ausführen">#</doc-anchor-trigger>
+        <span>4. <strong>SQL-Abfragen ausführen:</strong></span>
+    </h2>
+</doc-anchor-target>
+<p>Nutzen Sie die <code v-pre>java.sql.Statement</code>-Schnittstelle, um SQL-Abfragen auszuführen. Hier ist ein einfaches Beispiel zum Abrufen von Daten:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Connection connection = DatabaseConnector.connect();
+            Statement statement = connection.createStatement();
+
+            String query = &quot;SELECT * FROM deineTabelle&quot;;
+            ResultSet resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                // Verarbeite die Ergebnisse hier
+                System.out.println(resultSet.getString(&quot;spaltenName&quot;));
+            }
+
+            // Aufräumen
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+</doc-codeblock></div>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../tags/java/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>java</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/sql/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>sql</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/grundlagen/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>grundlagen</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/pas/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>pas</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/programmiersprache/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>programmiersprache</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/programmieren/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>programmieren</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../tags/mysql/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>mysql</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
+                                <div class="flex flex-wrap items-center justify-between mt-14">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc/blob/main/PAS/SQLUsingJava.md" target="_blank" rel="noopener">
+                                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>Edit this page</span>
+                                    </a>
+                                </div>
                             
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../sql_mysql_grundlagen/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">SQL Grundlagen</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../wsk/bgb/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">BGB</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
                             </footer>
                         </main>
                 
@@ -289,6 +429,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "BO", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Using SQL in Java", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
