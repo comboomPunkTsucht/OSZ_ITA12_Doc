@@ -1,0 +1,18 @@
+label: Using SQL in Java
+titel: Using SQL in Java
+description: Grundlagen für die Verbindung von Java mit SQL(MySQL)
+category: PAS
+tags:
+  - Java
+  - SQL
+  - Grundlagen
+  - PAS
+  - Programmiersprache
+  - Programmieren
+  - MySQL
+icon: ":technologist:"
+route: /java_sql_mysql_grundlagen/
+authors:
+  - name: Fabian Aps
+    email: mcpeaps_HD@outlook.com
+    link: https://linktr.ee/mcpeaps_hd
