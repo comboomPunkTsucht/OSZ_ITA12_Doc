@@ -18,9 +18,9 @@
 This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 <br/>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c08be726-3a1f-4542-bd08-645d2eb5b678/deploy-status)](https://app.netlify.com/sites/ita12docoszimt/deploys)
-
-<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
+<br/>
 <div data="https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc" class="github-pinner" style="visibility: hidden;"></div>
+<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
 
 ## Timetable
 
@@ -68,8 +68,9 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 
 ### Public Github Repo
 
-<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
+
 <div data="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps" class="github-pinner" style="visibility: hidden;"></div>
+<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
 <a href="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps">Link zum GitHub-Repository</a>
 
 #### release
@@ -78,8 +79,8 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 
 ### SwiftUI App
 
-<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
 <div data="https://github.com/comboomPunkTsucht/ITA-12_App" class="github-pinner" style="visibility: hidden;"></div>
+<script src="d29mk5socxaj4o.cloudfront.net/GitHubPinner.js"></script>
 <a href="https://github.com/comboomPunkTsucht/ITA-12_App">Link zum GitHub-Repository</a>
 
 #### Download
