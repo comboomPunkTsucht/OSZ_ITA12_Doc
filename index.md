@@ -13,7 +13,6 @@
 :::picture
 ![](/img/OSZimt-Logo-l.png)
 :::
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 # Welcome to ITA 12 Docs
 
 This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
@@ -21,6 +20,7 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c08be726-3a1f-4542-bd08-645d2eb5b678/deploy-status)](https://app.netlify.com/sites/ita12docoszimt/deploys)
 
 <div class="github-card" data-github="comboomPunkTsucht/OSZ_ITA12_Doc" data-width="400" data-height="297" data-theme="medium"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 ## Timetable
 
@@ -68,7 +68,7 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 ### Public Github Repo
 
 <div class="github-card" data-github="comboomPunkTsucht/OSZIMT-repo-ITA12_aps" data-width="400" data-height="" data-theme="medium"></div>
-
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 <a href="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps">Link zum GitHub-Repository</a>
 
 #### release
@@ -77,6 +77,7 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 ### SwiftUI App
 
 <div class="github-card" data-github="comboomPunkTsucht/ITA-12_App" data-width="400" data-height="" data-theme="medium"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 <a href="https://github.com/comboomPunkTsucht/ITA-12_App">Link zum GitHub-Repository</a>
 
 #### Download
