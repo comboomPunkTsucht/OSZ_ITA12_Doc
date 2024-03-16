@@ -65,8 +65,8 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 ## GitHub
 ### Public Github Repo
 
-<script src="https://cdn.jsdelivr.net/npm/@jaicab/github-activity/github-activity.js"></script>
-<div id="github-feed" data-username="comboomPunkTsucht"></div>
+<iframe src="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps/embed" width="600" height="400"></iframe>
+
 
 
 <a href="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps">Link zum GitHub-Repository</a>
@@ -75,7 +75,7 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 [Go to Latwst release](https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps/releases/latest)
 
 ### SwiftUI App
-
+<iframe src="https://github.com/comboomPunkTsucht/ITA-12_App/embed" width="600" height="400"></iframe>
 <a href="https://github.com/comboomPunkTsucht/ITA-12_App">Link zum GitHub-Repository</a>
 
 #### Download
