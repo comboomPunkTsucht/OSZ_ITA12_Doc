@@ -88,7 +88,7 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 ## GitHub
 
 ### Public Github Repo
-:::gh
+:::gh2
 <a href="https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps.png" width="560px"></a>
 :::
 #### release
