@@ -8,6 +8,15 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+        .gh {
+        text-align: center;
+        color: #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 </style>
 
 :::picture
@@ -19,8 +28,9 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 <br/>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c08be726-3a1f-4542-bd08-645d2eb5b678/deploy-status)](https://app.netlify.com/sites/ita12docoszimt/deploys)
 <br/>
-[![comboomPunkTsucht/OSZ_ITA12_Doc - GitHub](https://gh-card.dev/repos/comboomPunkTsucht/OSZ_ITA12_Doc.svg?fullname=)](https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc)
 
+:::gh[![comboomPunkTsucht/OSZ_ITA12_Doc - GitHub](https://gh-card.dev/repos/comboomPunkTsucht/OSZ_ITA12_Doc.svg?fullname=)](https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc)
+:::
 ## Timetable
 
 <style>
@@ -66,17 +76,17 @@ This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 ## GitHub
 
 ### Public Github Repo
-
+:::gh
 [![comboomPunkTsucht/OSZIMT-repo-ITA12_aps - GitHub](https://gh-card.dev/repos/comboomPunkTsucht/OSZIMT-repo-ITA12_aps.svg?fullname=)](https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps)
-
+:::
 #### release
 
 [Go to Latwst release](https://github.com/comboomPunkTsucht/OSZIMT-repo-ITA12_aps/releases/latest)
 
 ### SwiftUI App
-
+:::gh
 [![comboomPunkTsucht/ITA-12_App - GitHub](https://gh-card.dev/repos/comboomPunkTsucht/ITA-12_App.svg?fullname=)](https://github.com/comboomPunkTsucht/ITA-12_App)
-
+:::
 #### Download
 
 [!file Download DMG](https://github.com/comboomPunkTsucht/ITA-12_App/releases/latest/download/ITA_12_App.dmg)
