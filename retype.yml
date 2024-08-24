@@ -1,4 +1,4 @@
-url: https://ita12docoszimt.netlify.app
+url: https://ita12.comboompunksucht.app
 input: .
 output: .retype
 favicon: /img/fav_OSZimt-logo.png
@@ -15,10 +15,10 @@ footer:
   copyright: "&copy; Copyright . All rights reserved. Non official OSZ imt hosted Webseite but hosted by a student of the ITA 12 class from the OSZ imt on GitHub Pages."
   links:
     - text: Categories
-      link: https://ita12docoszimt.netlify.app/categories/
+      link: https://ita12.comboompunksucht.app/categories/
       icon: ":bookmark_tabs:"
     - text: Release Notes
-      link: https://ita12docoszimt.netlify.app/blog/releasenotes/
+      link: https://ita12.comboompunksucht.app/blog/releasenotes/
       icon: ":spiral_note_pad:"
 links:
   - text: Guilded-Server
