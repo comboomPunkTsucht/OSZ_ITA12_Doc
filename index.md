@@ -39,8 +39,6 @@
 
 This is the Website off the class [ITA 12](/404/) from OSZ imt Berlin.
 <br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c08be726-3a1f-4542-bd08-645d2eb5b678/deploy-status)](https://app.netlify.com/sites/ita12docoszimt/deploys)
-<br/>
 
 :::gh
 <a href="https://github.com/comboomPunkTsucht/OSZ_ITA12_Doc"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/comboomPunkTsucht/OSZ_ITA12_Doc.png" width="560px"></a>
