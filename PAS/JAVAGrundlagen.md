@@ -7,7 +7,7 @@
     height="100%" 
     src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRjKA_NuK9mHmlk0dZzuP1P5&vq=hd1080&color=white&loop=1&modestbranding=1" 
     frameborder="0" 
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
   ></iframe>
 </div>
