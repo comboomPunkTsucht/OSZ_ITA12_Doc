@@ -1,0 +1,23 @@
+﻿# Welcome to ITA 12 Docs
+
+> This is the Website off the class ITA 12 from OSZ imt Berlin.
+
+- [Welcome to ITA 12 Docs](https://ita12.mcpeapsunterstrichhd.dev/index.md): Welcome to ITA 12 Docs
+- [Java Grundlagen](https://ita12.mcpeapsunterstrichhd.dev/pas/javagrundlagen.md): Grundlagen für die Programmiersprache Java
+- [SQL (MySQL) Grundlagen](https://ita12.mcpeapsunterstrichhd.dev/pas/sqlmysqlgrundlagen.md): Grundlagen für SQL(MySQL)
+- [Using SQL in Java](https://ita12.mcpeapsunterstrichhd.dev/pas/sqlusingjava.md): Grundlagen für die Verbindung von Java mit SQL(MySQL)
+
+## ITS
+
+### ITS-I
+
+- [Cisco Router Befehle](https://ita12.mcpeapsunterstrichhd.dev/its/its-i/cisco_router_befehle.md)
+- [Cisco Switch Befehle](https://ita12.mcpeapsunterstrichhd.dev/its/its-i/cisco_switch_befehle.md)
+
+### ITS-T
+
+- [DSL Explanitys](https://ita12.mcpeapsunterstrichhd.dev/its/its-t/dsl.md)
+
+## Blog
+
+- [Release-Notes](https://ita12.mcpeapsunterstrichhd.dev/blog/releasenotes.md): this page
